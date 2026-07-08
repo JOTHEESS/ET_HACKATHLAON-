@@ -15,5 +15,11 @@ FailureSensorIQ/
 # data/eval/failuresensoriq_perturbed_*.json
 # data/eval/failuresensoriq_standard_all*.json
 
+# Secrets - never commit API keys to this public repo
+.env
+*.env
+secrets.json
+credentials.json
+
 # OS junk
 .DS_Store

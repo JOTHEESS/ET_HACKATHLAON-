@@ -15,6 +15,7 @@ Usage:
 import os
 import fitz  # PyMuPDF
 import pytesseract
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 from PIL import Image
 import io
 

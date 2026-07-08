@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Extraction cache (regenerable, no need to version)
+.extraction_cache/
+
+# FailureSensorIQ is a separate cloned repo - don't nest it in your repo history
+FailureSensorIQ/
+
+# Optional: exclude the largest unused FailureSensorIQ eval variants (~15MB)
+# Uncomment if you want a leaner repo:
+# data/eval/failuresensoriq_perturbed_*.json
+# data/eval/failuresensoriq_standard_all*.json
+
+# OS junk
+.DS_Store

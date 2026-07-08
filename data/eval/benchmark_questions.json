@@ -1,0 +1,75 @@
+{
+  "_description": "Benchmark questions for hybrid-vs-keyword evaluation. Each question tagged by retrieval_type so you can prove the graph earns its place. Ground-truth answers included for scoring.",
+  "_seed": 42,
+  "_tags": {
+    "keyword_answerable": "A single doc contains the answer; keyword/vector search alone can find it.",
+    "graph_only": "Answer requires traversing relationships across multiple docs; keyword search returns disconnected fragments.",
+    "hybrid": "Needs both semantic lookup and relationship reasoning."
+  },
+  "questions": [
+    {
+      "id": "Q01_STAR",
+      "question": "Was there any early warning before the Pump P-204 failure, and what should have been done according to procedure?",
+      "retrieval_type": "graph_only",
+      "hops": ["IR-556", "ML-1183", "VS-204", "INC-2024-07", "M-118"],
+      "ground_truth": "Yes. Elevated DE bearing vibration was flagged 21 days before failure in inspection IR-556 (4.6 mm/s, Zone C). Maintenance log ML-1183 topped up lube but DEFERRED bearing replacement due to no spare, against M-118 clause 4.3 which requires replacement within 14 days. Vibration crossed the 7.1 mm/s Zone D alarm 5 days before failure (VS-204) with no work order raised. Incident INC-2024-07 was the resulting bearing seizure. Procedure M-118 (per OISD-132) required replacement, not deferral.",
+      "why_keyword_fails": "The five facts live in five separate documents with no shared keyword. Keyword search on 'P-204 failure' returns the incident report only, missing the warning chain."
+    },
+    {
+      "id": "Q02",
+      "question": "Which regulation governs bearing replacement timelines for Pump P-204?",
+      "retrieval_type": "graph_only",
+      "hops": ["P-204", "M-118", "OISD-132"],
+      "ground_truth": "OISD-132. Pump P-204 maintenance follows Procedure M-118, which implements OISD-132 (Inspection of Rotating Equipment). Requires the equipment->procedure->regulation hop.",
+      "why_keyword_fails": "No single document says 'P-204 is governed by OISD-132'. The link is P-204 -> M-118 -> OISD-132 across documents."
+    },
+    {
+      "id": "Q03",
+      "question": "What is the vibration alarm threshold for Pump P-204's DE bearing?",
+      "retrieval_type": "keyword_answerable",
+      "hops": ["VS-204"],
+      "ground_truth": "7.1 mm/s RMS (ISO 10816-3 Zone D). Stated directly in VS-204 and IR-556.",
+      "why_keyword_fails": "N/A - keyword search handles this fine. Included as a control to show hybrid does not lose easy lookups."
+    },
+    {
+      "id": "Q04",
+      "question": "What lubricant grade is specified for feed water pumps?",
+      "retrieval_type": "keyword_answerable",
+      "hops": ["LS-07"],
+      "ground_truth": "ISO VG 68, relubrication interval 1500 operating hours. Stated in LS-07.",
+      "why_keyword_fails": "N/A - control question."
+    },
+    {
+      "id": "Q05",
+      "question": "Who inspected Pump P-204 and were they qualified?",
+      "retrieval_type": "hybrid",
+      "hops": ["IR-556"],
+      "ground_truth": "R. Krishnan, a certified vibration analyst (ISO 18436-2 Cat II). From IR-556.",
+      "why_keyword_fails": "Mostly keyword-findable, but connecting 'inspector' to 'qualification' benefits from entity linking."
+    },
+    {
+      "id": "Q06",
+      "question": "Did the motor driving P-204 have any problems around the same time?",
+      "retrieval_type": "graph_only",
+      "hops": ["IR-560", "M-204", "P-204"],
+      "ground_truth": "No. Motor M-204 (which drives P-204) was inspected in IR-560 and was nominal - all readings normal. The problem was the driven pump P-204's bearing, not the motor. Requires distinguishing the motor from the pump it drives.",
+      "why_keyword_fails": "Keyword search on 'P-204 problem' may wrongly surface the motor doc or conflate motor and pump. Graph keeps them as distinct linked entities."
+    },
+    {
+      "id": "Q07",
+      "question": "Why was the bearing replacement on P-204 delayed?",
+      "retrieval_type": "hybrid",
+      "hops": ["ML-1183"],
+      "ground_truth": "The spare bearing (SKF 6316 C3) was not in stores at the time of work order ML-1183, so replacement was deferred to next planned shutdown and lube top-up applied as interim. Approved by V. Menon.",
+      "why_keyword_fails": "Findable in one doc, but the significance (that this violated M-118) needs the graph link to the procedure."
+    },
+    {
+      "id": "Q08",
+      "question": "Was the Zone D vibration alarm on P-204 acted upon?",
+      "retrieval_type": "graph_only",
+      "hops": ["VS-204", "SH-0717", "INC-2024-07"],
+      "ground_truth": "No. VS-204 shows the alarm crossed 7.1 mm/s five days before failure. Shift handover SH-0717 noted the alarm but no work order was raised. The failure INC-2024-07 followed. M-118 clause 4.4 required an immediate work order.",
+      "why_keyword_fails": "The 'alarm raised but not acted on' story spans the sensor log, the handover log, and the incident - three docs, no shared keyword."
+    }
+  ]
+}

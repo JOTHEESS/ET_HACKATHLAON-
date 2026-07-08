@@ -1,0 +1,61 @@
+{
+  "_description": "Hand-labeled ground-truth entities for Macro-F1 scoring of extraction. Covers 3 document types. Entity types: EQUIPMENT, PROCEDURE, REGULATION, PERSON, DATE, SENSOR, MEASUREMENT, DOCUMENT_REF.",
+  "_seed": 42,
+  "_scoring": "Compare extractor output against these gold spans. Macro-F1 averaged across entity types.",
+  "documents": [
+    {
+      "doc_id": "IR-556_inspection_report.pdf",
+      "doc_type": "inspection_report",
+      "entities": [
+        {"text": "IR-556", "type": "DOCUMENT_REF"},
+        {"text": "Centrifugal Pump P-204", "type": "EQUIPMENT"},
+        {"text": "P-204", "type": "EQUIPMENT"},
+        {"text": "DE bearing", "type": "EQUIPMENT"},
+        {"text": "R. Krishnan", "type": "PERSON"},
+        {"text": "M-118", "type": "PROCEDURE"},
+        {"text": "ISO 10816-3", "type": "REGULATION"},
+        {"text": "ISO 18436-2", "type": "REGULATION"},
+        {"text": "4.6 mm/s RMS", "type": "MEASUREMENT"},
+        {"text": "2.1 mm/s RMS", "type": "MEASUREMENT"},
+        {"text": "7.1 mm/s", "type": "MEASUREMENT"},
+        {"text": "62 C", "type": "MEASUREMENT"},
+        {"text": "Unit 2, Pump House Bay 4", "type": "LOCATION"},
+        {"text": "ELEVATED - MONITOR", "type": "STATUS"}
+      ]
+    },
+    {
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "doc_type": "maintenance_log",
+      "entities": [
+        {"text": "ML-1183", "type": "DOCUMENT_REF"},
+        {"text": "P-204", "type": "EQUIPMENT"},
+        {"text": "DE bearing", "type": "EQUIPMENT"},
+        {"text": "SKF 6316 C3", "type": "EQUIPMENT"},
+        {"text": "IR-556", "type": "DOCUMENT_REF"},
+        {"text": "S. Prakash", "type": "PERSON"},
+        {"text": "V. Menon", "type": "PERSON"},
+        {"text": "M-118", "type": "PROCEDURE"},
+        {"text": "clause 4.3", "type": "PROCEDURE"},
+        {"text": "ISO VG 68", "type": "MEASUREMENT"},
+        {"text": "4.9 mm/s RMS", "type": "MEASUREMENT"},
+        {"text": "14 days", "type": "MEASUREMENT"}
+      ]
+    },
+    {
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "doc_type": "incident_report",
+      "entities": [
+        {"text": "INC-2024-07", "type": "DOCUMENT_REF"},
+        {"text": "Pump P-204", "type": "EQUIPMENT"},
+        {"text": "P-204", "type": "EQUIPMENT"},
+        {"text": "DE bearing", "type": "EQUIPMENT"},
+        {"text": "SKF 6316", "type": "EQUIPMENT"},
+        {"text": "P-205", "type": "EQUIPMENT"},
+        {"text": "38 hours", "type": "MEASUREMENT"},
+        {"text": "14:20", "type": "MEASUREMENT"},
+        {"text": "catastrophic DE bearing seizure", "type": "EVENT"},
+        {"text": "High", "type": "STATUS"}
+      ]
+    }
+  ]
+}

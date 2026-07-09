@@ -44,9 +44,11 @@ Keyword search fails this. Graph traversal answers it correctly.
 - [x] Dataset built and locked (commit ed55d1f)
 - [x] Document loader built and tested (ingest/loaders.py)
 - [x] Entity extractor built (ingest/extractor.py)
-- [ ] Live extraction test - BLOCKED on API credits, need to add
-      billing at console.anthropic.com/settings/billing tomorrow,
-      then rotate the API key, then retry the test
+- [x] Live extraction test - CONFIRMED WORKING. Correctly extracted
+      P-204, R. Krishnan, M-118, ISO 10816-3, ISO 18436-2, all
+      measurements, and relationships (inspected_by, governed_by,
+      serviced_under, flagged_by). Loader -> OCR fallback -> Claude
+      extractor pipeline confirmed end-to-end on real data.
 - [ ] Knowledge graph builder
 - [ ] Vector store builder
 - [ ] RRF fusion retriever

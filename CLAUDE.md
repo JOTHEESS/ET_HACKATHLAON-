@@ -99,5 +99,16 @@ Keyword search fails this. Graph traversal answers it correctly.
       references quoted inside ML-1183's own text. High confidence,
       correct citations. Good evidence the pipeline is robust to
       retrieval gaps, not just a lucky ranking.
-- [ ] Streamlit UI
+- [x] Streamlit chat UI (app.py) - chat_message/chat_input over
+      ingest.synthesis, resources cached with @st.cache_resource,
+      renders answer + confidence badge + citations + a "Retrieval
+      details" expander (matched entities, retrieved doc_ids).
+      Picks up ANTHROPIC_API_KEY from the environment automatically;
+      falls back to a password-style text input if unset. Verified
+      with a real browser (Playwright + Chromium, installed for this
+      since no chromium-cli was available): launched the server,
+      submitted the Q03 question through the actual chat input, and
+      confirmed the rendered answer, confidence badge, citations, and
+      expander contents all matched the synthesis agent's output -
+      see screenshots from that run for the golden-path proof.
 - [ ] Benchmark harness (keyword vs hybrid comparison)

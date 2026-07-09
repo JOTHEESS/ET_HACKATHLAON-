@@ -112,21 +112,52 @@ Keyword search fails this. Graph traversal answers it correctly.
       expander contents all matched the synthesis agent's output -
       see screenshots from that run for the golden-path proof.
 - [x] Benchmark harness (evaluate.py) - scores vector-only retrieval vs
-      the RRF hybrid on all 8 benchmark questions using recall@10 of
+      the RRF hybrid on all 8 benchmark questions using recall@top_k of
       each question's expected "hops". Results saved to
       data/eval/benchmark_results.json.
-      By retrieval_type: graph_only avg recall improved 0.38 -> 0.48
-      (4 questions); keyword_answerable and hybrid types held flat at
-      1.00 for both methods (2 questions each) - the control case
-      working as intended, hybrid doesn't cost anything on easy lookups.
-      Q01_STAR (the flagship demo question) showed the clearest win:
-      0.20 -> 0.60 recall (vector found 1 of 5 chain docs, hybrid found 3).
       Caveat worth knowing: benchmark "hops" mix document IDs with
       entity/regulation IDs that aren't documents at all (e.g. Q02's
       hops are ["P-204", "M-118", "OISD-132"] - only M-118 is an actual
       filename), so some questions have a recall ceiling below 1.0
-      regardless of retrieval quality. Read in that light: Q06's 0.33
-      is actually a perfect hit on its one real document target
-      (IR-560), not a partial miss. Q02's 0.00 IS a real miss, though -
-      confirms the M-118 ranking gap flagged back in stage 5 is genuine
-      and still unresolved.
+      regardless of retrieval quality. Read Q06's 0.33 in that light -
+      it's a perfect hit on its one real document target (IR-560), not
+      a partial miss.
+
+## Post-build review findings (user-requested full audit, then fixed)
+
+A full review of the actual code and live graph data (not just prose
+descriptions) surfaced two real bugs, both now fixed and re-verified:
+
+1. **Entity resolution was exact-string-only.** "P-204" was actually
+   split across 3 disconnected node identities (`P-204`, `Pump P-204`,
+   `Centrifugal Pump P-204`) because different documents used different
+   surface forms and graph_builder.py only merged on exact text match -
+   despite the module docstring claiming otherwise. Fixed by
+   canonicalizing node identity on an embedded ID token (e.g. "Pump
+   P-204" -> "P-204") in `_canonical_key()`; original surface forms are
+   kept as an `aliases` set on the node. Rebuilt from the existing
+   cached extraction_results.json (no new API calls needed) - graph
+   went from 416 nodes/74-ish fragmented equipment identities to 405
+   nodes, with P-204 now a single node of degree 38. The star chain
+   path IR-556 -> M-118 now resolves through the actual narrative doc
+   (`IR-556 -> ML-1183 -> M-118`) instead of an artifact node.
+
+2. **Q02's M-118 miss was a ranking cutoff, not a connectivity bug.**
+   Traced directly: M-118 is a real graph node, directly connected
+   (1 hop) to all P-204 variants and to OISD-132 (both `governed_by`
+   and `references` edges). The actual problem: ~8 documents mention
+   "P-204" directly (hop-0) and systematically outrank M-118_procedure.pdf
+   (hop-1, since that document's own text never mentions "P-204"),
+   landing it at fused position #11 of 17 - one slot past the old
+   top_k=10 cutoff. Fixed by bumping top_k to 12 in retriever.py,
+   synthesis.py, and evaluate.py.
+
+**Re-verified after both fixes:** Q02 hybrid recall 0.00 -> 0.33 (its
+one achievable target now recovered; vector-only stayed 0.00 as
+expected, since only graph traversal could reach it - this is the
+clearest single-question evidence yet that the graph is doing real
+work). M-118_procedure.pdf's fused position confirmed directly:
+#12 of 17 - it clears the new cutoff, but only just, so this remains a
+tight margin worth another look if time permits, not a robust win.
+graph_only avg recall: 0.38 -> 0.57 (vector -> hybrid, top_k=12).
+Overall: 0.69 -> 0.78. Q01_STAR still the clearest win: 0.20 -> 0.60.

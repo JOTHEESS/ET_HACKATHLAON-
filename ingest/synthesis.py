@@ -62,7 +62,7 @@ def _gather_context(collection, query: str, doc_ids: list,
 
 
 def synthesize(query: str, client: Anthropic = None, collection=None, graph=None,
-               model: str = "claude-sonnet-4-5", top_k: int = 10) -> dict:
+               model: str = "claude-sonnet-4-5", top_k: int = 12) -> dict:
     if client is None:
         client = Anthropic()
     if collection is None:

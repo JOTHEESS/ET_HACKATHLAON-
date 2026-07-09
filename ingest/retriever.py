@@ -94,7 +94,7 @@ def rrf_fuse(rankings: list, k: int = RRF_K) -> list:
     return [doc_id for doc_id, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)]
 
 
-def retrieve(query: str, collection=None, graph=None, top_k: int = 10) -> dict:
+def retrieve(query: str, collection=None, graph=None, top_k: int = 12) -> dict:
     if collection is None:
         collection = load_vector_store()
     if graph is None:

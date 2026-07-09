@@ -30,7 +30,7 @@ from ingest.vector_builder import load_vector_store
 
 BENCHMARK_PATH = "data/eval/benchmark_questions.json"
 RESULTS_PATH = "data/eval/benchmark_results.json"
-TOP_K = 10
+TOP_K = 12
 
 
 def _hop_found(hop: str, doc_ids: list) -> bool:

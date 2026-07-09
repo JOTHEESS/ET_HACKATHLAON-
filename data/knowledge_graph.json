@@ -11,6 +11,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "INC-2024-07"
+      ],
+      "display_text": "INC-2024-07",
       "id": "INC-2024-07"
     },
     {
@@ -21,23 +25,37 @@
       "types": [
         "DATE"
       ],
-      "id": "22 Jul 2024"
+      "aliases": [
+        "22 Jul 2024"
+      ],
+      "display_text": "22 Jul 2024",
+      "id": "22 jul 2024"
     },
     {
       "doc_ids": [
         "INC-2024-07_incident_report.pdf",
         "INC-2024-07_incident_report_SCANNED.pdf",
+        "IR-556_inspection_report.pdf",
         "IR-556_inspection_report_SCANNED.pdf",
         "IR-560_motor_inspection.pdf",
+        "LS-07_lubrication_spec.pdf",
         "ML-1183_maintenance_log.pdf",
         "ML-1183_maintenance_log_SCANNED.pdf",
         "MaintMaster_manual.pdf",
+        "SH-0717_shift_handover.pdf",
         "VS-204_vibration_trend_log.pdf"
       ],
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Pump P-204"
+      "aliases": [
+        "Centrifugal Pump P-204",
+        "P-204",
+        "P-204 DE bearing",
+        "Pump P-204"
+      ],
+      "display_text": "Centrifugal Pump P-204",
+      "id": "P-204"
     },
     {
       "doc_ids": [
@@ -47,17 +65,27 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Boiler Feed Water"
+      "aliases": [
+        "Boiler Feed Water"
+      ],
+      "display_text": "Boiler Feed Water",
+      "id": "boiler feed water"
     },
     {
       "doc_ids": [
         "INC-2024-07_incident_report.pdf",
-        "INC-2024-07_incident_report_SCANNED.pdf"
+        "INC-2024-07_incident_report_SCANNED.pdf",
+        "MaintMaster_manual.pdf"
       ],
       "types": [
         "EVENT"
       ],
-      "id": "Catastrophic DE bearing seizure"
+      "aliases": [
+        "Catastrophic DE bearing seizure",
+        "catastrophic DE bearing seizure"
+      ],
+      "display_text": "Catastrophic DE bearing seizure",
+      "id": "catastrophic de bearing seizure"
     },
     {
       "doc_ids": [
@@ -67,6 +95,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "38 hours"
+      ],
+      "display_text": "38 hours",
       "id": "38 hours"
     },
     {
@@ -77,7 +109,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "Shift Engineer"
+      "aliases": [
+        "Shift Engineer"
+      ],
+      "display_text": "Shift Engineer",
+      "id": "shift engineer"
     },
     {
       "doc_ids": [
@@ -89,7 +125,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Unit 2"
+      "aliases": [
+        "Unit 2"
+      ],
+      "display_text": "Unit 2",
+      "id": "unit 2"
     },
     {
       "doc_ids": [
@@ -99,7 +139,11 @@
       "types": [
         "STATUS"
       ],
-      "id": "High"
+      "aliases": [
+        "High"
+      ],
+      "display_text": "High",
+      "id": "high"
     },
     {
       "doc_ids": [
@@ -110,12 +154,18 @@
         "ML-1183_maintenance_log.pdf",
         "ML-1183_maintenance_log_SCANNED.pdf",
         "MaintMaster_manual.pdf",
-        "P-210_pump_manual_extract.pdf"
+        "P-210_pump_manual_extract.pdf",
+        "VS-204_vibration_trend_log.pdf"
       ],
       "types": [
         "EQUIPMENT"
       ],
-      "id": "DE bearing"
+      "aliases": [
+        "DE Bearing",
+        "DE bearing"
+      ],
+      "display_text": "DE bearing",
+      "id": "de bearing"
     },
     {
       "doc_ids": [
@@ -126,7 +176,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "SKF 6316"
+      "aliases": [
+        "SKF 6316"
+      ],
+      "display_text": "SKF 6316",
+      "id": "skf 6316"
     },
     {
       "doc_ids": [
@@ -136,16 +190,11 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "shaft"
+      ],
+      "display_text": "shaft",
       "id": "shaft"
-    },
-    {
-      "doc_ids": [
-        "INC-2024-07_incident_report.pdf"
-      ],
-      "types": [
-        "EQUIPMENT"
-      ],
-      "id": "standby pump P-205"
     },
     {
       "doc_ids": [
@@ -156,6 +205,11 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "P-205",
+        "standby pump P-205"
+      ],
+      "display_text": "standby pump P-205",
       "id": "P-205"
     },
     {
@@ -171,6 +225,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "IR-556"
+      ],
+      "display_text": "IR-556",
       "id": "IR-556"
     },
     {
@@ -182,30 +240,11 @@
       "types": [
         "DATE"
       ],
-      "id": "01 Jul 2024"
-    },
-    {
-      "doc_ids": [
-        "IR-556_inspection_report.pdf"
+      "aliases": [
+        "01 Jul 2024"
       ],
-      "types": [
-        "EQUIPMENT"
-      ],
-      "id": "Centrifugal Pump P-204"
-    },
-    {
-      "doc_ids": [
-        "IR-556_inspection_report.pdf",
-        "IR-560_motor_inspection.pdf",
-        "LS-07_lubrication_spec.pdf",
-        "ML-1183_maintenance_log.pdf",
-        "ML-1183_maintenance_log_SCANNED.pdf",
-        "SH-0717_shift_handover.pdf"
-      ],
-      "types": [
-        "EQUIPMENT"
-      ],
-      "id": "P-204"
+      "display_text": "01 Jul 2024",
+      "id": "01 jul 2024"
     },
     {
       "doc_ids": [
@@ -215,7 +254,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Unit 2, Pump House Bay 4"
+      "aliases": [
+        "Unit 2, Pump House Bay 4"
+      ],
+      "display_text": "Unit 2, Pump House Bay 4",
+      "id": "unit 2, pump house bay 4"
     },
     {
       "doc_ids": [
@@ -227,7 +270,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "R. Krishnan"
+      "aliases": [
+        "R. Krishnan"
+      ],
+      "display_text": "R. Krishnan",
+      "id": "r. krishnan"
     },
     {
       "doc_ids": [
@@ -237,7 +284,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "ISO 18436-2 Cat II"
+      "aliases": [
+        "ISO 18436-2 Cat II"
+      ],
+      "display_text": "ISO 18436-2 Cat II",
+      "id": "iso 18436-2 cat ii"
     },
     {
       "doc_ids": [
@@ -253,6 +304,11 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "M-118",
+        "Procedure M-118"
+      ],
+      "display_text": "Procedure M-118",
       "id": "M-118"
     },
     {
@@ -264,7 +320,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "4.6 mm/s RMS"
+      "aliases": [
+        "4.6 mm/s RMS"
+      ],
+      "display_text": "4.6 mm/s RMS",
+      "id": "4.6 mm/s rms"
     },
     {
       "doc_ids": [
@@ -274,7 +334,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "2.1 mm/s RMS"
+      "aliases": [
+        "2.1 mm/s RMS"
+      ],
+      "display_text": "2.1 mm/s RMS",
+      "id": "2.1 mm/s rms"
     },
     {
       "doc_ids": [
@@ -286,7 +350,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "ISO 10816-3"
+      "aliases": [
+        "ISO 10816-3"
+      ],
+      "display_text": "ISO 10816-3",
+      "id": "iso 10816-3"
     },
     {
       "doc_ids": [
@@ -296,6 +364,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "7.1 mm/s"
+      ],
+      "display_text": "7.1 mm/s",
       "id": "7.1 mm/s"
     },
     {
@@ -307,7 +379,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "62 C"
+      "aliases": [
+        "62 C"
+      ],
+      "display_text": "62 C",
+      "id": "62 c"
     },
     {
       "doc_ids": [
@@ -318,25 +394,11 @@
       "types": [
         "STATUS"
       ],
-      "id": "ELEVATED - MONITOR"
-    },
-    {
-      "doc_ids": [
-        "IR-556_inspection_report.pdf"
+      "aliases": [
+        "ELEVATED - MONITOR"
       ],
-      "types": [
-        "PROCEDURE"
-      ],
-      "id": "Procedure M-118"
-    },
-    {
-      "doc_ids": [
-        "IR-556_inspection_report_SCANNED.pdf"
-      ],
-      "types": [
-        "EQUIPMENT"
-      ],
-      "id": "P-204 DE bearing"
+      "display_text": "ELEVATED - MONITOR",
+      "id": "elevated - monitor"
     },
     {
       "doc_ids": [
@@ -345,6 +407,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "IR-560"
+      ],
+      "display_text": "IR-560",
       "id": "IR-560"
     },
     {
@@ -354,6 +420,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "M-204"
+      ],
+      "display_text": "M-204",
       "id": "M-204"
     },
     {
@@ -363,7 +433,11 @@
       "types": [
         "DATE"
       ],
-      "id": "03 Jul 2024"
+      "aliases": [
+        "03 Jul 2024"
+      ],
+      "display_text": "03 Jul 2024",
+      "id": "03 jul 2024"
     },
     {
       "doc_ids": [
@@ -372,6 +446,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "3.0 mm/s"
+      ],
+      "display_text": "3.0 mm/s",
       "id": "3.0 mm/s"
     },
     {
@@ -381,7 +459,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "LKH Centrifugal Pump"
+      "aliases": [
+        "LKH Centrifugal Pump"
+      ],
+      "display_text": "LKH Centrifugal Pump",
+      "id": "lkh centrifugal pump"
     },
     {
       "doc_ids": [
@@ -390,7 +472,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "LKH-5"
+      "aliases": [
+        "LKH-5"
+      ],
+      "display_text": "LKH-5",
+      "id": "lkh-5"
     },
     {
       "doc_ids": [
@@ -399,6 +485,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-10"
+      ],
+      "display_text": "LKH-10",
       "id": "LKH-10"
     },
     {
@@ -408,6 +498,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-15"
+      ],
+      "display_text": "LKH-15",
       "id": "LKH-15"
     },
     {
@@ -417,6 +511,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-20"
+      ],
+      "display_text": "LKH-20",
       "id": "LKH-20"
     },
     {
@@ -426,6 +524,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-25"
+      ],
+      "display_text": "LKH-25",
       "id": "LKH-25"
     },
     {
@@ -435,6 +537,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-35"
+      ],
+      "display_text": "LKH-35",
       "id": "LKH-35"
     },
     {
@@ -444,6 +550,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-40"
+      ],
+      "display_text": "LKH-40",
       "id": "LKH-40"
     },
     {
@@ -453,6 +563,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-45"
+      ],
+      "display_text": "LKH-45",
       "id": "LKH-45"
     },
     {
@@ -462,6 +576,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-50"
+      ],
+      "display_text": "LKH-50",
       "id": "LKH-50"
     },
     {
@@ -471,6 +589,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-60"
+      ],
+      "display_text": "LKH-60",
       "id": "LKH-60"
     },
     {
@@ -480,6 +602,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-70"
+      ],
+      "display_text": "LKH-70",
       "id": "LKH-70"
     },
     {
@@ -489,6 +615,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-75"
+      ],
+      "display_text": "LKH-75",
       "id": "LKH-75"
     },
     {
@@ -498,6 +628,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-85"
+      ],
+      "display_text": "LKH-85",
       "id": "LKH-85"
     },
     {
@@ -507,6 +641,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "LKH-90"
+      ],
+      "display_text": "LKH-90",
       "id": "LKH-90"
     },
     {
@@ -516,6 +654,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "impeller"
+      ],
+      "display_text": "impeller",
       "id": "impeller"
     },
     {
@@ -525,6 +667,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "impeller screw"
+      ],
+      "display_text": "impeller screw",
       "id": "impeller screw"
     },
     {
@@ -534,6 +680,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "stub shaft"
+      ],
+      "display_text": "stub shaft",
       "id": "stub shaft"
     },
     {
@@ -543,6 +693,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "pump casing"
+      ],
+      "display_text": "pump casing",
       "id": "pump casing"
     },
     {
@@ -552,6 +706,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "back plate"
+      ],
+      "display_text": "back plate",
       "id": "back plate"
     },
     {
@@ -561,6 +719,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "shaft seal"
+      ],
+      "display_text": "shaft seal",
       "id": "shaft seal"
     },
     {
@@ -570,6 +732,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "single shaft seal"
+      ],
+      "display_text": "single shaft seal",
       "id": "single shaft seal"
     },
     {
@@ -579,6 +745,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "double mechanical shaft seal"
+      ],
+      "display_text": "double mechanical shaft seal",
       "id": "double mechanical shaft seal"
     },
     {
@@ -588,6 +758,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "flushed shaft seal"
+      ],
+      "display_text": "flushed shaft seal",
       "id": "flushed shaft seal"
     },
     {
@@ -597,6 +771,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "motor"
+      ],
+      "display_text": "motor",
       "id": "motor"
     },
     {
@@ -606,6 +784,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "adaptor"
+      ],
+      "display_text": "adaptor",
       "id": "adaptor"
     },
     {
@@ -615,7 +797,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "O-ring"
+      "aliases": [
+        "O-ring"
+      ],
+      "display_text": "O-ring",
+      "id": "o-ring"
     },
     {
       "doc_ids": [
@@ -624,6 +810,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "stationary seal ring"
+      ],
+      "display_text": "stationary seal ring",
       "id": "stationary seal ring"
     },
     {
@@ -633,6 +823,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "rotating seal ring"
+      ],
+      "display_text": "rotating seal ring",
       "id": "rotating seal ring"
     },
     {
@@ -642,6 +836,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "spring"
+      ],
+      "display_text": "spring",
       "id": "spring"
     },
     {
@@ -651,6 +849,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "drive ring"
+      ],
+      "display_text": "drive ring",
       "id": "drive ring"
     },
     {
@@ -660,6 +862,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "seal housing"
+      ],
+      "display_text": "seal housing",
       "id": "seal housing"
     },
     {
@@ -669,6 +875,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "compression rings"
+      ],
+      "display_text": "compression rings",
       "id": "compression rings"
     },
     {
@@ -678,6 +888,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "motor shaft"
+      ],
+      "display_text": "motor shaft",
       "id": "motor shaft"
     },
     {
@@ -687,6 +901,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 3.3"
+      ],
+      "display_text": "section 3.3",
       "id": "section 3.3"
     },
     {
@@ -696,6 +914,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 3.4"
+      ],
+      "display_text": "section 3.4",
       "id": "section 3.4"
     },
     {
@@ -705,6 +927,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 4.3"
+      ],
+      "display_text": "section 4.3",
       "id": "section 4.3"
     },
     {
@@ -714,6 +940,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 5.1"
+      ],
+      "display_text": "section 5.1",
       "id": "section 5.1"
     },
     {
@@ -723,6 +953,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 5.2"
+      ],
+      "display_text": "section 5.2",
       "id": "section 5.2"
     },
     {
@@ -732,6 +966,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 5.3"
+      ],
+      "display_text": "section 5.3",
       "id": "section 5.3"
     },
     {
@@ -741,6 +979,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 5.4"
+      ],
+      "display_text": "section 5.4",
       "id": "section 5.4"
     },
     {
@@ -750,6 +992,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 5.5"
+      ],
+      "display_text": "section 5.5",
       "id": "section 5.5"
     },
     {
@@ -759,6 +1005,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 5.6"
+      ],
+      "display_text": "section 5.6",
       "id": "section 5.6"
     },
     {
@@ -768,6 +1018,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 5.7"
+      ],
+      "display_text": "section 5.7",
       "id": "section 5.7"
     },
     {
@@ -777,11 +1031,16 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "section 5.8"
+      ],
+      "display_text": "section 5.8",
       "id": "section 5.8"
     },
     {
       "doc_ids": [
         "LKH_manual.pdf",
+        "M-118_procedure.pdf",
         "ML-1183_maintenance_log.pdf",
         "ML-1183_maintenance_log_SCANNED.pdf",
         "MaintMaster_manual.pdf"
@@ -789,6 +1048,11 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "Clause 4.3",
+        "clause 4.3"
+      ],
+      "display_text": "clause 4.3",
       "id": "clause 4.3"
     },
     {
@@ -798,7 +1062,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "Machinery Directive 2006/42/EC"
+      "aliases": [
+        "Machinery Directive 2006/42/EC"
+      ],
+      "display_text": "Machinery Directive 2006/42/EC",
+      "id": "machinery directive 2006/42/ec"
     },
     {
       "doc_ids": [
@@ -807,7 +1075,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "RoHS EU Directive 2011/65/EU"
+      "aliases": [
+        "RoHS EU Directive 2011/65/EU"
+      ],
+      "display_text": "RoHS EU Directive 2011/65/EU",
+      "id": "rohs eu directive 2011/65/eu"
     },
     {
       "doc_ids": [
@@ -816,7 +1088,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "The Supply of Machinery (Safety) Regulations 2008"
+      "aliases": [
+        "The Supply of Machinery (Safety) Regulations 2008"
+      ],
+      "display_text": "The Supply of Machinery (Safety) Regulations 2008",
+      "id": "the supply of machinery (safety) regulations 2008"
     },
     {
       "doc_ids": [
@@ -825,7 +1101,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment Regulations 2012"
+      "aliases": [
+        "The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment Regulations 2012"
+      ],
+      "display_text": "The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment Regulations 2012",
+      "id": "the restriction of the use of certain hazardous substances in electrical and electronic equipment regulations 2012"
     },
     {
       "doc_ids": [
@@ -834,7 +1114,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "IEC metric standard"
+      "aliases": [
+        "IEC metric standard"
+      ],
+      "display_text": "IEC metric standard",
+      "id": "iec metric standard"
     },
     {
       "doc_ids": [
@@ -843,7 +1127,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "EN60204-1"
+      "aliases": [
+        "EN60204-1"
+      ],
+      "display_text": "EN60204-1",
+      "id": "en60204-1"
     },
     {
       "doc_ids": [
@@ -852,7 +1140,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "3A standard"
+      "aliases": [
+        "3A standard"
+      ],
+      "display_text": "3A standard",
+      "id": "3a standard"
     },
     {
       "doc_ids": [
@@ -861,7 +1153,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "Lars Kruse Andersen"
+      "aliases": [
+        "Lars Kruse Andersen"
+      ],
+      "display_text": "Lars Kruse Andersen",
+      "id": "lars kruse andersen"
     },
     {
       "doc_ids": [
@@ -870,7 +1166,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "ESE00698-EN31"
+      "aliases": [
+        "ESE00698-EN31"
+      ],
+      "display_text": "ESE00698-EN31",
+      "id": "ese00698-en31"
     },
     {
       "doc_ids": [
@@ -879,6 +1179,10 @@
       "types": [
         "DATE"
       ],
+      "aliases": [
+        "2022-10"
+      ],
+      "display_text": "2022-10",
       "id": "2022-10"
     },
     {
@@ -888,6 +1192,10 @@
       "types": [
         "DATE"
       ],
+      "aliases": [
+        "2022-10-01"
+      ],
+      "display_text": "2022-10-01",
       "id": "2022-10-01"
     },
     {
@@ -897,6 +1205,10 @@
       "types": [
         "DATE"
       ],
+      "aliases": [
+        "2020-01-23"
+      ],
+      "display_text": "2020-01-23",
       "id": "2020-01-23"
     },
     {
@@ -906,6 +1218,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "0.5 mm"
+      ],
+      "display_text": "0.5 mm",
       "id": "0.5 mm"
     },
     {
@@ -915,6 +1231,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "1.0 mm"
+      ],
+      "display_text": "1.0 mm",
       "id": "1.0 mm"
     },
     {
@@ -924,6 +1244,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "10-20 mm"
+      ],
+      "display_text": "10-20 mm",
       "id": "10-20 mm"
     },
     {
@@ -933,7 +1257,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "15 Nm"
+      "aliases": [
+        "15 Nm"
+      ],
+      "display_text": "15 Nm",
+      "id": "15 nm"
     },
     {
       "doc_ids": [
@@ -942,7 +1270,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "20 Nm"
+      "aliases": [
+        "20 Nm"
+      ],
+      "display_text": "20 Nm",
+      "id": "20 nm"
     },
     {
       "doc_ids": [
@@ -951,7 +1283,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "50 Nm"
+      "aliases": [
+        "50 Nm"
+      ],
+      "display_text": "50 Nm",
+      "id": "50 nm"
     },
     {
       "doc_ids": [
@@ -960,7 +1296,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "7 Nm"
+      "aliases": [
+        "7 Nm"
+      ],
+      "display_text": "7 Nm",
+      "id": "7 nm"
     },
     {
       "doc_ids": [
@@ -969,7 +1309,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "40 Nm"
+      "aliases": [
+        "40 Nm"
+      ],
+      "display_text": "40 Nm",
+      "id": "40 nm"
     },
     {
       "doc_ids": [
@@ -978,7 +1322,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "67 Nm"
+      "aliases": [
+        "67 Nm"
+      ],
+      "display_text": "67 Nm",
+      "id": "67 nm"
     },
     {
       "doc_ids": [
@@ -987,7 +1335,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "110 Nm"
+      "aliases": [
+        "110 Nm"
+      ],
+      "display_text": "110 Nm",
+      "id": "110 nm"
     },
     {
       "doc_ids": [
@@ -996,7 +1348,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "600 kPa"
+      "aliases": [
+        "600 kPa"
+      ],
+      "display_text": "600 kPa",
+      "id": "600 kpa"
     },
     {
       "doc_ids": [
@@ -1005,7 +1361,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "1000 kPa"
+      "aliases": [
+        "1000 kPa"
+      ],
+      "display_text": "1000 kPa",
+      "id": "1000 kpa"
     },
     {
       "doc_ids": [
@@ -1014,7 +1374,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "500 kPa"
+      "aliases": [
+        "500 kPa"
+      ],
+      "display_text": "500 kPa",
+      "id": "500 kpa"
     },
     {
       "doc_ids": [
@@ -1023,7 +1387,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "-10\u00b0C to +140\u00b0C"
+      "aliases": [
+        "-10\u00b0C to +140\u00b0C"
+      ],
+      "display_text": "-10\u00b0C to +140\u00b0C",
+      "id": "-10\u00b0c to +140\u00b0c"
     },
     {
       "doc_ids": [
@@ -1032,7 +1400,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "70\u00b0C"
+      "aliases": [
+        "70\u00b0C"
+      ],
+      "display_text": "70\u00b0C",
+      "id": "70\u00b0c"
     },
     {
       "doc_ids": [
@@ -1041,7 +1413,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "125\u00b0C"
+      "aliases": [
+        "125\u00b0C"
+      ],
+      "display_text": "125\u00b0C",
+      "id": "125\u00b0c"
     },
     {
       "doc_ids": [
@@ -1050,7 +1426,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "800 cP"
+      "aliases": [
+        "800 cP"
+      ],
+      "display_text": "800 cP",
+      "id": "800 cp"
     },
     {
       "doc_ids": [
@@ -1059,6 +1439,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "0.25 - 0.5 l/min"
+      ],
+      "display_text": "0.25 - 0.5 l/min",
       "id": "0.25 - 0.5 l/min"
     },
     {
@@ -1068,7 +1452,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "0.75 - 110 kW"
+      "aliases": [
+        "0.75 - 110 kW"
+      ],
+      "display_text": "0.75 - 110 kW",
+      "id": "0.75 - 110 kw"
     },
     {
       "doc_ids": [
@@ -1077,6 +1465,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "900 - 4000 rpm"
+      ],
+      "display_text": "900 - 4000 rpm",
       "id": "900 - 4000 rpm"
     },
     {
@@ -1086,6 +1478,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "3000/3600 rpm"
+      ],
+      "display_text": "3000/3600 rpm",
       "id": "3000/3600 rpm"
     },
     {
@@ -1095,6 +1491,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "12 months"
+      ],
+      "display_text": "12 months",
       "id": "12 months"
     },
     {
@@ -1104,6 +1504,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "0.5 m"
+      ],
+      "display_text": "0.5 m",
       "id": "0.5 m"
     },
     {
@@ -1113,6 +1517,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "100 mm"
+      ],
+      "display_text": "100 mm",
       "id": "100 mm"
     },
     {
@@ -1122,6 +1530,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "1 bar"
+      ],
+      "display_text": "1 bar",
       "id": "1 bar"
     },
     {
@@ -1131,6 +1543,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "5 bar"
+      ],
+      "display_text": "5 bar",
       "id": "5 bar"
     },
     {
@@ -1140,6 +1556,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "3 bar"
+      ],
+      "display_text": "3 bar",
       "id": "3 bar"
     },
     {
@@ -1149,7 +1569,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Alfa Laval Kolding A/S, Albuen 31, DK-6000 Kolding, Denmark"
+      "aliases": [
+        "Alfa Laval Kolding A/S, Albuen 31, DK-6000 Kolding, Denmark"
+      ],
+      "display_text": "Alfa Laval Kolding A/S, Albuen 31, DK-6000 Kolding, Denmark",
+      "id": "DK-6000"
     },
     {
       "doc_ids": [
@@ -1158,7 +1582,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Kolding, Denmark"
+      "aliases": [
+        "Kolding, Denmark"
+      ],
+      "display_text": "Kolding, Denmark",
+      "id": "kolding, denmark"
     },
     {
       "doc_ids": [
@@ -1167,7 +1595,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "AISI 316L"
+      "aliases": [
+        "AISI 316L"
+      ],
+      "display_text": "AISI 316L",
+      "id": "aisi 316l"
     },
     {
       "doc_ids": [
@@ -1176,7 +1608,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "EPDM"
+      "aliases": [
+        "EPDM"
+      ],
+      "display_text": "EPDM",
+      "id": "epdm"
     },
     {
       "doc_ids": [
@@ -1185,7 +1621,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "NBR"
+      "aliases": [
+        "NBR"
+      ],
+      "display_text": "NBR",
+      "id": "nbr"
     },
     {
       "doc_ids": [
@@ -1194,7 +1634,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "FPM"
+      "aliases": [
+        "FPM"
+      ],
+      "display_text": "FPM",
+      "id": "fpm"
     },
     {
       "doc_ids": [
@@ -1203,7 +1647,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "FEP"
+      "aliases": [
+        "FEP"
+      ],
+      "display_text": "FEP",
+      "id": "fep"
     },
     {
       "doc_ids": [
@@ -1212,6 +1660,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "silicon carbide"
+      ],
+      "display_text": "silicon carbide",
       "id": "silicon carbide"
     },
     {
@@ -1221,7 +1673,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Carbon"
+      "aliases": [
+        "Carbon"
+      ],
+      "display_text": "Carbon",
+      "id": "carbon"
     },
     {
       "doc_ids": [
@@ -1230,6 +1686,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "LS-07"
+      ],
+      "display_text": "LS-07",
       "id": "LS-07"
     },
     {
@@ -1239,7 +1699,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Feed water pumps"
+      "aliases": [
+        "Feed water pumps"
+      ],
+      "display_text": "Feed water pumps",
+      "id": "feed water pumps"
     },
     {
       "doc_ids": [
@@ -1251,7 +1715,11 @@
         "MEASUREMENT",
         "REGULATION"
       ],
-      "id": "ISO VG 68"
+      "aliases": [
+        "ISO VG 68"
+      ],
+      "display_text": "ISO VG 68",
+      "id": "iso vg 68"
     },
     {
       "doc_ids": [
@@ -1260,6 +1728,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "1500 hrs"
+      ],
+      "display_text": "1500 hrs",
       "id": "1500 hrs"
     },
     {
@@ -1269,7 +1741,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Cooling water pumps"
+      "aliases": [
+        "Cooling water pumps"
+      ],
+      "display_text": "Cooling water pumps",
+      "id": "cooling water pumps"
     },
     {
       "doc_ids": [
@@ -1278,7 +1754,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "ISO VG 68 grease"
+      "aliases": [
+        "ISO VG 68 grease"
+      ],
+      "display_text": "ISO VG 68 grease",
+      "id": "iso vg 68 grease"
     },
     {
       "doc_ids": [
@@ -1287,16 +1767,26 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "2000 hrs"
+      ],
+      "display_text": "2000 hrs",
       "id": "2000 hrs"
     },
     {
       "doc_ids": [
-        "LS-07_lubrication_spec.pdf"
+        "LS-07_lubrication_spec.pdf",
+        "M-118_procedure.pdf"
       ],
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Fans"
+      "aliases": [
+        "Fans",
+        "fans"
+      ],
+      "display_text": "Fans",
+      "id": "fans"
     },
     {
       "doc_ids": [
@@ -1305,7 +1795,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "ISO VG 46"
+      "aliases": [
+        "ISO VG 46"
+      ],
+      "display_text": "ISO VG 46",
+      "id": "iso vg 46"
     },
     {
       "doc_ids": [
@@ -1314,6 +1808,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "3000 hrs"
+      ],
+      "display_text": "3000 hrs",
       "id": "3000 hrs"
     },
     {
@@ -1323,6 +1821,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "1500 operating hours"
+      ],
+      "display_text": "1500 operating hours",
       "id": "1500 operating hours"
     },
     {
@@ -1332,7 +1834,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Rotating Equipment Condition Monitoring"
+      "aliases": [
+        "Rotating Equipment Condition Monitoring"
+      ],
+      "display_text": "Rotating Equipment Condition Monitoring",
+      "id": "rotating equipment condition monitoring"
     },
     {
       "doc_ids": [
@@ -1341,7 +1847,26 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Condition Monitoring & Bearing Management, Rotating Equipment"
+      "aliases": [
+        "Condition Monitoring & Bearing Management, Rotating Equipment"
+      ],
+      "display_text": "Condition Monitoring & Bearing Management, Rotating Equipment",
+      "id": "condition monitoring & bearing management, rotating equipment"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf",
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "aliases": [
+        "Centrifugal pumps",
+        "centrifugal pumps"
+      ],
+      "display_text": "Centrifugal pumps",
+      "id": "centrifugal pumps"
     },
     {
       "doc_ids": [
@@ -1350,25 +1875,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Centrifugal pumps"
-    },
-    {
-      "doc_ids": [
-        "M-118_procedure.pdf"
+      "aliases": [
+        "motors"
       ],
-      "types": [
-        "EQUIPMENT"
-      ],
+      "display_text": "motors",
       "id": "motors"
-    },
-    {
-      "doc_ids": [
-        "M-118_procedure.pdf"
-      ],
-      "types": [
-        "EQUIPMENT"
-      ],
-      "id": "fans"
     },
     {
       "doc_ids": [
@@ -1378,6 +1889,10 @@
       "types": [
         "REGULATION"
       ],
+      "aliases": [
+        "OISD-132"
+      ],
+      "display_text": "OISD-132",
       "id": "OISD-132"
     },
     {
@@ -1387,7 +1902,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "Inspection of Rotating Equipment"
+      "aliases": [
+        "Inspection of Rotating Equipment"
+      ],
+      "display_text": "Inspection of Rotating Equipment",
+      "id": "inspection of rotating equipment"
     },
     {
       "doc_ids": [
@@ -1396,16 +1915,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Rev 4"
-    },
-    {
-      "doc_ids": [
-        "M-118_procedure.pdf"
+      "aliases": [
+        "Rev 4"
       ],
-      "types": [
-        "PROCEDURE"
-      ],
-      "id": "Clause 4.3"
+      "display_text": "Rev 4",
+      "id": "rev 4"
     },
     {
       "doc_ids": [
@@ -1414,7 +1928,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "ISO 10816-3 Zone C"
+      "aliases": [
+        "ISO 10816-3 Zone C"
+      ],
+      "display_text": "ISO 10816-3 Zone C",
+      "id": "iso 10816-3 zone c"
     },
     {
       "doc_ids": [
@@ -1426,6 +1944,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "14 days"
+      ],
+      "display_text": "14 days",
       "id": "14 days"
     },
     {
@@ -1435,7 +1957,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Clause 4.4"
+      "aliases": [
+        "Clause 4.4"
+      ],
+      "display_text": "Clause 4.4",
+      "id": "clause 4.4"
     },
     {
       "doc_ids": [
@@ -1444,7 +1970,11 @@
       "types": [
         "STATUS"
       ],
-      "id": "Zone D"
+      "aliases": [
+        "Zone D"
+      ],
+      "display_text": "Zone D",
+      "id": "zone d"
     },
     {
       "doc_ids": [
@@ -1454,7 +1984,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "7.1 mm/s RMS"
+      "aliases": [
+        "7.1 mm/s RMS"
+      ],
+      "display_text": "7.1 mm/s RMS",
+      "id": "7.1 mm/s rms"
     },
     {
       "doc_ids": [
@@ -1463,6 +1997,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "M-142"
+      ],
+      "display_text": "M-142",
       "id": "M-142"
     },
     {
@@ -1472,6 +2010,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "mechanical seals"
+      ],
+      "display_text": "mechanical seals",
       "id": "mechanical seals"
     },
     {
@@ -1481,15 +2023,10 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "centrifugal pumps"
-    },
-    {
-      "doc_ids": [
-        "M-142_seal_procedure.pdf"
+      "aliases": [
+        "bearing"
       ],
-      "types": [
-        "EQUIPMENT"
-      ],
+      "display_text": "bearing",
       "id": "bearing"
     },
     {
@@ -1499,7 +2036,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Seal faces"
+      "aliases": [
+        "Seal faces"
+      ],
+      "display_text": "Seal faces",
+      "id": "seal faces"
     },
     {
       "doc_ids": [
@@ -1508,7 +2049,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Gland bolts"
+      "aliases": [
+        "Gland bolts"
+      ],
+      "display_text": "Gland bolts",
+      "id": "gland bolts"
     },
     {
       "doc_ids": [
@@ -1517,7 +2062,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Cover bolts"
+      "aliases": [
+        "Cover bolts"
+      ],
+      "display_text": "Cover bolts",
+      "id": "cover bolts"
     },
     {
       "doc_ids": [
@@ -1526,7 +2075,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Coupling"
+      "aliases": [
+        "Coupling"
+      ],
+      "display_text": "Coupling",
+      "id": "coupling"
     },
     {
       "doc_ids": [
@@ -1535,6 +2088,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "45"
+      ],
+      "display_text": "45",
       "id": "45"
     },
     {
@@ -1544,6 +2101,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "70"
+      ],
+      "display_text": "70",
       "id": "70"
     },
     {
@@ -1553,6 +2114,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "120"
+      ],
+      "display_text": "120",
       "id": "120"
     },
     {
@@ -1562,7 +2127,11 @@
       "types": [
         "UNKNOWN"
       ],
-      "id": "Pump Sealing Systems"
+      "aliases": [
+        "Pump Sealing Systems"
+      ],
+      "display_text": "Pump Sealing Systems",
+      "id": "pump sealing systems"
     },
     {
       "doc_ids": [
@@ -1573,6 +2142,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "ML-1183"
+      ],
+      "display_text": "ML-1183",
       "id": "ML-1183"
     },
     {
@@ -1584,7 +2157,11 @@
       "types": [
         "DATE"
       ],
-      "id": "08 Jul 2024"
+      "aliases": [
+        "08 Jul 2024"
+      ],
+      "display_text": "08 Jul 2024",
+      "id": "08 jul 2024"
     },
     {
       "doc_ids": [
@@ -1594,7 +2171,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "S. Prakash"
+      "aliases": [
+        "S. Prakash"
+      ],
+      "display_text": "S. Prakash",
+      "id": "s. prakash"
     },
     {
       "doc_ids": [
@@ -1604,7 +2185,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "V. Menon"
+      "aliases": [
+        "V. Menon"
+      ],
+      "display_text": "V. Menon",
+      "id": "v. menon"
     },
     {
       "doc_ids": [
@@ -1614,7 +2199,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "4.9 mm/s RMS"
+      "aliases": [
+        "4.9 mm/s RMS"
+      ],
+      "display_text": "4.9 mm/s RMS",
+      "id": "4.9 mm/s rms"
     },
     {
       "doc_ids": [
@@ -1624,7 +2213,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "SKF 6316 C3"
+      "aliases": [
+        "SKF 6316 C3"
+      ],
+      "display_text": "SKF 6316 C3",
+      "id": "skf 6316 c3"
     },
     {
       "doc_ids": [
@@ -1634,6 +2227,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "6 weeks"
+      ],
+      "display_text": "6 weeks",
       "id": "6 weeks"
     },
     {
@@ -1643,7 +2240,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "MAINTMASTER\u00ae"
+      "aliases": [
+        "MAINTMASTER\u00ae"
+      ],
+      "display_text": "MAINTMASTER\u00ae",
+      "id": "maintmaster\u00ae"
     },
     {
       "doc_ids": [
@@ -1652,7 +2253,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "EN 13306"
+      "aliases": [
+        "EN 13306"
+      ],
+      "display_text": "EN 13306",
+      "id": "en 13306"
     },
     {
       "doc_ids": [
@@ -1661,7 +2266,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "SS-EN 13306"
+      "aliases": [
+        "SS-EN 13306"
+      ],
+      "display_text": "SS-EN 13306",
+      "id": "ss-en 13306"
     },
     {
       "doc_ids": [
@@ -1670,7 +2279,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "EN-15341"
+      "aliases": [
+        "EN-15341"
+      ],
+      "display_text": "EN-15341",
+      "id": "en-15341"
     },
     {
       "doc_ids": [
@@ -1679,7 +2292,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "EN-13460"
+      "aliases": [
+        "EN-13460"
+      ],
+      "display_text": "EN-13460",
+      "id": "en-13460"
     },
     {
       "doc_ids": [
@@ -1688,7 +2305,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "European standards"
+      "aliases": [
+        "European standards"
+      ],
+      "display_text": "European standards",
+      "id": "european standards"
     },
     {
       "doc_ids": [
@@ -1697,7 +2318,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "Swedish Institute for Standards"
+      "aliases": [
+        "Swedish Institute for Standards"
+      ],
+      "display_text": "Swedish Institute for Standards",
+      "id": "swedish institute for standards"
     },
     {
       "doc_ids": [
@@ -1706,7 +2331,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "Mikael Andersson"
+      "aliases": [
+        "Mikael Andersson"
+      ],
+      "display_text": "Mikael Andersson",
+      "id": "mikael andersson"
     },
     {
       "doc_ids": [
@@ -1715,7 +2344,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "MaintMaster Systems"
+      "aliases": [
+        "MaintMaster Systems"
+      ],
+      "display_text": "MaintMaster Systems",
+      "id": "maintmaster systems"
     },
     {
       "doc_ids": [
@@ -1724,7 +2357,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "MaintMaster_manual.pdf"
+      "aliases": [
+        "MaintMaster_manual.pdf"
+      ],
+      "display_text": "MaintMaster_manual.pdf",
+      "id": "maintmaster_manual.pdf"
     },
     {
       "doc_ids": [
@@ -1733,6 +2370,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "www.sis.se"
+      ],
+      "display_text": "www.sis.se",
       "id": "www.sis.se"
     },
     {
@@ -1742,6 +2383,10 @@
       "types": [
         "DATE"
       ],
+      "aliases": [
+        "2016"
+      ],
+      "display_text": "2016",
       "id": "2016"
     },
     {
@@ -1751,7 +2396,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "MOTBF"
+      "aliases": [
+        "MOTBF"
+      ],
+      "display_text": "MOTBF",
+      "id": "motbf"
     },
     {
       "doc_ids": [
@@ -1760,7 +2409,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "MTTR"
+      "aliases": [
+        "MTTR"
+      ],
+      "display_text": "MTTR",
+      "id": "mttr"
     },
     {
       "doc_ids": [
@@ -1769,7 +2422,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "MMDT"
+      "aliases": [
+        "MMDT"
+      ],
+      "display_text": "MMDT",
+      "id": "mmdt"
     },
     {
       "doc_ids": [
@@ -1778,7 +2435,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "MWT"
+      "aliases": [
+        "MWT"
+      ],
+      "display_text": "MWT",
+      "id": "mwt"
     },
     {
       "doc_ids": [
@@ -1787,7 +2448,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Line 1"
+      "aliases": [
+        "Line 1"
+      ],
+      "display_text": "Line 1",
+      "id": "line 1"
     },
     {
       "doc_ids": [
@@ -1796,7 +2461,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Hydraulic press"
+      "aliases": [
+        "Hydraulic press"
+      ],
+      "display_text": "Hydraulic press",
+      "id": "hydraulic press"
     },
     {
       "doc_ids": [
@@ -1805,7 +2474,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Cutting machine"
+      "aliases": [
+        "Cutting machine"
+      ],
+      "display_text": "Cutting machine",
+      "id": "cutting machine"
     },
     {
       "doc_ids": [
@@ -1814,7 +2487,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Scissor lift"
+      "aliases": [
+        "Scissor lift"
+      ],
+      "display_text": "Scissor lift",
+      "id": "scissor lift"
     },
     {
       "doc_ids": [
@@ -1823,7 +2500,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Welding station"
+      "aliases": [
+        "Welding station"
+      ],
+      "display_text": "Welding station",
+      "id": "welding station"
     },
     {
       "doc_ids": [
@@ -1832,7 +2513,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Robot"
+      "aliases": [
+        "Robot"
+      ],
+      "display_text": "Robot",
+      "id": "robot"
     },
     {
       "doc_ids": [
@@ -1841,7 +2526,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Compressor 1"
+      "aliases": [
+        "Compressor 1"
+      ],
+      "display_text": "Compressor 1",
+      "id": "compressor 1"
     },
     {
       "doc_ids": [
@@ -1850,7 +2539,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Dryer 1-1"
+      "aliases": [
+        "Dryer 1-1"
+      ],
+      "display_text": "Dryer 1-1",
+      "id": "dryer 1-1"
     },
     {
       "doc_ids": [
@@ -1859,7 +2552,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Tank 1-2"
+      "aliases": [
+        "Tank 1-2"
+      ],
+      "display_text": "Tank 1-2",
+      "id": "tank 1-2"
     },
     {
       "doc_ids": [
@@ -1868,7 +2565,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Cooling unit A-1"
+      "aliases": [
+        "Cooling unit A-1"
+      ],
+      "display_text": "Cooling unit A-1",
+      "id": "cooling unit a-1"
     },
     {
       "doc_ids": [
@@ -1877,7 +2578,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Cooling unit B-1"
+      "aliases": [
+        "Cooling unit B-1"
+      ],
+      "display_text": "Cooling unit B-1",
+      "id": "cooling unit b-1"
     },
     {
       "doc_ids": [
@@ -1886,7 +2591,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Cooling central B"
+      "aliases": [
+        "Cooling central B"
+      ],
+      "display_text": "Cooling central B",
+      "id": "cooling central b"
     },
     {
       "doc_ids": [
@@ -1895,7 +2604,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Cooling central A"
+      "aliases": [
+        "Cooling central A"
+      ],
+      "display_text": "Cooling central A",
+      "id": "cooling central a"
     },
     {
       "doc_ids": [
@@ -1904,7 +2617,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Gate 15, Hall B"
+      "aliases": [
+        "Gate 15, Hall B"
+      ],
+      "display_text": "Gate 15, Hall B",
+      "id": "gate 15, hall b"
     },
     {
       "doc_ids": [
@@ -1913,7 +2630,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Gate 16, Hall B"
+      "aliases": [
+        "Gate 16, Hall B"
+      ],
+      "display_text": "Gate 16, Hall B",
+      "id": "gate 16, hall b"
     },
     {
       "doc_ids": [
@@ -1922,7 +2643,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Hall B"
+      "aliases": [
+        "Hall B"
+      ],
+      "display_text": "Hall B",
+      "id": "hall b"
     },
     {
       "doc_ids": [
@@ -1931,7 +2656,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Building A"
+      "aliases": [
+        "Building A"
+      ],
+      "display_text": "Building A",
+      "id": "building a"
     },
     {
       "doc_ids": [
@@ -1940,7 +2669,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Pump House Bay 4"
+      "aliases": [
+        "Pump House Bay 4"
+      ],
+      "display_text": "Pump House Bay 4",
+      "id": "pump house bay 4"
     },
     {
       "doc_ids": [
@@ -1949,7 +2682,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Incoming goods"
+      "aliases": [
+        "Incoming goods"
+      ],
+      "display_text": "Incoming goods",
+      "id": "incoming goods"
     },
     {
       "doc_ids": [
@@ -1958,7 +2695,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Outgoing goods"
+      "aliases": [
+        "Outgoing goods"
+      ],
+      "display_text": "Outgoing goods",
+      "id": "outgoing goods"
     },
     {
       "doc_ids": [
@@ -1967,7 +2708,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Stockroom"
+      "aliases": [
+        "Stockroom"
+      ],
+      "display_text": "Stockroom",
+      "id": "stockroom"
     },
     {
       "doc_ids": [
@@ -1976,6 +2721,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "3 years"
+      ],
+      "display_text": "3 years",
       "id": "3 years"
     },
     {
@@ -1985,7 +2734,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "5000 Euro"
+      "aliases": [
+        "5000 Euro"
+      ],
+      "display_text": "5000 Euro",
+      "id": "5000 euro"
     },
     {
       "doc_ids": [
@@ -1994,6 +2747,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "30-70 people"
+      ],
+      "display_text": "30-70 people",
       "id": "30-70 people"
     },
     {
@@ -2003,6 +2760,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "70-100 persons"
+      ],
+      "display_text": "70-100 persons",
       "id": "70-100 persons"
     },
     {
@@ -2012,6 +2773,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "100+ people"
+      ],
+      "display_text": "100+ people",
       "id": "100+ people"
     },
     {
@@ -2021,6 +2786,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "15-30 people"
+      ],
+      "display_text": "15-30 people",
       "id": "15-30 people"
     },
     {
@@ -2030,6 +2799,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "account 5510"
+      ],
+      "display_text": "account 5510",
       "id": "account 5510"
     },
     {
@@ -2039,7 +2812,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5511"
+      "aliases": [
+        "Account 5511"
+      ],
+      "display_text": "Account 5511",
+      "id": "account 5511"
     },
     {
       "doc_ids": [
@@ -2048,7 +2825,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5511-01"
+      "aliases": [
+        "Account 5511-01"
+      ],
+      "display_text": "Account 5511-01",
+      "id": "account 5511-01"
     },
     {
       "doc_ids": [
@@ -2057,7 +2838,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5511-02"
+      "aliases": [
+        "Account 5511-02"
+      ],
+      "display_text": "Account 5511-02",
+      "id": "account 5511-02"
     },
     {
       "doc_ids": [
@@ -2066,7 +2851,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5511-03"
+      "aliases": [
+        "Account 5511-03"
+      ],
+      "display_text": "Account 5511-03",
+      "id": "account 5511-03"
     },
     {
       "doc_ids": [
@@ -2075,7 +2864,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5512"
+      "aliases": [
+        "Account 5512"
+      ],
+      "display_text": "Account 5512",
+      "id": "account 5512"
     },
     {
       "doc_ids": [
@@ -2084,7 +2877,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5512-01"
+      "aliases": [
+        "Account 5512-01"
+      ],
+      "display_text": "Account 5512-01",
+      "id": "account 5512-01"
     },
     {
       "doc_ids": [
@@ -2093,7 +2890,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5512-02"
+      "aliases": [
+        "Account 5512-02"
+      ],
+      "display_text": "Account 5512-02",
+      "id": "account 5512-02"
     },
     {
       "doc_ids": [
@@ -2102,7 +2903,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5512-03"
+      "aliases": [
+        "Account 5512-03"
+      ],
+      "display_text": "Account 5512-03",
+      "id": "account 5512-03"
     },
     {
       "doc_ids": [
@@ -2111,7 +2916,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5513"
+      "aliases": [
+        "Account 5513"
+      ],
+      "display_text": "Account 5513",
+      "id": "account 5513"
     },
     {
       "doc_ids": [
@@ -2120,7 +2929,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5513-01"
+      "aliases": [
+        "Account 5513-01"
+      ],
+      "display_text": "Account 5513-01",
+      "id": "account 5513-01"
     },
     {
       "doc_ids": [
@@ -2129,7 +2942,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Account 5513-02"
+      "aliases": [
+        "Account 5513-02"
+      ],
+      "display_text": "Account 5513-02",
+      "id": "account 5513-02"
     },
     {
       "doc_ids": [
@@ -2138,7 +2955,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "BAS chart of accounts"
+      "aliases": [
+        "BAS chart of accounts"
+      ],
+      "display_text": "BAS chart of accounts",
+      "id": "bas chart of accounts"
     },
     {
       "doc_ids": [
@@ -2147,7 +2968,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "Swedish BAS chart of accounts"
+      "aliases": [
+        "Swedish BAS chart of accounts"
+      ],
+      "display_text": "Swedish BAS chart of accounts",
+      "id": "swedish bas chart of accounts"
     },
     {
       "doc_ids": [
@@ -2156,7 +2981,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Corrective maintenance"
+      "aliases": [
+        "Corrective maintenance"
+      ],
+      "display_text": "Corrective maintenance",
+      "id": "corrective maintenance"
     },
     {
       "doc_ids": [
@@ -2165,7 +2994,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Preventive maintenance"
+      "aliases": [
+        "Preventive maintenance"
+      ],
+      "display_text": "Preventive maintenance",
+      "id": "preventive maintenance"
     },
     {
       "doc_ids": [
@@ -2174,7 +3007,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Improvement maintenance"
+      "aliases": [
+        "Improvement maintenance"
+      ],
+      "display_text": "Improvement maintenance",
+      "id": "improvement maintenance"
     },
     {
       "doc_ids": [
@@ -2183,7 +3020,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Modification"
+      "aliases": [
+        "Modification"
+      ],
+      "display_text": "Modification",
+      "id": "modification"
     },
     {
       "doc_ids": [
@@ -2192,7 +3033,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Case management"
+      "aliases": [
+        "Case management"
+      ],
+      "display_text": "Case management",
+      "id": "case management"
     },
     {
       "doc_ids": [
@@ -2201,7 +3046,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Immediate corrective maintenance"
+      "aliases": [
+        "Immediate corrective maintenance"
+      ],
+      "display_text": "Immediate corrective maintenance",
+      "id": "immediate corrective maintenance"
     },
     {
       "doc_ids": [
@@ -2210,7 +3059,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Deferred corrective maintenance"
+      "aliases": [
+        "Deferred corrective maintenance"
+      ],
+      "display_text": "Deferred corrective maintenance",
+      "id": "deferred corrective maintenance"
     },
     {
       "doc_ids": [
@@ -2219,7 +3072,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Predetermined maintenance"
+      "aliases": [
+        "Predetermined maintenance"
+      ],
+      "display_text": "Predetermined maintenance",
+      "id": "predetermined maintenance"
     },
     {
       "doc_ids": [
@@ -2228,7 +3085,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Condition-based maintenance"
+      "aliases": [
+        "Condition-based maintenance"
+      ],
+      "display_text": "Condition-based maintenance",
+      "id": "condition-based maintenance"
     },
     {
       "doc_ids": [
@@ -2237,7 +3098,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Predictive maintenance"
+      "aliases": [
+        "Predictive maintenance"
+      ],
+      "display_text": "Predictive maintenance",
+      "id": "predictive maintenance"
     },
     {
       "doc_ids": [
@@ -2246,7 +3111,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Autonomous maintenance"
+      "aliases": [
+        "Autonomous maintenance"
+      ],
+      "display_text": "Autonomous maintenance",
+      "id": "autonomous maintenance"
     },
     {
       "doc_ids": [
@@ -2255,7 +3124,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Operator maintenance"
+      "aliases": [
+        "Operator maintenance"
+      ],
+      "display_text": "Operator maintenance",
+      "id": "operator maintenance"
     },
     {
       "doc_ids": [
@@ -2264,7 +3137,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Root Cause Analysis"
+      "aliases": [
+        "Root Cause Analysis"
+      ],
+      "display_text": "Root Cause Analysis",
+      "id": "root cause analysis"
     },
     {
       "doc_ids": [
@@ -2273,7 +3150,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Root Cause Analyses"
+      "aliases": [
+        "Root Cause Analyses"
+      ],
+      "display_text": "Root Cause Analyses",
+      "id": "root cause analyses"
     },
     {
       "doc_ids": [
@@ -2282,6 +3163,10 @@
       "types": [
         "PROCEDURE"
       ],
+      "aliases": [
+        "6-sigma"
+      ],
+      "display_text": "6-sigma",
       "id": "6-sigma"
     },
     {
@@ -2291,7 +3176,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "FMEA"
+      "aliases": [
+        "FMEA"
+      ],
+      "display_text": "FMEA",
+      "id": "fmea"
     },
     {
       "doc_ids": [
@@ -2300,7 +3189,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "SPL"
+      "aliases": [
+        "SPL"
+      ],
+      "display_text": "SPL",
+      "id": "spl"
     },
     {
       "doc_ids": [
@@ -2309,7 +3202,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "LEAN"
+      "aliases": [
+        "LEAN"
+      ],
+      "display_text": "LEAN",
+      "id": "lean"
     },
     {
       "doc_ids": [
@@ -2318,7 +3215,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "5S"
+      "aliases": [
+        "5S"
+      ],
+      "display_text": "5S",
+      "id": "5s"
     },
     {
       "doc_ids": [
@@ -2327,7 +3228,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "CMMS"
+      "aliases": [
+        "CMMS"
+      ],
+      "display_text": "CMMS",
+      "id": "cmms"
     },
     {
       "doc_ids": [
@@ -2336,16 +3241,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Maintenance system"
-    },
-    {
-      "doc_ids": [
-        "MaintMaster_manual.pdf"
+      "aliases": [
+        "Maintenance system"
       ],
-      "types": [
-        "EVENT"
-      ],
-      "id": "catastrophic DE bearing seizure"
+      "display_text": "Maintenance system",
+      "id": "maintenance system"
     },
     {
       "doc_ids": [
@@ -2355,7 +3255,11 @@
       "types": [
         "SENSOR"
       ],
-      "id": "VT-204-DE"
+      "aliases": [
+        "VT-204-DE"
+      ],
+      "display_text": "VT-204-DE",
+      "id": "VT-204"
     },
     {
       "doc_ids": [
@@ -2364,7 +3268,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "Maintenance manager"
+      "aliases": [
+        "Maintenance manager"
+      ],
+      "display_text": "Maintenance manager",
+      "id": "maintenance manager"
     },
     {
       "doc_ids": [
@@ -2373,7 +3281,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "Maintenance supervisor"
+      "aliases": [
+        "Maintenance supervisor"
+      ],
+      "display_text": "Maintenance supervisor",
+      "id": "maintenance supervisor"
     },
     {
       "doc_ids": [
@@ -2382,7 +3294,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "Maintenance planner"
+      "aliases": [
+        "Maintenance planner"
+      ],
+      "display_text": "Maintenance planner",
+      "id": "maintenance planner"
     },
     {
       "doc_ids": [
@@ -2391,7 +3307,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "Maintenance technician"
+      "aliases": [
+        "Maintenance technician"
+      ],
+      "display_text": "Maintenance technician",
+      "id": "maintenance technician"
     },
     {
       "doc_ids": [
@@ -2400,7 +3320,11 @@
       "types": [
         "PERSON"
       ],
-      "id": "Maintenance engineer"
+      "aliases": [
+        "Maintenance engineer"
+      ],
+      "display_text": "Maintenance engineer",
+      "id": "maintenance engineer"
     },
     {
       "doc_ids": [
@@ -2409,6 +3333,10 @@
       "types": [
         "EVENT"
       ],
+      "aliases": [
+        "breakdown"
+      ],
+      "display_text": "breakdown",
       "id": "breakdown"
     },
     {
@@ -2418,6 +3346,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "first edition"
+      ],
+      "display_text": "first edition",
       "id": "first edition"
     },
     {
@@ -2428,6 +3360,11 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "Centrifugal Pump P-210",
+        "P-210"
+      ],
+      "display_text": "Centrifugal Pump P-210",
       "id": "P-210"
     },
     {
@@ -2437,15 +3374,10 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "Centrifugal Pump P-210"
-    },
-    {
-      "doc_ids": [
-        "P-210_pump_manual_extract.pdf"
+      "aliases": [
+        "deep-groove ball bearings"
       ],
-      "types": [
-        "EQUIPMENT"
-      ],
+      "display_text": "deep-groove ball bearings",
       "id": "deep-groove ball bearings"
     },
     {
@@ -2455,6 +3387,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "2000 operating hours"
+      ],
+      "display_text": "2000 operating hours",
       "id": "2000 operating hours"
     },
     {
@@ -2464,7 +3400,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "ISO VG 68 grade grease"
+      "aliases": [
+        "ISO VG 68 grade grease"
+      ],
+      "display_text": "ISO VG 68 grade grease",
+      "id": "iso vg 68 grade grease"
     },
     {
       "doc_ids": [
@@ -2473,7 +3413,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "2.8 mm/s RMS"
+      "aliases": [
+        "2.8 mm/s RMS"
+      ],
+      "display_text": "2.8 mm/s RMS",
+      "id": "2.8 mm/s rms"
     },
     {
       "doc_ids": [
@@ -2482,7 +3426,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "PWI_IOM.pdf"
+      "aliases": [
+        "PWI_IOM.pdf"
+      ],
+      "display_text": "PWI_IOM.pdf",
+      "id": "pwi_iom.pdf"
     },
     {
       "doc_ids": [
@@ -2491,7 +3439,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "STDS-PWI-IOM-TM-0.0"
+      "aliases": [
+        "STDS-PWI-IOM-TM-0.0"
+      ],
+      "display_text": "STDS-PWI-IOM-TM-0.0",
+      "id": "stds-pwi-iom-tm-0.0"
     },
     {
       "doc_ids": [
@@ -2500,7 +3452,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "PumpWorks 610 PWI pump"
+      "aliases": [
+        "PumpWorks 610 PWI pump"
+      ],
+      "display_text": "PumpWorks 610 PWI pump",
+      "id": "pumpworks 610 pwi pump"
     },
     {
       "doc_ids": [
@@ -2509,7 +3465,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "API Standard 610"
+      "aliases": [
+        "API Standard 610"
+      ],
+      "display_text": "API Standard 610",
+      "id": "api standard 610"
     },
     {
       "doc_ids": [
@@ -2518,7 +3478,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "American Petroleum Institute (API) Standard 610"
+      "aliases": [
+        "American Petroleum Institute (API) Standard 610"
+      ],
+      "display_text": "American Petroleum Institute (API) Standard 610",
+      "id": "american petroleum institute (api) standard 610"
     },
     {
       "doc_ids": [
@@ -2527,7 +3491,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "PWI-BB (OH3)"
+      "aliases": [
+        "PWI-BB (OH3)"
+      ],
+      "display_text": "PWI-BB (OH3)",
+      "id": "pwi-bb (oh3)"
     },
     {
       "doc_ids": [
@@ -2536,7 +3504,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "PWI (OH4)"
+      "aliases": [
+        "PWI (OH4)"
+      ],
+      "display_text": "PWI (OH4)",
+      "id": "pwi (oh4)"
     },
     {
       "doc_ids": [
@@ -2545,6 +3517,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "pump driver stand (3160)"
+      ],
+      "display_text": "pump driver stand (3160)",
       "id": "pump driver stand (3160)"
     },
     {
@@ -2554,6 +3530,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "shaft (2210)"
+      ],
+      "display_text": "shaft (2210)",
       "id": "shaft (2210)"
     },
     {
@@ -2563,6 +3543,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "mechanical seal (4200)"
+      ],
+      "display_text": "mechanical seal (4200)",
       "id": "mechanical seal (4200)"
     },
     {
@@ -2572,7 +3556,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Figure 3"
+      "aliases": [
+        "Figure 3"
+      ],
+      "display_text": "Figure 3",
+      "id": "figure 3"
     },
     {
       "doc_ids": [
@@ -2581,7 +3569,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "ISO/ASTM VG 32 oil"
+      "aliases": [
+        "ISO/ASTM VG 32 oil"
+      ],
+      "display_text": "ISO/ASTM VG 32 oil",
+      "id": "iso/astm vg 32 oil"
     },
     {
       "doc_ids": [
@@ -2590,6 +3582,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "6 months"
+      ],
+      "display_text": "6 months",
       "id": "6 months"
     },
     {
@@ -2599,6 +3595,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "1 quart"
+      ],
+      "display_text": "1 quart",
       "id": "1 quart"
     },
     {
@@ -2608,6 +3608,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "3.5 turns"
+      ],
+      "display_text": "3.5 turns",
       "id": "3.5 turns"
     },
     {
@@ -2617,6 +3621,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "180\u00ba"
+      ],
+      "display_text": "180\u00ba",
       "id": "180\u00ba"
     },
     {
@@ -2626,7 +3634,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "Hydraulic Institute"
+      "aliases": [
+        "Hydraulic Institute"
+      ],
+      "display_text": "Hydraulic Institute",
+      "id": "hydraulic institute"
     },
     {
       "doc_ids": [
@@ -2635,6 +3647,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "five to ten pipe diameters"
+      ],
+      "display_text": "five to ten pipe diameters",
       "id": "five to ten pipe diameters"
     },
     {
@@ -2644,7 +3660,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Figure 1"
+      "aliases": [
+        "Figure 1"
+      ],
+      "display_text": "Figure 1",
+      "id": "figure 1"
     },
     {
       "doc_ids": [
@@ -2653,7 +3673,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Figure 2"
+      "aliases": [
+        "Figure 2"
+      ],
+      "display_text": "Figure 2",
+      "id": "figure 2"
     },
     {
       "doc_ids": [
@@ -2662,6 +3686,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "seal drive collar"
+      ],
+      "display_text": "seal drive collar",
       "id": "seal drive collar"
     },
     {
@@ -2671,7 +3699,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "0.005\" T.I.R."
+      "aliases": [
+        "0.005\" T.I.R."
+      ],
+      "display_text": "0.005\" T.I.R.",
+      "id": "0.005\" t.i.r."
     },
     {
       "doc_ids": [
@@ -2680,6 +3712,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "0.002\""
+      ],
+      "display_text": "0.002\"",
       "id": "0.002\""
     },
     {
@@ -2689,6 +3725,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "0.0005\""
+      ],
+      "display_text": "0.0005\"",
       "id": "0.0005\""
     },
     {
@@ -2698,7 +3738,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "300\u00ba F"
+      "aliases": [
+        "300\u00ba F"
+      ],
+      "display_text": "300\u00ba F",
+      "id": "300\u00ba f"
     },
     {
       "doc_ids": [
@@ -2707,7 +3751,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "150\u00ba C"
+      "aliases": [
+        "150\u00ba C"
+      ],
+      "display_text": "150\u00ba C",
+      "id": "150\u00ba c"
     },
     {
       "doc_ids": [
@@ -2716,7 +3764,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "150\u00ba F"
+      "aliases": [
+        "150\u00ba F"
+      ],
+      "display_text": "150\u00ba F",
+      "id": "150\u00ba f"
     },
     {
       "doc_ids": [
@@ -2725,7 +3777,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "37.8\u00ba C"
+      "aliases": [
+        "37.8\u00ba C"
+      ],
+      "display_text": "37.8\u00ba C",
+      "id": "37.8\u00ba c"
     },
     {
       "doc_ids": [
@@ -2734,7 +3790,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "75\u00ba F"
+      "aliases": [
+        "75\u00ba F"
+      ],
+      "display_text": "75\u00ba F",
+      "id": "75\u00ba f"
     },
     {
       "doc_ids": [
@@ -2743,7 +3803,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "24\u00ba C"
+      "aliases": [
+        "24\u00ba C"
+      ],
+      "display_text": "24\u00ba C",
+      "id": "24\u00ba c"
     },
     {
       "doc_ids": [
@@ -2752,7 +3816,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "minimum continuous safe flow (MCSF)"
+      "aliases": [
+        "minimum continuous safe flow (MCSF)"
+      ],
+      "display_text": "minimum continuous safe flow (MCSF)",
+      "id": "minimum continuous safe flow (mcsf)"
     },
     {
       "doc_ids": [
@@ -2761,6 +3829,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "pump data sheet"
+      ],
+      "display_text": "pump data sheet",
       "id": "pump data sheet"
     },
     {
@@ -2770,7 +3842,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 4"
+      "aliases": [
+        "Section 4"
+      ],
+      "display_text": "Section 4",
+      "id": "section 4"
     },
     {
       "doc_ids": [
@@ -2779,7 +3855,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 7"
+      "aliases": [
+        "Section 7"
+      ],
+      "display_text": "Section 7",
+      "id": "section 7"
     },
     {
       "doc_ids": [
@@ -2788,7 +3868,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 8"
+      "aliases": [
+        "Section 8"
+      ],
+      "display_text": "Section 8",
+      "id": "section 8"
     },
     {
       "doc_ids": [
@@ -2797,7 +3881,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "60 Minutes"
+      "aliases": [
+        "60 Minutes"
+      ],
+      "display_text": "60 Minutes",
+      "id": "60 minutes"
     },
     {
       "doc_ids": [
@@ -2806,6 +3894,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "10 minute intervals"
+      ],
+      "display_text": "10 minute intervals",
       "id": "10 minute intervals"
     },
     {
@@ -2815,6 +3907,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "24 hours"
+      ],
+      "display_text": "24 hours",
       "id": "24 hours"
     },
     {
@@ -2824,7 +3920,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "180\u00b0F"
+      "aliases": [
+        "180\u00b0F"
+      ],
+      "display_text": "180\u00b0F",
+      "id": "180\u00b0f"
     },
     {
       "doc_ids": [
@@ -2833,7 +3933,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "82.2\u00b0C"
+      "aliases": [
+        "82.2\u00b0C"
+      ],
+      "display_text": "82.2\u00b0C",
+      "id": "82.2\u00b0c"
     },
     {
       "doc_ids": [
@@ -2842,7 +3946,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "160\u00b0F"
+      "aliases": [
+        "160\u00b0F"
+      ],
+      "display_text": "160\u00b0F",
+      "id": "160\u00b0f"
     },
     {
       "doc_ids": [
@@ -2851,7 +3959,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "71.1\u00b0C"
+      "aliases": [
+        "71.1\u00b0C"
+      ],
+      "display_text": "71.1\u00b0C",
+      "id": "71.1\u00b0c"
     },
     {
       "doc_ids": [
@@ -2860,7 +3972,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "125\u00b0 - 180\u00b0 F"
+      "aliases": [
+        "125\u00b0 - 180\u00b0 F"
+      ],
+      "display_text": "125\u00b0 - 180\u00b0 F",
+      "id": "125\u00b0 - 180\u00b0 f"
     },
     {
       "doc_ids": [
@@ -2869,7 +3985,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "50\u00ba - 80\u00ba C"
+      "aliases": [
+        "50\u00ba - 80\u00ba C"
+      ],
+      "display_text": "50\u00ba - 80\u00ba C",
+      "id": "50\u00ba - 80\u00ba c"
     },
     {
       "doc_ids": [
@@ -2878,7 +3998,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "190\u00b0 F"
+      "aliases": [
+        "190\u00b0 F"
+      ],
+      "display_text": "190\u00b0 F",
+      "id": "190\u00b0 f"
     },
     {
       "doc_ids": [
@@ -2887,7 +4011,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "88\u00b0 C"
+      "aliases": [
+        "88\u00b0 C"
+      ],
+      "display_text": "88\u00b0 C",
+      "id": "88\u00b0 c"
     },
     {
       "doc_ids": [
@@ -2896,7 +4024,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "25\u00b0F"
+      "aliases": [
+        "25\u00b0F"
+      ],
+      "display_text": "25\u00b0F",
+      "id": "25\u00b0f"
     },
     {
       "doc_ids": [
@@ -2905,6 +4037,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "impeller (2200)"
+      ],
+      "display_text": "impeller (2200)",
       "id": "impeller (2200)"
     },
     {
@@ -2914,6 +4050,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "casing (1110)"
+      ],
+      "display_text": "casing (1110)",
       "id": "casing (1110)"
     },
     {
@@ -2923,6 +4063,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "impeller wear rings (1500.1, 1500.2, 2300.1, 2300.2)"
+      ],
+      "display_text": "impeller wear rings (1500.1, 1500.2, 2300.1, 2300.2)",
       "id": "impeller wear rings (1500.1, 1500.2, 2300.1, 2300.2)"
     },
     {
@@ -2932,6 +4076,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "casing cover (4100)"
+      ],
+      "display_text": "casing cover (4100)",
       "id": "casing cover (4100)"
     },
     {
@@ -2941,7 +4089,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Table 2"
+      "aliases": [
+        "Table 2"
+      ],
+      "display_text": "Table 2",
+      "id": "table 2"
     },
     {
       "doc_ids": [
@@ -2950,7 +4102,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "API 610"
+      "aliases": [
+        "API 610"
+      ],
+      "display_text": "API 610",
+      "id": "api 610"
     },
     {
       "doc_ids": [
@@ -2959,6 +4115,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "0.005\""
+      ],
+      "display_text": "0.005\"",
       "id": "0.005\""
     },
     {
@@ -2968,6 +4128,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "127 micrometers"
+      ],
+      "display_text": "127 micrometers",
       "id": "127 micrometers"
     },
     {
@@ -2977,7 +4141,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": "500\u00ba F"
+      "aliases": [
+        "500\u00ba F"
+      ],
+      "display_text": "500\u00ba F",
+      "id": "500\u00ba f"
     },
     {
       "doc_ids": [
@@ -2986,7 +4154,11 @@
       "types": [
         "MEASUREMENT"
       ],
-      "id": ".002 inch TIR"
+      "aliases": [
+        ".002 inch TIR"
+      ],
+      "display_text": ".002 inch TIR",
+      "id": ".002 inch tir"
     },
     {
       "doc_ids": [
@@ -2995,6 +4167,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "sleeve bearing (3000)"
+      ],
+      "display_text": "sleeve bearing (3000)",
       "id": "sleeve bearing (3000)"
     },
     {
@@ -3004,6 +4180,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "impeller key (6700.1)"
+      ],
+      "display_text": "impeller key (6700.1)",
       "id": "impeller key (6700.1)"
     },
     {
@@ -3013,6 +4193,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "pump shaft (2110)"
+      ],
+      "display_text": "pump shaft (2110)",
       "id": "pump shaft (2110)"
     },
     {
@@ -3022,6 +4206,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "casing gasket (4510)"
+      ],
+      "display_text": "casing gasket (4510)",
       "id": "casing gasket (4510)"
     },
     {
@@ -3031,6 +4219,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "casing stud nuts (6580.1)"
+      ],
+      "display_text": "casing stud nuts (6580.1)",
       "id": "casing stud nuts (6580.1)"
     },
     {
@@ -3040,6 +4232,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "driver stand (3160)"
+      ],
+      "display_text": "driver stand (3160)",
       "id": "driver stand (3160)"
     },
     {
@@ -3049,6 +4245,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "cap screws (6577)"
+      ],
+      "display_text": "cap screws (6577)",
       "id": "cap screws (6577)"
     },
     {
@@ -3058,6 +4258,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "seal gland nuts (6580.2)"
+      ],
+      "display_text": "seal gland nuts (6580.2)",
       "id": "seal gland nuts (6580.2)"
     },
     {
@@ -3067,6 +4271,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "bearing bracket (849)"
+      ],
+      "display_text": "bearing bracket (849)",
       "id": "bearing bracket (849)"
     },
     {
@@ -3076,6 +4284,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "cartridge seal (4200)"
+      ],
+      "display_text": "cartridge seal (4200)",
       "id": "cartridge seal (4200)"
     },
     {
@@ -3085,6 +4297,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "throat bushing (847)"
+      ],
+      "display_text": "throat bushing (847)",
       "id": "throat bushing (847)"
     },
     {
@@ -3094,6 +4310,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "oil rings (817)"
+      ],
+      "display_text": "oil rings (817)",
       "id": "oil rings (817)"
     },
     {
@@ -3103,6 +4323,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "thrust bearing (881-2)"
+      ],
+      "display_text": "thrust bearing (881-2)",
       "id": "thrust bearing (881-2)"
     },
     {
@@ -3112,6 +4336,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "radial bearing (881-1)"
+      ],
+      "display_text": "radial bearing (881-1)",
       "id": "radial bearing (881-1)"
     },
     {
@@ -3121,6 +4349,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "inboard bearing seal (829-1)"
+      ],
+      "display_text": "inboard bearing seal (829-1)",
       "id": "inboard bearing seal (829-1)"
     },
     {
@@ -3130,6 +4362,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "outboard bearing end cap/bearing seal assembly (813-2,829-2)"
+      ],
+      "display_text": "outboard bearing end cap/bearing seal assembly (813-2,829-2)",
       "id": "outboard bearing end cap/bearing seal assembly (813-2,829-2)"
     },
     {
@@ -3139,6 +4375,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "plastic shims (815-3)"
+      ],
+      "display_text": "plastic shims (815-3)",
       "id": "plastic shims (815-3)"
     },
     {
@@ -3148,6 +4388,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "0.003\" to 0.005\""
+      ],
+      "display_text": "0.003\" to 0.005\"",
       "id": "0.003\" to 0.005\""
     },
     {
@@ -3157,6 +4401,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "inboard heat sink (829-2)"
+      ],
+      "display_text": "inboard heat sink (829-2)",
       "id": "inboard heat sink (829-2)"
     },
     {
@@ -3166,6 +4414,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "outboard fan (817)"
+      ],
+      "display_text": "outboard fan (817)",
       "id": "outboard fan (817)"
     },
     {
@@ -3175,6 +4427,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "fan shroud (812)"
+      ],
+      "display_text": "fan shroud (812)",
       "id": "fan shroud (812)"
     },
     {
@@ -3184,6 +4440,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "pump coupling hub"
+      ],
+      "display_text": "pump coupling hub",
       "id": "pump coupling hub"
     },
     {
@@ -3193,6 +4453,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "drive key (811-2)"
+      ],
+      "display_text": "drive key (811-2)",
       "id": "drive key (811-2)"
     },
     {
@@ -3202,6 +4466,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "impeller (805)"
+      ],
+      "display_text": "impeller (805)",
       "id": "impeller (805)"
     },
     {
@@ -3211,6 +4479,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "shaft (820)"
+      ],
+      "display_text": "shaft (820)",
       "id": "shaft (820)"
     },
     {
@@ -3220,6 +4492,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "casing cover (802)"
+      ],
+      "display_text": "casing cover (802)",
       "id": "casing cover (802)"
     },
     {
@@ -3229,6 +4505,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "casing (800)"
+      ],
+      "display_text": "casing (800)",
       "id": "casing (800)"
     },
     {
@@ -3238,6 +4518,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "gland gasket (815-2)"
+      ],
+      "display_text": "gland gasket (815-2)",
       "id": "gland gasket (815-2)"
     },
     {
@@ -3247,6 +4531,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "impeller key (811-1)"
+      ],
+      "display_text": "impeller key (811-1)",
       "id": "impeller key (811-1)"
     },
     {
@@ -3256,6 +4544,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "casing gasket (815-1)"
+      ],
+      "display_text": "casing gasket (815-1)",
       "id": "casing gasket (815-1)"
     },
     {
@@ -3265,7 +4557,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Table 3"
+      "aliases": [
+        "Table 3"
+      ],
+      "display_text": "Table 3",
+      "id": "table 3"
     },
     {
       "doc_ids": [
@@ -3274,7 +4570,11 @@
       "types": [
         "REGULATION"
       ],
-      "id": "ASTM A193 GR B7"
+      "aliases": [
+        "ASTM A193 GR B7"
+      ],
+      "display_text": "ASTM A193 GR B7",
+      "id": "astm a193 gr b7"
     },
     {
       "doc_ids": [
@@ -3283,7 +4583,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "Table 4"
+      "aliases": [
+        "Table 4"
+      ],
+      "display_text": "Table 4",
+      "id": "table 4"
     },
     {
       "doc_ids": [
@@ -3292,7 +4596,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 1"
+      "aliases": [
+        "Section 1"
+      ],
+      "display_text": "Section 1",
+      "id": "section 1"
     },
     {
       "doc_ids": [
@@ -3301,7 +4609,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 2"
+      "aliases": [
+        "Section 2"
+      ],
+      "display_text": "Section 2",
+      "id": "section 2"
     },
     {
       "doc_ids": [
@@ -3310,7 +4622,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 3"
+      "aliases": [
+        "Section 3"
+      ],
+      "display_text": "Section 3",
+      "id": "section 3"
     },
     {
       "doc_ids": [
@@ -3319,7 +4635,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 5"
+      "aliases": [
+        "Section 5"
+      ],
+      "display_text": "Section 5",
+      "id": "section 5"
     },
     {
       "doc_ids": [
@@ -3328,7 +4648,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 6"
+      "aliases": [
+        "Section 6"
+      ],
+      "display_text": "Section 6",
+      "id": "section 6"
     },
     {
       "doc_ids": [
@@ -3337,7 +4661,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 9"
+      "aliases": [
+        "Section 9"
+      ],
+      "display_text": "Section 9",
+      "id": "section 9"
     },
     {
       "doc_ids": [
@@ -3346,7 +4674,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 10"
+      "aliases": [
+        "Section 10"
+      ],
+      "display_text": "Section 10",
+      "id": "section 10"
     },
     {
       "doc_ids": [
@@ -3355,7 +4687,11 @@
       "types": [
         "PROCEDURE"
       ],
-      "id": "Section 11"
+      "aliases": [
+        "Section 11"
+      ],
+      "display_text": "Section 11",
+      "id": "section 11"
     },
     {
       "doc_ids": [
@@ -3364,7 +4700,11 @@
       "types": [
         "EQUIPMENT"
       ],
-      "id": "PumpWorks 610"
+      "aliases": [
+        "PumpWorks 610"
+      ],
+      "display_text": "PumpWorks 610",
+      "id": "pumpworks 610"
     },
     {
       "doc_ids": [
@@ -3373,6 +4713,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "impeller locknut (2912)"
+      ],
+      "display_text": "impeller locknut (2912)",
       "id": "impeller locknut (2912)"
     },
     {
@@ -3382,6 +4726,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "impeller locknut setscrew"
+      ],
+      "display_text": "impeller locknut setscrew",
       "id": "impeller locknut setscrew"
     },
     {
@@ -3391,6 +4739,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "seal setting devices"
+      ],
+      "display_text": "seal setting devices",
       "id": "seal setting devices"
     },
     {
@@ -3400,6 +4752,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "coupling spacer"
+      ],
+      "display_text": "coupling spacer",
       "id": "coupling spacer"
     },
     {
@@ -3409,6 +4765,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "coupling guard"
+      ],
+      "display_text": "coupling guard",
       "id": "coupling guard"
     },
     {
@@ -3418,6 +4778,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "coupling key (6700.2)"
+      ],
+      "display_text": "coupling key (6700.2)",
       "id": "coupling key (6700.2)"
     },
     {
@@ -3427,6 +4791,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "nuts (6580.2)"
+      ],
+      "display_text": "nuts (6580.2)",
       "id": "nuts (6580.2)"
     },
     {
@@ -3436,6 +4804,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "nuts (6580.1)"
+      ],
+      "display_text": "nuts (6580.1)",
       "id": "nuts (6580.1)"
     },
     {
@@ -3445,6 +4817,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "jack bolts"
+      ],
+      "display_text": "jack bolts",
       "id": "jack bolts"
     },
     {
@@ -3454,6 +4830,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "locknut (821-1)"
+      ],
+      "display_text": "locknut (821-1)",
       "id": "locknut (821-1)"
     },
     {
@@ -3463,6 +4843,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "lockwasher (831)"
+      ],
+      "display_text": "lockwasher (831)",
       "id": "lockwasher (831)"
     },
     {
@@ -3472,6 +4856,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "locknut (821-2)"
+      ],
+      "display_text": "locknut (821-2)",
       "id": "locknut (821-2)"
     },
     {
@@ -3481,6 +4869,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "seal chamber bore"
+      ],
+      "display_text": "seal chamber bore",
       "id": "seal chamber bore"
     },
     {
@@ -3490,6 +4882,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "motor coupling hub"
+      ],
+      "display_text": "motor coupling hub",
       "id": "motor coupling hub"
     },
     {
@@ -3499,6 +4895,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "case cover plate"
+      ],
+      "display_text": "case cover plate",
       "id": "case cover plate"
     },
     {
@@ -3508,6 +4908,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "motor hub"
+      ],
+      "display_text": "motor hub",
       "id": "motor hub"
     },
     {
@@ -3517,6 +4921,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "motor mounting bolts"
+      ],
+      "display_text": "motor mounting bolts",
       "id": "motor mounting bolts"
     },
     {
@@ -3526,6 +4934,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "suction flange"
+      ],
+      "display_text": "suction flange",
       "id": "suction flange"
     },
     {
@@ -3535,6 +4947,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "discharge flange"
+      ],
+      "display_text": "discharge flange",
       "id": "discharge flange"
     },
     {
@@ -3544,6 +4960,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "suction valve"
+      ],
+      "display_text": "suction valve",
       "id": "suction valve"
     },
     {
@@ -3553,6 +4973,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "discharge valve"
+      ],
+      "display_text": "discharge valve",
       "id": "discharge valve"
     },
     {
@@ -3562,6 +4986,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "check valve"
+      ],
+      "display_text": "check valve",
       "id": "check valve"
     },
     {
@@ -3571,6 +4999,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "gate valve"
+      ],
+      "display_text": "gate valve",
       "id": "gate valve"
     },
     {
@@ -3580,6 +5012,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "constant level oiler"
+      ],
+      "display_text": "constant level oiler",
       "id": "constant level oiler"
     },
     {
@@ -3589,6 +5025,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "oil vent plug"
+      ],
+      "display_text": "oil vent plug",
       "id": "oil vent plug"
     },
     {
@@ -3598,6 +5038,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "bearing housing"
+      ],
+      "display_text": "bearing housing",
       "id": "bearing housing"
     },
     {
@@ -3607,6 +5051,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "oil flinger"
+      ],
+      "display_text": "oil flinger",
       "id": "oil flinger"
     },
     {
@@ -3616,6 +5064,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "pumping ring"
+      ],
+      "display_text": "pumping ring",
       "id": "pumping ring"
     },
     {
@@ -3625,6 +5077,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "fan guard (812)"
+      ],
+      "display_text": "fan guard (812)",
       "id": "fan guard (812)"
     },
     {
@@ -3634,6 +5090,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "fan (853)"
+      ],
+      "display_text": "fan (853)",
       "id": "fan (853)"
     },
     {
@@ -3643,7 +5103,11 @@
       "types": [
         "UNKNOWN"
       ],
-      "id": "Table 1"
+      "aliases": [
+        "Table 1"
+      ],
+      "display_text": "Table 1",
+      "id": "table 1"
     },
     {
       "doc_ids": [
@@ -3652,7 +5116,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
-      "id": "SH-0717_shift_handover.pdf"
+      "aliases": [
+        "SH-0717_shift_handover.pdf"
+      ],
+      "display_text": "SH-0717_shift_handover.pdf",
+      "id": "sh-0717_shift_handover.pdf"
     },
     {
       "doc_ids": [
@@ -3661,7 +5129,11 @@
       "types": [
         "DATE"
       ],
-      "id": "18 Jul 2024"
+      "aliases": [
+        "18 Jul 2024"
+      ],
+      "display_text": "18 Jul 2024",
+      "id": "18 jul 2024"
     },
     {
       "doc_ids": [
@@ -3670,6 +5142,10 @@
       "types": [
         "EQUIPMENT"
       ],
+      "aliases": [
+        "P-201"
+      ],
+      "display_text": "P-201",
       "id": "P-201"
     },
     {
@@ -3679,6 +5155,10 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "SOP-09"
+      ],
+      "display_text": "SOP-09",
       "id": "SOP-09"
     },
     {
@@ -3688,7 +5168,11 @@
       "types": [
         "LOCATION"
       ],
-      "id": "Pump House Confined Areas"
+      "aliases": [
+        "Pump House Confined Areas"
+      ],
+      "display_text": "Pump House Confined Areas",
+      "id": "pump house confined areas"
     },
     {
       "doc_ids": [
@@ -3697,16 +5181,11 @@
       "types": [
         "DOCUMENT_REF"
       ],
+      "aliases": [
+        "VS-204"
+      ],
+      "display_text": "VS-204",
       "id": "VS-204"
-    },
-    {
-      "doc_ids": [
-        "VS-204_vibration_trend_log.pdf"
-      ],
-      "types": [
-        "EQUIPMENT"
-      ],
-      "id": "DE Bearing"
     },
     {
       "doc_ids": [
@@ -3715,6 +5194,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "4.6"
+      ],
+      "display_text": "4.6",
       "id": "4.6"
     },
     {
@@ -3724,7 +5207,11 @@
       "types": [
         "STATUS"
       ],
-      "id": "Zone C - Elevated"
+      "aliases": [
+        "Zone C - Elevated"
+      ],
+      "display_text": "Zone C - Elevated",
+      "id": "zone c - elevated"
     },
     {
       "doc_ids": [
@@ -3733,6 +5220,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "4.9"
+      ],
+      "display_text": "4.9",
       "id": "4.9"
     },
     {
@@ -3742,7 +5233,11 @@
       "types": [
         "DATE"
       ],
-      "id": "12 Jul 2024"
+      "aliases": [
+        "12 Jul 2024"
+      ],
+      "display_text": "12 Jul 2024",
+      "id": "12 jul 2024"
     },
     {
       "doc_ids": [
@@ -3751,6 +5246,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "5.8"
+      ],
+      "display_text": "5.8",
       "id": "5.8"
     },
     {
@@ -3760,7 +5259,11 @@
       "types": [
         "STATUS"
       ],
-      "id": "Zone C - Rising"
+      "aliases": [
+        "Zone C - Rising"
+      ],
+      "display_text": "Zone C - Rising",
+      "id": "zone c - rising"
     },
     {
       "doc_ids": [
@@ -3769,7 +5272,11 @@
       "types": [
         "DATE"
       ],
-      "id": "17 Jul 2024"
+      "aliases": [
+        "17 Jul 2024"
+      ],
+      "display_text": "17 Jul 2024",
+      "id": "17 jul 2024"
     },
     {
       "doc_ids": [
@@ -3778,6 +5285,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "7.4"
+      ],
+      "display_text": "7.4",
       "id": "7.4"
     },
     {
@@ -3787,7 +5298,11 @@
       "types": [
         "STATUS"
       ],
-      "id": "Zone D - ALARM"
+      "aliases": [
+        "Zone D - ALARM"
+      ],
+      "display_text": "Zone D - ALARM",
+      "id": "zone d - alarm"
     },
     {
       "doc_ids": [
@@ -3796,7 +5311,11 @@
       "types": [
         "DATE"
       ],
-      "id": "19 Jul 2024"
+      "aliases": [
+        "19 Jul 2024"
+      ],
+      "display_text": "19 Jul 2024",
+      "id": "19 jul 2024"
     },
     {
       "doc_ids": [
@@ -3805,6 +5324,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "9.1"
+      ],
+      "display_text": "9.1",
       "id": "9.1"
     },
     {
@@ -3814,7 +5337,11 @@
       "types": [
         "STATUS"
       ],
-      "id": "Zone D - CRITICAL"
+      "aliases": [
+        "Zone D - CRITICAL"
+      ],
+      "display_text": "Zone D - CRITICAL",
+      "id": "zone d - critical"
     },
     {
       "doc_ids": [
@@ -3823,6 +5350,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "five days"
+      ],
+      "display_text": "five days",
       "id": "five days"
     },
     {
@@ -3832,6 +5363,10 @@
       "types": [
         "MEASUREMENT"
       ],
+      "aliases": [
+        "9.1 mm/s"
+      ],
+      "display_text": "9.1 mm/s",
       "id": "9.1 mm/s"
     }
   ],
@@ -3840,218 +5375,71 @@
       "relation": "references",
       "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
       "source": "INC-2024-07",
-      "target": "Pump P-204",
+      "target": "P-204",
       "key": "references@INC-2024-07_incident_report_SCANNED.pdf"
     },
     {
       "relation": "reported_by",
       "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
       "source": "INC-2024-07",
-      "target": "Shift Engineer",
+      "target": "shift engineer",
       "key": "reported_by@INC-2024-07_incident_report_SCANNED.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "INC-2024-07_incident_report.pdf",
-      "source": "Pump P-204",
-      "target": "Unit 2",
-      "key": "part_of@INC-2024-07_incident_report.pdf"
-    },
-    {
-      "relation": "drives",
-      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
-      "source": "Pump P-204",
-      "target": "Boiler Feed Water",
-      "key": "drives@INC-2024-07_incident_report_SCANNED.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
-      "source": "Pump P-204",
-      "target": "Unit 2, Pump House Bay 4",
-      "key": "part_of@IR-556_inspection_report_SCANNED.pdf"
-    },
-    {
-      "relation": "inspected_by",
-      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
-      "source": "Pump P-204",
-      "target": "R. Krishnan",
-      "key": "inspected_by@IR-556_inspection_report_SCANNED.pdf"
-    },
-    {
-      "relation": "governed_by",
-      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
-      "source": "Pump P-204",
-      "target": "M-118",
-      "key": "governed_by@IR-556_inspection_report_SCANNED.pdf"
-    },
-    {
-      "relation": "governed_by",
-      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
-      "source": "Pump P-204",
-      "target": "ISO 10816-3",
-      "key": "governed_by@IR-556_inspection_report_SCANNED.pdf"
-    },
-    {
-      "relation": "inspected_by",
-      "doc_id": "ML-1183_maintenance_log.pdf",
-      "source": "Pump P-204",
-      "target": "S. Prakash",
-      "key": "inspected_by@ML-1183_maintenance_log.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report.pdf",
-      "source": "Catastrophic DE bearing seizure",
-      "target": "Pump P-204",
-      "key": "part_of@INC-2024-07_incident_report.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
-      "source": "Catastrophic DE bearing seizure",
-      "target": "Pump P-204",
-      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report.pdf",
-      "source": "Shift Engineer",
-      "target": "Unit 2",
-      "key": "part_of@INC-2024-07_incident_report.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
-      "source": "Shift Engineer",
-      "target": "Unit 2",
-      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report.pdf",
-      "source": "DE bearing",
-      "target": "Pump P-204",
-      "key": "part_of@INC-2024-07_incident_report.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
-      "source": "DE bearing",
-      "target": "Pump P-204",
-      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
-      "source": "DE bearing",
-      "target": "Pump P-204",
-      "key": "part_of@IR-556_inspection_report_SCANNED.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "IR-556_inspection_report.pdf",
-      "source": "DE bearing",
-      "target": "P-204",
-      "key": "part_of@IR-556_inspection_report.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "ML-1183_maintenance_log.pdf",
-      "source": "DE bearing",
-      "target": "P-204",
-      "key": "part_of@ML-1183_maintenance_log.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
-      "source": "DE bearing",
-      "target": "P-204",
-      "key": "part_of@ML-1183_maintenance_log_SCANNED.pdf"
-    },
-    {
-      "relation": "flagged_by",
-      "doc_id": "IR-556_inspection_report.pdf",
-      "source": "DE bearing",
-      "target": "ELEVATED - MONITOR",
-      "key": "flagged_by@IR-556_inspection_report.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "P-210_pump_manual_extract.pdf",
-      "source": "DE bearing",
-      "target": "P-210",
-      "key": "part_of@P-210_pump_manual_extract.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report.pdf",
-      "source": "SKF 6316",
-      "target": "Pump P-204",
-      "key": "part_of@INC-2024-07_incident_report.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
-      "source": "SKF 6316",
-      "target": "Pump P-204",
-      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report.pdf",
-      "source": "shaft",
-      "target": "Pump P-204",
-      "key": "part_of@INC-2024-07_incident_report.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
-      "source": "shaft",
-      "target": "Pump P-204",
-      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "INC-2024-07_incident_report.pdf",
-      "source": "P-205",
-      "target": "Unit 2",
+      "source": "P-204",
+      "target": "unit 2",
       "key": "part_of@INC-2024-07_incident_report.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "SH-0717_shift_handover.pdf",
-      "source": "P-205",
-      "target": "Unit 2",
+      "source": "P-204",
+      "target": "unit 2",
       "key": "part_of@SH-0717_shift_handover.pdf"
     },
     {
-      "relation": "part_of",
+      "relation": "drives",
       "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
-      "source": "P-205",
-      "target": "Boiler Feed Water",
-      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+      "source": "P-204",
+      "target": "boiler feed water",
+      "key": "drives@INC-2024-07_incident_report_SCANNED.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "IR-556_inspection_report.pdf",
-      "source": "Centrifugal Pump P-204",
-      "target": "Unit 2, Pump House Bay 4",
+      "source": "P-204",
+      "target": "P-204",
       "key": "part_of@IR-556_inspection_report.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "IR-556_inspection_report.pdf",
       "source": "P-204",
-      "target": "Centrifugal Pump P-204",
+      "target": "unit 2, pump house bay 4",
       "key": "part_of@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "P-204",
+      "target": "unit 2, pump house bay 4",
+      "key": "part_of@IR-556_inspection_report_SCANNED.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "IR-556_inspection_report.pdf",
       "source": "P-204",
-      "target": "ISO 10816-3",
+      "target": "iso 10816-3",
       "key": "governed_by@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "P-204",
+      "target": "iso 10816-3",
+      "key": "governed_by@IR-556_inspection_report_SCANNED.pdf"
     },
     {
       "relation": "serviced_under",
@@ -4059,6 +5447,34 @@
       "source": "P-204",
       "target": "M-118",
       "key": "serviced_under@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "P-204",
+      "target": "M-118",
+      "key": "governed_by@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "serviced_under",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "P-204",
+      "target": "M-118",
+      "key": "serviced_under@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "inspected_by",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "P-204",
+      "target": "r. krishnan",
+      "key": "inspected_by@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "flagged_by",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "P-204",
+      "target": "IR-556",
+      "key": "flagged_by@IR-556_inspection_report_SCANNED.pdf"
     },
     {
       "relation": "references",
@@ -4078,35 +5494,175 @@
       "relation": "part_of",
       "doc_id": "LS-07_lubrication_spec.pdf",
       "source": "P-204",
-      "target": "Feed water pumps",
+      "target": "feed water pumps",
       "key": "part_of@LS-07_lubrication_spec.pdf"
+    },
+    {
+      "relation": "inspected_by",
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "source": "P-204",
+      "target": "s. prakash",
+      "key": "inspected_by@ML-1183_maintenance_log.pdf"
     },
     {
       "relation": "inspected_by",
       "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
       "source": "P-204",
-      "target": "S. Prakash",
+      "target": "s. prakash",
       "key": "inspected_by@ML-1183_maintenance_log_SCANNED.pdf"
     },
     {
       "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "catastrophic de bearing seizure",
+      "target": "P-204",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "catastrophic de bearing seizure",
+      "target": "P-204",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "shift engineer",
+      "target": "unit 2",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "shift engineer",
+      "target": "unit 2",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "de bearing",
+      "target": "P-204",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "de bearing",
+      "target": "P-204",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "de bearing",
+      "target": "P-204",
+      "key": "part_of@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "de bearing",
+      "target": "P-204",
+      "key": "part_of@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "source": "de bearing",
+      "target": "P-204",
+      "key": "part_of@ML-1183_maintenance_log.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
+      "source": "de bearing",
+      "target": "P-204",
+      "key": "part_of@ML-1183_maintenance_log_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "VS-204_vibration_trend_log.pdf",
+      "source": "de bearing",
+      "target": "P-204",
+      "key": "part_of@VS-204_vibration_trend_log.pdf"
+    },
+    {
+      "relation": "flagged_by",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "de bearing",
+      "target": "elevated - monitor",
+      "key": "flagged_by@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "P-210_pump_manual_extract.pdf",
+      "source": "de bearing",
+      "target": "P-210",
+      "key": "part_of@P-210_pump_manual_extract.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "skf 6316",
+      "target": "P-204",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "skf 6316",
+      "target": "P-204",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "shaft",
+      "target": "P-204",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "shaft",
+      "target": "P-204",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "P-205",
+      "target": "unit 2",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
       "doc_id": "SH-0717_shift_handover.pdf",
-      "source": "P-204",
-      "target": "Unit 2",
+      "source": "P-205",
+      "target": "unit 2",
       "key": "part_of@SH-0717_shift_handover.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "P-205",
+      "target": "boiler feed water",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
     },
     {
       "relation": "inspected_by",
       "doc_id": "IR-556_inspection_report.pdf",
-      "source": "R. Krishnan",
-      "target": "Centrifugal Pump P-204",
+      "source": "r. krishnan",
+      "target": "P-204",
       "key": "inspected_by@IR-556_inspection_report.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "IR-556_inspection_report.pdf",
       "source": "M-118",
-      "target": "Centrifugal Pump P-204",
+      "target": "P-204",
       "key": "governed_by@IR-556_inspection_report.pdf"
     },
     {
@@ -4124,32 +5680,11 @@
       "key": "references@M-118_procedure.pdf"
     },
     {
-      "relation": "flagged_by",
-      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
-      "source": "P-204 DE bearing",
-      "target": "IR-556",
-      "key": "flagged_by@IR-556_inspection_report_SCANNED.pdf"
-    },
-    {
-      "relation": "serviced_under",
-      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
-      "source": "P-204 DE bearing",
-      "target": "M-118",
-      "key": "serviced_under@IR-556_inspection_report_SCANNED.pdf"
-    },
-    {
       "relation": "references",
       "doc_id": "IR-560_motor_inspection.pdf",
       "source": "IR-560",
       "target": "IR-556",
       "key": "references@IR-560_motor_inspection.pdf"
-    },
-    {
-      "relation": "drives",
-      "doc_id": "IR-560_motor_inspection.pdf",
-      "source": "M-204",
-      "target": "Pump P-204",
-      "key": "drives@IR-560_motor_inspection.pdf"
     },
     {
       "relation": "drives",
@@ -4162,49 +5697,49 @@
       "relation": "inspected_by",
       "doc_id": "IR-560_motor_inspection.pdf",
       "source": "M-204",
-      "target": "R. Krishnan",
+      "target": "r. krishnan",
       "key": "inspected_by@IR-560_motor_inspection.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "LKH_manual.pdf",
-      "source": "LKH Centrifugal Pump",
-      "target": "Machinery Directive 2006/42/EC",
+      "source": "lkh centrifugal pump",
+      "target": "machinery directive 2006/42/ec",
       "key": "governed_by@LKH_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "LKH_manual.pdf",
-      "source": "LKH Centrifugal Pump",
-      "target": "RoHS EU Directive 2011/65/EU",
+      "source": "lkh centrifugal pump",
+      "target": "rohs eu directive 2011/65/eu",
       "key": "governed_by@LKH_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "LKH_manual.pdf",
-      "source": "LKH Centrifugal Pump",
-      "target": "The Supply of Machinery (Safety) Regulations 2008",
+      "source": "lkh centrifugal pump",
+      "target": "the supply of machinery (safety) regulations 2008",
       "key": "governed_by@LKH_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "LKH_manual.pdf",
-      "source": "LKH Centrifugal Pump",
-      "target": "The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment Regulations 2012",
+      "source": "lkh centrifugal pump",
+      "target": "the restriction of the use of certain hazardous substances in electrical and electronic equipment regulations 2012",
       "key": "governed_by@LKH_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "LKH_manual.pdf",
-      "source": "LKH Centrifugal Pump",
-      "target": "3A standard",
+      "source": "lkh centrifugal pump",
+      "target": "3a standard",
       "key": "governed_by@LKH_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "LKH_manual.pdf",
       "source": "impeller",
-      "target": "LKH Centrifugal Pump",
+      "target": "lkh centrifugal pump",
       "key": "part_of@LKH_manual.pdf"
     },
     {
@@ -4218,28 +5753,28 @@
       "relation": "part_of",
       "doc_id": "LKH_manual.pdf",
       "source": "stub shaft",
-      "target": "LKH Centrifugal Pump",
+      "target": "lkh centrifugal pump",
       "key": "part_of@LKH_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "LKH_manual.pdf",
       "source": "pump casing",
-      "target": "LKH Centrifugal Pump",
+      "target": "lkh centrifugal pump",
       "key": "part_of@LKH_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "LKH_manual.pdf",
       "source": "back plate",
-      "target": "LKH Centrifugal Pump",
+      "target": "lkh centrifugal pump",
       "key": "part_of@LKH_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "LKH_manual.pdf",
       "source": "shaft seal",
-      "target": "LKH Centrifugal Pump",
+      "target": "lkh centrifugal pump",
       "key": "part_of@LKH_manual.pdf"
     },
     {
@@ -4267,34 +5802,34 @@
       "relation": "drives",
       "doc_id": "LKH_manual.pdf",
       "source": "motor",
-      "target": "LKH Centrifugal Pump",
+      "target": "lkh centrifugal pump",
       "key": "drives@LKH_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "LKH_manual.pdf",
       "source": "motor",
-      "target": "IEC metric standard",
+      "target": "iec metric standard",
       "key": "governed_by@LKH_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "LKH_manual.pdf",
       "source": "motor",
-      "target": "EN60204-1",
+      "target": "en60204-1",
       "key": "governed_by@LKH_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "LKH_manual.pdf",
       "source": "adaptor",
-      "target": "LKH Centrifugal Pump",
+      "target": "lkh centrifugal pump",
       "key": "part_of@LKH_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "LKH_manual.pdf",
-      "source": "O-ring",
+      "source": "o-ring",
       "target": "shaft seal",
       "key": "part_of@LKH_manual.pdf"
     },
@@ -4358,7 +5893,7 @@
       "relation": "serviced_under",
       "doc_id": "LKH_manual.pdf",
       "source": "section 5.7",
-      "target": "LKH-5",
+      "target": "lkh-5",
       "key": "serviced_under@LKH_manual.pdf"
     },
     {
@@ -4377,6 +5912,13 @@
     },
     {
       "relation": "part_of",
+      "doc_id": "M-118_procedure.pdf",
+      "source": "clause 4.3",
+      "target": "M-118",
+      "key": "part_of@M-118_procedure.pdf"
+    },
+    {
+      "relation": "part_of",
       "doc_id": "ML-1183_maintenance_log.pdf",
       "source": "clause 4.3",
       "target": "M-118",
@@ -4390,17 +5932,24 @@
       "key": "part_of@ML-1183_maintenance_log_SCANNED.pdf"
     },
     {
+      "relation": "references",
+      "doc_id": "M-118_procedure.pdf",
+      "source": "clause 4.3",
+      "target": "iso 10816-3 zone c",
+      "key": "references@M-118_procedure.pdf"
+    },
+    {
       "relation": "approved",
       "doc_id": "LKH_manual.pdf",
-      "source": "Lars Kruse Andersen",
-      "target": "ESE00698-EN31",
+      "source": "lars kruse andersen",
+      "target": "ese00698-en31",
       "key": "approved@LKH_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "LKH_manual.pdf",
-      "source": "EPDM",
-      "target": "O-ring",
+      "source": "epdm",
+      "target": "o-ring",
       "key": "part_of@LKH_manual.pdf"
     },
     {
@@ -4413,57 +5962,43 @@
     {
       "relation": "part_of",
       "doc_id": "LKH_manual.pdf",
-      "source": "Carbon",
+      "source": "carbon",
       "target": "rotating seal ring",
       "key": "part_of@LKH_manual.pdf"
     },
     {
       "relation": "requires_lubricant",
       "doc_id": "LS-07_lubrication_spec.pdf",
-      "source": "Feed water pumps",
-      "target": "ISO VG 68",
+      "source": "feed water pumps",
+      "target": "iso vg 68",
       "key": "requires_lubricant@LS-07_lubrication_spec.pdf"
     },
     {
       "relation": "requires_lubricant",
       "doc_id": "LS-07_lubrication_spec.pdf",
-      "source": "Cooling water pumps",
-      "target": "ISO VG 68 grease",
+      "source": "cooling water pumps",
+      "target": "iso vg 68 grease",
       "key": "requires_lubricant@LS-07_lubrication_spec.pdf"
     },
     {
       "relation": "requires_lubricant",
       "doc_id": "LS-07_lubrication_spec.pdf",
-      "source": "Fans",
-      "target": "ISO VG 46",
+      "source": "fans",
+      "target": "iso vg 46",
       "key": "requires_lubricant@LS-07_lubrication_spec.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "M-118_procedure.pdf",
-      "source": "Clause 4.3",
-      "target": "M-118",
-      "key": "part_of@M-118_procedure.pdf"
-    },
-    {
-      "relation": "references",
-      "doc_id": "M-118_procedure.pdf",
-      "source": "Clause 4.3",
-      "target": "ISO 10816-3 Zone C",
-      "key": "references@M-118_procedure.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "M-118_procedure.pdf",
-      "source": "Clause 4.4",
+      "source": "clause 4.4",
       "target": "M-118",
       "key": "part_of@M-118_procedure.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "VS-204_vibration_trend_log.pdf",
-      "source": "7.1 mm/s RMS",
-      "target": "ISO 10816-3",
+      "source": "7.1 mm/s rms",
+      "target": "iso 10816-3",
       "key": "governed_by@VS-204_vibration_trend_log.pdf"
     },
     {
@@ -4477,14 +6012,14 @@
       "relation": "part_of",
       "doc_id": "M-142_seal_procedure.pdf",
       "source": "M-142",
-      "target": "Pump Sealing Systems",
+      "target": "pump sealing systems",
       "key": "part_of@M-142_seal_procedure.pdf"
     },
     {
       "relation": "references",
       "doc_id": "ML-1183_maintenance_log.pdf",
       "source": "ML-1183",
-      "target": "Pump P-204",
+      "target": "P-204",
       "key": "references@ML-1183_maintenance_log.pdf"
     },
     {
@@ -4518,372 +6053,372 @@
     {
       "relation": "deferred_in",
       "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
-      "source": "V. Menon",
+      "source": "v. menon",
       "target": "ML-1183",
       "key": "deferred_in@ML-1183_maintenance_log_SCANNED.pdf"
     },
     {
       "relation": "owned_by",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "SS-EN 13306",
-      "target": "Swedish Institute for Standards",
+      "source": "ss-en 13306",
+      "target": "swedish institute for standards",
       "key": "owned_by@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Mikael Andersson",
-      "target": "MaintMaster Systems",
+      "source": "mikael andersson",
+      "target": "maintmaster systems",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "MaintMaster_manual.pdf",
-      "target": "EN 13306",
+      "source": "maintmaster_manual.pdf",
+      "target": "en 13306",
       "key": "governed_by@MaintMaster_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "MaintMaster_manual.pdf",
-      "target": "SS-EN 13306",
+      "source": "maintmaster_manual.pdf",
+      "target": "ss-en 13306",
       "key": "governed_by@MaintMaster_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "MaintMaster_manual.pdf",
-      "target": "EN-15341",
+      "source": "maintmaster_manual.pdf",
+      "target": "en-15341",
       "key": "governed_by@MaintMaster_manual.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "MaintMaster_manual.pdf",
-      "target": "EN-13460",
+      "source": "maintmaster_manual.pdf",
+      "target": "en-13460",
       "key": "governed_by@MaintMaster_manual.pdf"
     },
     {
       "relation": "references",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "MaintMaster_manual.pdf",
+      "source": "maintmaster_manual.pdf",
       "target": "www.sis.se",
       "key": "references@MaintMaster_manual.pdf"
     },
     {
       "relation": "references",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "MaintMaster_manual.pdf",
+      "source": "maintmaster_manual.pdf",
       "target": "first edition",
       "key": "references@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Hydraulic press",
-      "target": "Line 1",
+      "source": "hydraulic press",
+      "target": "line 1",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Cutting machine",
-      "target": "Line 1",
+      "source": "cutting machine",
+      "target": "line 1",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Scissor lift",
-      "target": "Line 1",
+      "source": "scissor lift",
+      "target": "line 1",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Welding station",
-      "target": "Line 1",
+      "source": "welding station",
+      "target": "line 1",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Robot",
-      "target": "Line 1",
+      "source": "robot",
+      "target": "line 1",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Dryer 1-1",
-      "target": "Compressor 1",
+      "source": "dryer 1-1",
+      "target": "compressor 1",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Tank 1-2",
-      "target": "Compressor 1",
+      "source": "tank 1-2",
+      "target": "compressor 1",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Cooling unit A-1",
-      "target": "Cooling central A",
+      "source": "cooling unit a-1",
+      "target": "cooling central a",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Cooling unit B-1",
-      "target": "Cooling central B",
+      "source": "cooling unit b-1",
+      "target": "cooling central b",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Gate 15, Hall B",
-      "target": "Hall B",
+      "source": "gate 15, hall b",
+      "target": "hall b",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Gate 16, Hall B",
-      "target": "Hall B",
+      "source": "gate 16, hall b",
+      "target": "hall b",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Stockroom",
-      "target": "Building A",
-      "key": "part_of@MaintMaster_manual.pdf"
-    },
-    {
-      "relation": "tracks",
-      "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5511",
-      "target": "Preventive maintenance",
-      "key": "tracks@MaintMaster_manual.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5511-01",
-      "target": "Account 5511",
-      "key": "part_of@MaintMaster_manual.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5511-02",
-      "target": "Account 5511",
-      "key": "part_of@MaintMaster_manual.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5511-03",
-      "target": "Account 5511",
+      "source": "stockroom",
+      "target": "building a",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "tracks",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5512",
-      "target": "Improvement maintenance",
+      "source": "account 5511",
+      "target": "preventive maintenance",
       "key": "tracks@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5512-01",
-      "target": "Account 5512",
+      "source": "account 5511-01",
+      "target": "account 5511",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5512-02",
-      "target": "Account 5512",
+      "source": "account 5511-02",
+      "target": "account 5511",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5512-03",
-      "target": "Account 5512",
+      "source": "account 5511-03",
+      "target": "account 5511",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "tracks",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5513",
-      "target": "Corrective maintenance",
+      "source": "account 5512",
+      "target": "improvement maintenance",
       "key": "tracks@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5513-01",
-      "target": "Account 5513",
+      "source": "account 5512-01",
+      "target": "account 5512",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Account 5513-02",
-      "target": "Account 5513",
+      "source": "account 5512-02",
+      "target": "account 5512",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Corrective maintenance",
-      "target": "European standards",
+      "source": "account 5512-03",
+      "target": "account 5512",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "tracks",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "account 5513",
+      "target": "corrective maintenance",
+      "key": "tracks@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "account 5513-01",
+      "target": "account 5513",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Preventive maintenance",
-      "target": "European standards",
+      "source": "account 5513-02",
+      "target": "account 5513",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Improvement maintenance",
-      "target": "European standards",
+      "source": "corrective maintenance",
+      "target": "european standards",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Immediate corrective maintenance",
-      "target": "Corrective maintenance",
+      "source": "preventive maintenance",
+      "target": "european standards",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Deferred corrective maintenance",
-      "target": "Corrective maintenance",
+      "source": "improvement maintenance",
+      "target": "european standards",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Predetermined maintenance",
-      "target": "Preventive maintenance",
+      "source": "immediate corrective maintenance",
+      "target": "corrective maintenance",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Condition-based maintenance",
-      "target": "Preventive maintenance",
+      "source": "deferred corrective maintenance",
+      "target": "corrective maintenance",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Predictive maintenance",
-      "target": "Preventive maintenance",
+      "source": "predetermined maintenance",
+      "target": "preventive maintenance",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Autonomous maintenance",
-      "target": "Preventive maintenance",
+      "source": "condition-based maintenance",
+      "target": "preventive maintenance",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Root Cause Analysis",
-      "target": "Improvement maintenance",
+      "source": "predictive maintenance",
+      "target": "preventive maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "autonomous maintenance",
+      "target": "preventive maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "root cause analysis",
+      "target": "improvement maintenance",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
       "source": "6-sigma",
-      "target": "Improvement maintenance",
+      "target": "improvement maintenance",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "FMEA",
-      "target": "Improvement maintenance",
+      "source": "fmea",
+      "target": "improvement maintenance",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "SPL",
-      "target": "Improvement maintenance",
+      "source": "spl",
+      "target": "improvement maintenance",
       "key": "part_of@MaintMaster_manual.pdf"
     },
     {
       "relation": "incorporates",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "LEAN",
-      "target": "5S",
+      "source": "lean",
+      "target": "5s",
       "key": "incorporates@MaintMaster_manual.pdf"
     },
     {
       "relation": "references",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "CMMS",
-      "target": "MAINTMASTER\u00ae",
+      "source": "cmms",
+      "target": "maintmaster\u00ae",
       "key": "references@MaintMaster_manual.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "VS-204_vibration_trend_log.pdf",
-      "source": "VT-204-DE",
-      "target": "Pump P-204",
+      "source": "VT-204",
+      "target": "P-204",
       "key": "part_of@VS-204_vibration_trend_log.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "VS-204_vibration_trend_log.pdf",
-      "source": "VT-204-DE",
-      "target": "DE Bearing",
+      "source": "VT-204",
+      "target": "de bearing",
       "key": "part_of@VS-204_vibration_trend_log.pdf"
     },
     {
       "relation": "reports_to",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Maintenance supervisor",
-      "target": "Maintenance manager",
+      "source": "maintenance supervisor",
+      "target": "maintenance manager",
       "key": "reports_to@MaintMaster_manual.pdf"
     },
     {
       "relation": "reports_to",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Maintenance planner",
-      "target": "Maintenance manager",
+      "source": "maintenance planner",
+      "target": "maintenance manager",
       "key": "reports_to@MaintMaster_manual.pdf"
     },
     {
       "relation": "reports_to",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Maintenance technician",
-      "target": "Maintenance supervisor",
+      "source": "maintenance technician",
+      "target": "maintenance supervisor",
       "key": "reports_to@MaintMaster_manual.pdf"
     },
     {
       "relation": "reports_to",
       "doc_id": "MaintMaster_manual.pdf",
-      "source": "Maintenance engineer",
-      "target": "Maintenance manager",
+      "source": "maintenance engineer",
+      "target": "maintenance manager",
       "key": "reports_to@MaintMaster_manual.pdf"
     },
     {
@@ -4892,6 +6427,13 @@
       "source": "first edition",
       "target": "2016",
       "key": "published_in@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "P-210_pump_manual_extract.pdf",
+      "source": "P-210",
+      "target": "P-210",
+      "key": "part_of@P-210_pump_manual_extract.pdf"
     },
     {
       "relation": "uses",
@@ -4904,70 +6446,63 @@
       "relation": "part_of",
       "doc_id": "SH-0717_shift_handover.pdf",
       "source": "P-210",
-      "target": "Unit 2",
+      "target": "unit 2",
       "key": "part_of@SH-0717_shift_handover.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "P-210_pump_manual_extract.pdf",
-      "source": "Centrifugal Pump P-210",
-      "target": "P-210",
-      "key": "part_of@P-210_pump_manual_extract.pdf"
     },
     {
       "relation": "requires",
       "doc_id": "P-210_pump_manual_extract.pdf",
       "source": "deep-groove ball bearings",
-      "target": "ISO VG 68 grade grease",
+      "target": "iso vg 68 grade grease",
       "key": "requires@P-210_pump_manual_extract.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "PWI_IOM.pdf",
-      "source": "PumpWorks 610 PWI pump",
-      "target": "API Standard 610",
+      "source": "pumpworks 610 pwi pump",
+      "target": "api standard 610",
       "key": "governed_by@PWI_IOM.pdf"
     },
     {
       "relation": "references",
       "doc_id": "PWI_IOM.pdf",
-      "source": "PumpWorks 610 PWI pump",
-      "target": "Figure 3",
+      "source": "pumpworks 610 pwi pump",
+      "target": "figure 3",
       "key": "references@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
-      "source": "PWI-BB (OH3)",
-      "target": "PumpWorks 610 PWI pump",
+      "source": "pwi-bb (oh3)",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
-      "source": "PWI (OH4)",
-      "target": "PumpWorks 610 PWI pump",
+      "source": "pwi (oh4)",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "pump driver stand (3160)",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "shaft (2210)",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "mechanical seal (4200)",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
@@ -4981,49 +6516,49 @@
       "relation": "references",
       "doc_id": "PWI_IOM.pdf",
       "source": "pump data sheet",
-      "target": "minimum continuous safe flow (MCSF)",
+      "target": "minimum continuous safe flow (mcsf)",
       "key": "references@PWI_IOM.pdf"
     },
     {
       "relation": "references",
       "doc_id": "PWI_IOM.pdf",
-      "source": "Section 4",
-      "target": "Figure 1",
+      "source": "section 4",
+      "target": "figure 1",
       "key": "references@PWI_IOM.pdf"
     },
     {
       "relation": "references",
       "doc_id": "PWI_IOM.pdf",
-      "source": "Section 4",
-      "target": "Figure 2",
+      "source": "section 4",
+      "target": "figure 2",
       "key": "references@PWI_IOM.pdf"
     },
     {
       "relation": "references",
       "doc_id": "PWI_IOM.pdf",
-      "source": "Section 7",
-      "target": "Table 1",
+      "source": "section 7",
+      "target": "table 1",
       "key": "references@PWI_IOM.pdf"
     },
     {
       "relation": "references",
       "doc_id": "PWI_IOM.pdf",
-      "source": "Section 8",
-      "target": "Table 4",
+      "source": "section 8",
+      "target": "table 4",
       "key": "references@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "impeller (2200)",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "casing (1110)",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
@@ -5037,14 +6572,14 @@
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "casing cover (4100)",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "governed_by",
       "doc_id": "PWI_IOM.pdf",
-      "source": "Table 2",
-      "target": "API 610",
+      "source": "table 2",
+      "target": "api 610",
       "key": "governed_by@PWI_IOM.pdf"
     },
     {
@@ -5065,21 +6600,21 @@
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "casing gasket (4510)",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "casing stud nuts (6580.1)",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "driver stand (3160)",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
@@ -5100,7 +6635,7 @@
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "bearing bracket (849)",
-      "target": "PWI-BB (OH3)",
+      "target": "pwi-bb (oh3)",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
@@ -5205,14 +6740,14 @@
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "casing cover (802)",
-      "target": "PWI-BB (OH3)",
+      "target": "pwi-bb (oh3)",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "casing (800)",
-      "target": "PWI-BB (OH3)",
+      "target": "pwi-bb (oh3)",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
@@ -5239,15 +6774,15 @@
     {
       "relation": "governed_by",
       "doc_id": "PWI_IOM.pdf",
-      "source": "Table 3",
-      "target": "ASTM A193 GR B7",
+      "source": "table 3",
+      "target": "astm a193 gr b7",
       "key": "governed_by@PWI_IOM.pdf"
     },
     {
       "relation": "references",
       "doc_id": "PWI_IOM.pdf",
-      "source": "Section 9",
-      "target": "Table 4",
+      "source": "section 9",
+      "target": "table 4",
       "key": "references@PWI_IOM.pdf"
     },
     {
@@ -5268,14 +6803,14 @@
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "coupling spacer",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "coupling guard",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
@@ -5338,7 +6873,7 @@
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "motor coupling hub",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
@@ -5359,49 +6894,49 @@
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "motor mounting bolts",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "suction flange",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "discharge flange",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "suction valve",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "discharge valve",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "check valve",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "gate valve",
-      "target": "PumpWorks 610 PWI pump",
+      "target": "pumpworks 610 pwi pump",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
@@ -5422,7 +6957,7 @@
       "relation": "part_of",
       "doc_id": "PWI_IOM.pdf",
       "source": "bearing housing",
-      "target": "PWI-BB (OH3)",
+      "target": "pwi-bb (oh3)",
       "key": "part_of@PWI_IOM.pdf"
     },
     {
@@ -5457,7 +6992,7 @@
       "relation": "part_of",
       "doc_id": "SH-0717_shift_handover.pdf",
       "source": "P-201",
-      "target": "Unit 2",
+      "target": "unit 2",
       "key": "part_of@SH-0717_shift_handover.pdf"
     },
     {
@@ -5473,13 +7008,6 @@
       "source": "VS-204",
       "target": "IR-556",
       "key": "references@VS-204_vibration_trend_log.pdf"
-    },
-    {
-      "relation": "part_of",
-      "doc_id": "VS-204_vibration_trend_log.pdf",
-      "source": "DE Bearing",
-      "target": "Pump P-204",
-      "key": "part_of@VS-204_vibration_trend_log.pdf"
     }
   ]
 }

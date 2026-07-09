@@ -63,7 +63,28 @@ Keyword search fails this. Graph traversal answers it correctly.
       threshold for Pump P-204's DE bearing" correctly top-ranked IR-556,
       its scanned duplicate, and VS-204 - matches benchmark Q03's expected
       source docs.
-- [ ] RRF fusion retriever
+- [x] RRF fusion retriever (ingest/retriever.py) - fuses vector_builder
+      semantic search with graph_builder traversal via Reciprocal Rank
+      Fusion. Query entities are matched by substring against graph node
+      text, then a per-entity bounded BFS (max_hops=2) scores docs by
+      closest hop, one contribution per (seed entity, doc) pair.
+      Found and fixed two real bugs while testing against all 8 benchmark
+      questions: (1) a shared-frontier BFS let the mega-hub "P-204" node
+      (mentioned in nearly every doc) flood all docs to the same hop-0
+      tie, drowning more specific co-matched entities like "Zone D" -
+      fixed by running a separate BFS per matched entity. (2) scoring
+      every node visited (rather than once per doc) rewarded the real
+      OEM manuals (90-130 entities each) purely for entity count, letting
+      them out-rank the tight synthetic narrative chain regardless of
+      relevance - fixed by capping each seed entity's contribution to
+      once per doc, at its closest hop.
+      Default top_k=10. Known limitation: M-118_procedure.pdf still
+      ranks low on the Q01/Q02/Q08 star-chain questions since it's a
+      short doc that never textually mentions "P-204" itself (only
+      reachable via a 1-hop "governed_by" edge) - its content is still
+      visible to the synthesis agent because IR-556/ML-1183 quote the
+      procedure by name, but this is worth re-checking once the
+      benchmark harness (stage 7) can score it objectively.
 - [ ] Synthesis agent
 - [ ] Streamlit UI
 - [ ] Benchmark harness (keyword vs hybrid comparison)

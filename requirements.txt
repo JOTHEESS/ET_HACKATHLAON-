@@ -5,3 +5,4 @@ pillow
 anthropic
 pdf2image
 img2pdf
+networkx

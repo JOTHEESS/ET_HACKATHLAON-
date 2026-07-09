@@ -49,7 +49,13 @@ Keyword search fails this. Graph traversal answers it correctly.
       measurements, and relationships (inspected_by, governed_by,
       serviced_under, flagged_by). Loader -> OCR fallback -> Claude
       extractor pipeline confirmed end-to-end on real data.
-- [ ] Knowledge graph builder
+- [x] Knowledge graph builder (ingest/graph_builder.py) - NetworkX MultiDiGraph
+      built from all 17 corpus docs (416 nodes, 235 edges). Fixed a real bug
+      along the way: extractor.py's max_tokens=2000 was truncating JSON on
+      the 3 large real OEM manuals (44-82k chars), causing silent empty
+      extractions - bumped to 8192 and all 17 docs now extract cleanly.
+      Entities merge across docs by exact text match (e.g. "P-204" links
+      IR-556 to M-118). Saved to data/knowledge_graph.json.
 - [ ] Vector store builder
 - [ ] RRF fusion retriever
 - [ ] Synthesis agent

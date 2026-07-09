@@ -1,0 +1,3296 @@
+{
+  "INC-2024-07_incident_report.pdf": {
+    "entities": [
+      {
+        "text": "INC-2024-07",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "22 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "Pump P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Boiler Feed Water",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Catastrophic DE bearing seizure",
+        "type": "EVENT"
+      },
+      {
+        "text": "38 hours",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Shift Engineer",
+        "type": "PERSON"
+      },
+      {
+        "text": "Unit 2",
+        "type": "LOCATION"
+      },
+      {
+        "text": "High",
+        "type": "STATUS"
+      },
+      {
+        "text": "DE bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "SKF 6316",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "shaft",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "standby pump P-205",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "P-205",
+        "type": "EQUIPMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Catastrophic DE bearing seizure",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "DE bearing",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "SKF 6316",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "shaft",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "Pump P-204",
+        "relation": "part_of",
+        "target": "Unit 2"
+      },
+      {
+        "source": "Shift Engineer",
+        "relation": "part_of",
+        "target": "Unit 2"
+      },
+      {
+        "source": "P-205",
+        "relation": "part_of",
+        "target": "Unit 2"
+      }
+    ],
+    "pages": 1
+  },
+  "INC-2024-07_incident_report_SCANNED.pdf": {
+    "entities": [
+      {
+        "text": "INC-2024-07",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "22 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "Pump P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Boiler Feed Water",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Catastrophic DE bearing seizure",
+        "type": "EVENT"
+      },
+      {
+        "text": "38 hours",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Shift Engineer",
+        "type": "PERSON"
+      },
+      {
+        "text": "Unit 2",
+        "type": "LOCATION"
+      },
+      {
+        "text": "High",
+        "type": "STATUS"
+      },
+      {
+        "text": "DE bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "SKF 6316",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "shaft",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "P-205",
+        "type": "EQUIPMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "INC-2024-07",
+        "relation": "references",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "Catastrophic DE bearing seizure",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "DE bearing",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "SKF 6316",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "shaft",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "Pump P-204",
+        "relation": "drives",
+        "target": "Boiler Feed Water"
+      },
+      {
+        "source": "INC-2024-07",
+        "relation": "reported_by",
+        "target": "Shift Engineer"
+      },
+      {
+        "source": "Shift Engineer",
+        "relation": "part_of",
+        "target": "Unit 2"
+      },
+      {
+        "source": "P-205",
+        "relation": "part_of",
+        "target": "Boiler Feed Water"
+      }
+    ],
+    "pages": 1
+  },
+  "IR-556_inspection_report.pdf": {
+    "entities": [
+      {
+        "text": "IR-556",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "01 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "Centrifugal Pump P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Unit 2, Pump House Bay 4",
+        "type": "LOCATION"
+      },
+      {
+        "text": "R. Krishnan",
+        "type": "PERSON"
+      },
+      {
+        "text": "ISO 18436-2 Cat II",
+        "type": "REGULATION"
+      },
+      {
+        "text": "M-118",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "DE bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "4.6 mm/s RMS",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "2.1 mm/s RMS",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "ISO 10816-3",
+        "type": "REGULATION"
+      },
+      {
+        "text": "7.1 mm/s",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "62 C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "ELEVATED - MONITOR",
+        "type": "STATUS"
+      },
+      {
+        "text": "Procedure M-118",
+        "type": "PROCEDURE"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "P-204",
+        "relation": "part_of",
+        "target": "Centrifugal Pump P-204"
+      },
+      {
+        "source": "Centrifugal Pump P-204",
+        "relation": "part_of",
+        "target": "Unit 2, Pump House Bay 4"
+      },
+      {
+        "source": "R. Krishnan",
+        "relation": "inspected_by",
+        "target": "Centrifugal Pump P-204"
+      },
+      {
+        "source": "M-118",
+        "relation": "governed_by",
+        "target": "Centrifugal Pump P-204"
+      },
+      {
+        "source": "DE bearing",
+        "relation": "part_of",
+        "target": "P-204"
+      },
+      {
+        "source": "P-204",
+        "relation": "governed_by",
+        "target": "ISO 10816-3"
+      },
+      {
+        "source": "P-204",
+        "relation": "serviced_under",
+        "target": "M-118"
+      },
+      {
+        "source": "DE bearing",
+        "relation": "flagged_by",
+        "target": "ELEVATED - MONITOR"
+      }
+    ],
+    "pages": 1
+  },
+  "IR-556_inspection_report_SCANNED.pdf": {
+    "entities": [
+      {
+        "text": "IR-556",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "01 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "Pump P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Unit 2, Pump House Bay 4",
+        "type": "LOCATION"
+      },
+      {
+        "text": "R. Krishnan",
+        "type": "PERSON"
+      },
+      {
+        "text": "M-118",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "DE bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "4.6 mm/s RMS",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "2.1 mm/s RMS",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "ISO 10816-3",
+        "type": "REGULATION"
+      },
+      {
+        "text": "7.1 mm/s",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "62 C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "ELEVATED - MONITOR",
+        "type": "STATUS"
+      },
+      {
+        "text": "P-204 DE bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "ISO 18436-2 Cat II",
+        "type": "REGULATION"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Pump P-204",
+        "relation": "part_of",
+        "target": "Unit 2, Pump House Bay 4"
+      },
+      {
+        "source": "Pump P-204",
+        "relation": "inspected_by",
+        "target": "R. Krishnan"
+      },
+      {
+        "source": "Pump P-204",
+        "relation": "governed_by",
+        "target": "M-118"
+      },
+      {
+        "source": "DE bearing",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "Pump P-204",
+        "relation": "governed_by",
+        "target": "ISO 10816-3"
+      },
+      {
+        "source": "P-204 DE bearing",
+        "relation": "flagged_by",
+        "target": "IR-556"
+      },
+      {
+        "source": "P-204 DE bearing",
+        "relation": "serviced_under",
+        "target": "M-118"
+      }
+    ],
+    "pages": 1
+  },
+  "IR-560_motor_inspection.pdf": {
+    "entities": [
+      {
+        "text": "IR-560",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "M-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Pump P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "03 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "R. Krishnan",
+        "type": "PERSON"
+      },
+      {
+        "text": "3.0 mm/s",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "IR-556",
+        "type": "DOCUMENT_REF"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "M-204",
+        "relation": "drives",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "M-204",
+        "relation": "drives",
+        "target": "P-204"
+      },
+      {
+        "source": "M-204",
+        "relation": "inspected_by",
+        "target": "R. Krishnan"
+      },
+      {
+        "source": "IR-560",
+        "relation": "references",
+        "target": "IR-556"
+      },
+      {
+        "source": "P-204",
+        "relation": "references",
+        "target": "IR-556"
+      }
+    ],
+    "pages": 1
+  },
+  "LKH_manual.pdf": {
+    "entities": [
+      {
+        "text": "LKH Centrifugal Pump",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-5",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-10",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-15",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-20",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-25",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-35",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-40",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-45",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-50",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-60",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-70",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-75",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-85",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "LKH-90",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "impeller",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "impeller screw",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "stub shaft",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "pump casing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "back plate",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "shaft seal",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "single shaft seal",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "double mechanical shaft seal",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "flushed shaft seal",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "motor",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "adaptor",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "O-ring",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "stationary seal ring",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "rotating seal ring",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "spring",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "drive ring",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "seal housing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "compression rings",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "motor shaft",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "section 3.3",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 3.4",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 4.3",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 5.1",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 5.2",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 5.3",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 5.4",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 5.5",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 5.6",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 5.7",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "section 5.8",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "clause 4.3",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Machinery Directive 2006/42/EC",
+        "type": "REGULATION"
+      },
+      {
+        "text": "RoHS EU Directive 2011/65/EU",
+        "type": "REGULATION"
+      },
+      {
+        "text": "The Supply of Machinery (Safety) Regulations 2008",
+        "type": "REGULATION"
+      },
+      {
+        "text": "The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment Regulations 2012",
+        "type": "REGULATION"
+      },
+      {
+        "text": "IEC metric standard",
+        "type": "REGULATION"
+      },
+      {
+        "text": "EN60204-1",
+        "type": "REGULATION"
+      },
+      {
+        "text": "3A standard",
+        "type": "REGULATION"
+      },
+      {
+        "text": "Lars Kruse Andersen",
+        "type": "PERSON"
+      },
+      {
+        "text": "ESE00698-EN31",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "2022-10",
+        "type": "DATE"
+      },
+      {
+        "text": "2022-10-01",
+        "type": "DATE"
+      },
+      {
+        "text": "2020-01-23",
+        "type": "DATE"
+      },
+      {
+        "text": "0.5 mm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "1.0 mm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "10-20 mm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "15 Nm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "20 Nm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "50 Nm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "7 Nm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "40 Nm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "67 Nm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "110 Nm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "600 kPa",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "1000 kPa",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "500 kPa",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "-10\u00b0C to +140\u00b0C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "70\u00b0C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "125\u00b0C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "800 cP",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "0.25 - 0.5 l/min",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "0.75 - 110 kW",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "900 - 4000 rpm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "3000/3600 rpm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "12 months",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "0.5 m",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "100 mm",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "1 bar",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "5 bar",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "3 bar",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Alfa Laval Kolding A/S, Albuen 31, DK-6000 Kolding, Denmark",
+        "type": "LOCATION"
+      },
+      {
+        "text": "Kolding, Denmark",
+        "type": "LOCATION"
+      },
+      {
+        "text": "AISI 316L",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "EPDM",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "NBR",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "FPM",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "FEP",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "silicon carbide",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Carbon",
+        "type": "EQUIPMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "LKH Centrifugal Pump",
+        "relation": "governed_by",
+        "target": "Machinery Directive 2006/42/EC"
+      },
+      {
+        "source": "LKH Centrifugal Pump",
+        "relation": "governed_by",
+        "target": "RoHS EU Directive 2011/65/EU"
+      },
+      {
+        "source": "LKH Centrifugal Pump",
+        "relation": "governed_by",
+        "target": "The Supply of Machinery (Safety) Regulations 2008"
+      },
+      {
+        "source": "LKH Centrifugal Pump",
+        "relation": "governed_by",
+        "target": "The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment Regulations 2012"
+      },
+      {
+        "source": "LKH Centrifugal Pump",
+        "relation": "governed_by",
+        "target": "3A standard"
+      },
+      {
+        "source": "impeller",
+        "relation": "part_of",
+        "target": "LKH Centrifugal Pump"
+      },
+      {
+        "source": "stub shaft",
+        "relation": "part_of",
+        "target": "LKH Centrifugal Pump"
+      },
+      {
+        "source": "pump casing",
+        "relation": "part_of",
+        "target": "LKH Centrifugal Pump"
+      },
+      {
+        "source": "back plate",
+        "relation": "part_of",
+        "target": "LKH Centrifugal Pump"
+      },
+      {
+        "source": "shaft seal",
+        "relation": "part_of",
+        "target": "LKH Centrifugal Pump"
+      },
+      {
+        "source": "motor",
+        "relation": "drives",
+        "target": "LKH Centrifugal Pump"
+      },
+      {
+        "source": "adaptor",
+        "relation": "part_of",
+        "target": "LKH Centrifugal Pump"
+      },
+      {
+        "source": "stationary seal ring",
+        "relation": "part_of",
+        "target": "shaft seal"
+      },
+      {
+        "source": "rotating seal ring",
+        "relation": "part_of",
+        "target": "shaft seal"
+      },
+      {
+        "source": "spring",
+        "relation": "part_of",
+        "target": "shaft seal"
+      },
+      {
+        "source": "drive ring",
+        "relation": "part_of",
+        "target": "shaft seal"
+      },
+      {
+        "source": "seal housing",
+        "relation": "part_of",
+        "target": "shaft seal"
+      },
+      {
+        "source": "O-ring",
+        "relation": "part_of",
+        "target": "shaft seal"
+      },
+      {
+        "source": "impeller screw",
+        "relation": "part_of",
+        "target": "impeller"
+      },
+      {
+        "source": "compression rings",
+        "relation": "part_of",
+        "target": "stub shaft"
+      },
+      {
+        "source": "motor shaft",
+        "relation": "part_of",
+        "target": "motor"
+      },
+      {
+        "source": "section 5.4",
+        "relation": "references",
+        "target": "section 3.3"
+      },
+      {
+        "source": "section 5.7",
+        "relation": "serviced_under",
+        "target": "LKH-5"
+      },
+      {
+        "source": "section 5.8",
+        "relation": "serviced_under",
+        "target": "LKH-10"
+      },
+      {
+        "source": "section 5.8",
+        "relation": "serviced_under",
+        "target": "LKH-90"
+      },
+      {
+        "source": "Lars Kruse Andersen",
+        "relation": "approved",
+        "target": "ESE00698-EN31"
+      },
+      {
+        "source": "silicon carbide",
+        "relation": "part_of",
+        "target": "stationary seal ring"
+      },
+      {
+        "source": "Carbon",
+        "relation": "part_of",
+        "target": "rotating seal ring"
+      },
+      {
+        "source": "EPDM",
+        "relation": "part_of",
+        "target": "O-ring"
+      },
+      {
+        "source": "motor",
+        "relation": "governed_by",
+        "target": "IEC metric standard"
+      },
+      {
+        "source": "motor",
+        "relation": "governed_by",
+        "target": "EN60204-1"
+      },
+      {
+        "source": "single shaft seal",
+        "relation": "part_of",
+        "target": "shaft seal"
+      },
+      {
+        "source": "double mechanical shaft seal",
+        "relation": "part_of",
+        "target": "shaft seal"
+      },
+      {
+        "source": "flushed shaft seal",
+        "relation": "part_of",
+        "target": "shaft seal"
+      }
+    ],
+    "pages": 62
+  },
+  "LS-07_lubrication_spec.pdf": {
+    "entities": [
+      {
+        "text": "LS-07",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Feed water pumps",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "ISO VG 68",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "1500 hrs",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Cooling water pumps",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "ISO VG 68 grease",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "2000 hrs",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Fans",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "ISO VG 46",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "3000 hrs",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "1500 operating hours",
+        "type": "MEASUREMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "P-204",
+        "relation": "part_of",
+        "target": "Feed water pumps"
+      },
+      {
+        "source": "Feed water pumps",
+        "relation": "requires_lubricant",
+        "target": "ISO VG 68"
+      },
+      {
+        "source": "Cooling water pumps",
+        "relation": "requires_lubricant",
+        "target": "ISO VG 68 grease"
+      },
+      {
+        "source": "Fans",
+        "relation": "requires_lubricant",
+        "target": "ISO VG 46"
+      }
+    ],
+    "pages": 1
+  },
+  "M-118_procedure.pdf": {
+    "entities": [
+      {
+        "text": "M-118",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Rotating Equipment Condition Monitoring",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Condition Monitoring & Bearing Management, Rotating Equipment",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Centrifugal pumps",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "motors",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "fans",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "OISD-132",
+        "type": "REGULATION"
+      },
+      {
+        "text": "Inspection of Rotating Equipment",
+        "type": "REGULATION"
+      },
+      {
+        "text": "Rev 4",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Clause 4.3",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "ISO 10816-3 Zone C",
+        "type": "REGULATION"
+      },
+      {
+        "text": "14 days",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Clause 4.4",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Zone D",
+        "type": "STATUS"
+      },
+      {
+        "text": "7.1 mm/s RMS",
+        "type": "MEASUREMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "M-118",
+        "relation": "governed_by",
+        "target": "OISD-132"
+      },
+      {
+        "source": "Clause 4.3",
+        "relation": "part_of",
+        "target": "M-118"
+      },
+      {
+        "source": "Clause 4.4",
+        "relation": "part_of",
+        "target": "M-118"
+      },
+      {
+        "source": "Clause 4.3",
+        "relation": "references",
+        "target": "ISO 10816-3 Zone C"
+      },
+      {
+        "source": "M-118",
+        "relation": "references",
+        "target": "OISD-132"
+      }
+    ],
+    "pages": 1
+  },
+  "M-142_seal_procedure.pdf": {
+    "entities": [
+      {
+        "text": "M-142",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "M-118",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "mechanical seals",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "centrifugal pumps",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Seal faces",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Gland bolts",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Cover bolts",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Coupling",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "45",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "70",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "120",
+        "type": "MEASUREMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "M-142",
+        "relation": "references",
+        "target": "M-118"
+      },
+      {
+        "source": "M-142",
+        "relation": "part_of",
+        "target": "Pump Sealing Systems"
+      }
+    ],
+    "pages": 1
+  },
+  "ML-1183_maintenance_log.pdf": {
+    "entities": [
+      {
+        "text": "ML-1183",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "08 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "Pump P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "IR-556",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "S. Prakash",
+        "type": "PERSON"
+      },
+      {
+        "text": "V. Menon",
+        "type": "PERSON"
+      },
+      {
+        "text": "M-118",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "DE bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "ISO VG 68",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "4.9 mm/s RMS",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "SKF 6316 C3",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "6 weeks",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "clause 4.3",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "14 days",
+        "type": "MEASUREMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "ML-1183",
+        "relation": "references",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "ML-1183",
+        "relation": "references",
+        "target": "IR-556"
+      },
+      {
+        "source": "Pump P-204",
+        "relation": "inspected_by",
+        "target": "S. Prakash"
+      },
+      {
+        "source": "ML-1183",
+        "relation": "serviced_under",
+        "target": "M-118"
+      },
+      {
+        "source": "P-204",
+        "relation": "references",
+        "target": "IR-556"
+      },
+      {
+        "source": "DE bearing",
+        "relation": "part_of",
+        "target": "P-204"
+      },
+      {
+        "source": "clause 4.3",
+        "relation": "part_of",
+        "target": "M-118"
+      }
+    ],
+    "pages": 1
+  },
+  "ML-1183_maintenance_log_SCANNED.pdf": {
+    "entities": [
+      {
+        "text": "ML-1183",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "08 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "Pump P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "IR-556",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "S. Prakash",
+        "type": "PERSON"
+      },
+      {
+        "text": "V. Menon",
+        "type": "PERSON"
+      },
+      {
+        "text": "M-118",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "DE bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "ISO VG 68",
+        "type": "REGULATION"
+      },
+      {
+        "text": "4.9 mm/s RMS",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "SKF 6316 C3",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "6 weeks",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "clause 4.3",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "14 days",
+        "type": "MEASUREMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "ML-1183",
+        "relation": "references",
+        "target": "IR-556"
+      },
+      {
+        "source": "P-204",
+        "relation": "inspected_by",
+        "target": "S. Prakash"
+      },
+      {
+        "source": "ML-1183",
+        "relation": "serviced_under",
+        "target": "M-118"
+      },
+      {
+        "source": "DE bearing",
+        "relation": "part_of",
+        "target": "P-204"
+      },
+      {
+        "source": "V. Menon",
+        "relation": "deferred_in",
+        "target": "ML-1183"
+      },
+      {
+        "source": "clause 4.3",
+        "relation": "part_of",
+        "target": "M-118"
+      }
+    ],
+    "pages": 1
+  },
+  "MaintMaster_manual.pdf": {
+    "entities": [
+      {
+        "text": "MAINTMASTER\u00ae",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "EN 13306",
+        "type": "REGULATION"
+      },
+      {
+        "text": "SS-EN 13306",
+        "type": "REGULATION"
+      },
+      {
+        "text": "EN-15341",
+        "type": "REGULATION"
+      },
+      {
+        "text": "EN-13460",
+        "type": "REGULATION"
+      },
+      {
+        "text": "European standards",
+        "type": "REGULATION"
+      },
+      {
+        "text": "Swedish Institute for Standards",
+        "type": "PERSON"
+      },
+      {
+        "text": "Mikael Andersson",
+        "type": "PERSON"
+      },
+      {
+        "text": "MaintMaster Systems",
+        "type": "PERSON"
+      },
+      {
+        "text": "MaintMaster_manual.pdf",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "www.sis.se",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "2016",
+        "type": "DATE"
+      },
+      {
+        "text": "MOTBF",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "MTTR",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "MMDT",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "MWT",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Line 1",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Hydraulic press",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Cutting machine",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Scissor lift",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Welding station",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Robot",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Compressor 1",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Dryer 1-1",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Tank 1-2",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Cooling unit A-1",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Cooling unit B-1",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Cooling central B",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Cooling central A",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Gate 15, Hall B",
+        "type": "LOCATION"
+      },
+      {
+        "text": "Gate 16, Hall B",
+        "type": "LOCATION"
+      },
+      {
+        "text": "Hall B",
+        "type": "LOCATION"
+      },
+      {
+        "text": "Building A",
+        "type": "LOCATION"
+      },
+      {
+        "text": "Unit 2",
+        "type": "LOCATION"
+      },
+      {
+        "text": "Pump House Bay 4",
+        "type": "LOCATION"
+      },
+      {
+        "text": "Incoming goods",
+        "type": "LOCATION"
+      },
+      {
+        "text": "Outgoing goods",
+        "type": "LOCATION"
+      },
+      {
+        "text": "Stockroom",
+        "type": "LOCATION"
+      },
+      {
+        "text": "3 years",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "5000 Euro",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "30-70 people",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "70-100 persons",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "100+ people",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "15-30 people",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "account 5510",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5511",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5511-01",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5511-02",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5511-03",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5512",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5512-01",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5512-02",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5512-03",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5513",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5513-01",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Account 5513-02",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "BAS chart of accounts",
+        "type": "REGULATION"
+      },
+      {
+        "text": "Swedish BAS chart of accounts",
+        "type": "REGULATION"
+      },
+      {
+        "text": "Corrective maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Preventive maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Improvement maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Modification",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Case management",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Immediate corrective maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Deferred corrective maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Predetermined maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Condition-based maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Predictive maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Autonomous maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Operator maintenance",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Root Cause Analysis",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Root Cause Analyses",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "6-sigma",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "FMEA",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "SPL",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "LEAN",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "5S",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "CMMS",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Maintenance system",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "M-118",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "clause 4.3",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "OISD-132",
+        "type": "REGULATION"
+      },
+      {
+        "text": "ISO 10816-3",
+        "type": "REGULATION"
+      },
+      {
+        "text": "Pump P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "DE bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "SKF 6316",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "R. Krishnan",
+        "type": "PERSON"
+      },
+      {
+        "text": "IR-556",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "ML-1183",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "4.6 mm/s RMS",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "62 C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "14 days",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "catastrophic DE bearing seizure",
+        "type": "EVENT"
+      },
+      {
+        "text": "VT-204-DE",
+        "type": "SENSOR"
+      },
+      {
+        "text": "ELEVATED - MONITOR",
+        "type": "STATUS"
+      },
+      {
+        "text": "Maintenance manager",
+        "type": "PERSON"
+      },
+      {
+        "text": "Maintenance supervisor",
+        "type": "PERSON"
+      },
+      {
+        "text": "Maintenance planner",
+        "type": "PERSON"
+      },
+      {
+        "text": "Maintenance technician",
+        "type": "PERSON"
+      },
+      {
+        "text": "Maintenance engineer",
+        "type": "PERSON"
+      },
+      {
+        "text": "breakdown",
+        "type": "EVENT"
+      },
+      {
+        "text": "first edition",
+        "type": "DOCUMENT_REF"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "MaintMaster_manual.pdf",
+        "relation": "governed_by",
+        "target": "EN 13306"
+      },
+      {
+        "source": "MaintMaster_manual.pdf",
+        "relation": "governed_by",
+        "target": "SS-EN 13306"
+      },
+      {
+        "source": "MaintMaster_manual.pdf",
+        "relation": "governed_by",
+        "target": "EN-15341"
+      },
+      {
+        "source": "MaintMaster_manual.pdf",
+        "relation": "governed_by",
+        "target": "EN-13460"
+      },
+      {
+        "source": "MaintMaster_manual.pdf",
+        "relation": "references",
+        "target": "www.sis.se"
+      },
+      {
+        "source": "SS-EN 13306",
+        "relation": "owned_by",
+        "target": "Swedish Institute for Standards"
+      },
+      {
+        "source": "Mikael Andersson",
+        "relation": "part_of",
+        "target": "MaintMaster Systems"
+      },
+      {
+        "source": "MaintMaster_manual.pdf",
+        "relation": "references",
+        "target": "first edition"
+      },
+      {
+        "source": "first edition",
+        "relation": "published_in",
+        "target": "2016"
+      },
+      {
+        "source": "Corrective maintenance",
+        "relation": "part_of",
+        "target": "European standards"
+      },
+      {
+        "source": "Preventive maintenance",
+        "relation": "part_of",
+        "target": "European standards"
+      },
+      {
+        "source": "Improvement maintenance",
+        "relation": "part_of",
+        "target": "European standards"
+      },
+      {
+        "source": "Immediate corrective maintenance",
+        "relation": "part_of",
+        "target": "Corrective maintenance"
+      },
+      {
+        "source": "Deferred corrective maintenance",
+        "relation": "part_of",
+        "target": "Corrective maintenance"
+      },
+      {
+        "source": "Predetermined maintenance",
+        "relation": "part_of",
+        "target": "Preventive maintenance"
+      },
+      {
+        "source": "Condition-based maintenance",
+        "relation": "part_of",
+        "target": "Preventive maintenance"
+      },
+      {
+        "source": "Predictive maintenance",
+        "relation": "part_of",
+        "target": "Preventive maintenance"
+      },
+      {
+        "source": "Autonomous maintenance",
+        "relation": "part_of",
+        "target": "Preventive maintenance"
+      },
+      {
+        "source": "Root Cause Analysis",
+        "relation": "part_of",
+        "target": "Improvement maintenance"
+      },
+      {
+        "source": "CMMS",
+        "relation": "references",
+        "target": "MAINTMASTER\u00ae"
+      },
+      {
+        "source": "Hydraulic press",
+        "relation": "part_of",
+        "target": "Line 1"
+      },
+      {
+        "source": "Cutting machine",
+        "relation": "part_of",
+        "target": "Line 1"
+      },
+      {
+        "source": "Scissor lift",
+        "relation": "part_of",
+        "target": "Line 1"
+      },
+      {
+        "source": "Welding station",
+        "relation": "part_of",
+        "target": "Line 1"
+      },
+      {
+        "source": "Robot",
+        "relation": "part_of",
+        "target": "Line 1"
+      },
+      {
+        "source": "Dryer 1-1",
+        "relation": "part_of",
+        "target": "Compressor 1"
+      },
+      {
+        "source": "Tank 1-2",
+        "relation": "part_of",
+        "target": "Compressor 1"
+      },
+      {
+        "source": "Cooling unit A-1",
+        "relation": "part_of",
+        "target": "Cooling central A"
+      },
+      {
+        "source": "Cooling unit B-1",
+        "relation": "part_of",
+        "target": "Cooling central B"
+      },
+      {
+        "source": "Gate 15, Hall B",
+        "relation": "part_of",
+        "target": "Hall B"
+      },
+      {
+        "source": "Gate 16, Hall B",
+        "relation": "part_of",
+        "target": "Hall B"
+      },
+      {
+        "source": "Stockroom",
+        "relation": "part_of",
+        "target": "Building A"
+      },
+      {
+        "source": "Account 5511-01",
+        "relation": "part_of",
+        "target": "Account 5511"
+      },
+      {
+        "source": "Account 5511-02",
+        "relation": "part_of",
+        "target": "Account 5511"
+      },
+      {
+        "source": "Account 5511-03",
+        "relation": "part_of",
+        "target": "Account 5511"
+      },
+      {
+        "source": "Account 5512-01",
+        "relation": "part_of",
+        "target": "Account 5512"
+      },
+      {
+        "source": "Account 5512-02",
+        "relation": "part_of",
+        "target": "Account 5512"
+      },
+      {
+        "source": "Account 5512-03",
+        "relation": "part_of",
+        "target": "Account 5512"
+      },
+      {
+        "source": "Account 5513-01",
+        "relation": "part_of",
+        "target": "Account 5513"
+      },
+      {
+        "source": "Account 5513-02",
+        "relation": "part_of",
+        "target": "Account 5513"
+      },
+      {
+        "source": "Account 5511",
+        "relation": "tracks",
+        "target": "Preventive maintenance"
+      },
+      {
+        "source": "Account 5512",
+        "relation": "tracks",
+        "target": "Improvement maintenance"
+      },
+      {
+        "source": "Account 5513",
+        "relation": "tracks",
+        "target": "Corrective maintenance"
+      },
+      {
+        "source": "Maintenance supervisor",
+        "relation": "reports_to",
+        "target": "Maintenance manager"
+      },
+      {
+        "source": "Maintenance planner",
+        "relation": "reports_to",
+        "target": "Maintenance manager"
+      },
+      {
+        "source": "Maintenance technician",
+        "relation": "reports_to",
+        "target": "Maintenance supervisor"
+      },
+      {
+        "source": "Maintenance engineer",
+        "relation": "reports_to",
+        "target": "Maintenance manager"
+      },
+      {
+        "source": "LEAN",
+        "relation": "incorporates",
+        "target": "5S"
+      },
+      {
+        "source": "6-sigma",
+        "relation": "part_of",
+        "target": "Improvement maintenance"
+      },
+      {
+        "source": "FMEA",
+        "relation": "part_of",
+        "target": "Improvement maintenance"
+      },
+      {
+        "source": "SPL",
+        "relation": "part_of",
+        "target": "Improvement maintenance"
+      }
+    ],
+    "pages": 92
+  },
+  "P-210_pump_manual_extract.pdf": {
+    "entities": [
+      {
+        "text": "P-210",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Centrifugal Pump P-210",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "deep-groove ball bearings",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "DE bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "2000 operating hours",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "ISO VG 68 grade grease",
+        "type": "REGULATION"
+      },
+      {
+        "text": "2.8 mm/s RMS",
+        "type": "MEASUREMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Centrifugal Pump P-210",
+        "relation": "part_of",
+        "target": "P-210"
+      },
+      {
+        "source": "P-210",
+        "relation": "uses",
+        "target": "deep-groove ball bearings"
+      },
+      {
+        "source": "deep-groove ball bearings",
+        "relation": "requires",
+        "target": "ISO VG 68 grade grease"
+      },
+      {
+        "source": "DE bearing",
+        "relation": "part_of",
+        "target": "P-210"
+      }
+    ],
+    "pages": 1
+  },
+  "PWI_IOM.pdf": {
+    "entities": [
+      {
+        "text": "PWI_IOM.pdf",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "STDS-PWI-IOM-TM-0.0",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "PumpWorks 610 PWI pump",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "API Standard 610",
+        "type": "REGULATION"
+      },
+      {
+        "text": "American Petroleum Institute (API) Standard 610",
+        "type": "REGULATION"
+      },
+      {
+        "text": "PWI-BB (OH3)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "PWI (OH4)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "pump driver stand (3160)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "shaft (2210)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "mechanical seal (4200)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Figure 3",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "ISO/ASTM VG 32 oil",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "6 months",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "1 quart",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "3.5 turns",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "180\u00ba",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Hydraulic Institute",
+        "type": "REGULATION"
+      },
+      {
+        "text": "five to ten pipe diameters",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Figure 1",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Figure 2",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "seal drive collar",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "0.005\" T.I.R.",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "0.002\"",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "0.0005\"",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "300\u00ba F",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "150\u00ba C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "150\u00ba F",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "37.8\u00ba C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "75\u00ba F",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "24\u00ba C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "minimum continuous safe flow (MCSF)",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "pump data sheet",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Section 4",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Section 7",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Section 8",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "60 Minutes",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "10 minute intervals",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "24 hours",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "180\u00b0F",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "82.2\u00b0C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "160\u00b0F",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "71.1\u00b0C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "125\u00b0 - 180\u00b0 F",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "50\u00ba - 80\u00ba C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "190\u00b0 F",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "88\u00b0 C",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "25\u00b0F",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "impeller (2200)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "casing (1110)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "impeller wear rings (1500.1, 1500.2, 2300.1, 2300.2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "casing cover (4100)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Table 2",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "API 610",
+        "type": "REGULATION"
+      },
+      {
+        "text": "0.005\"",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "127 micrometers",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "500\u00ba F",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": ".002 inch TIR",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "sleeve bearing (3000)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "impeller key (6700.1)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "pump shaft (2110)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "casing gasket (4510)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "casing stud nuts (6580.1)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "driver stand (3160)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "cap screws (6577)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "seal gland nuts (6580.2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "bearing bracket (849)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "cartridge seal (4200)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "throat bushing (847)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "oil rings (817)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "thrust bearing (881-2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "radial bearing (881-1)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "inboard bearing seal (829-1)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "outboard bearing end cap/bearing seal assembly (813-2,829-2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "plastic shims (815-3)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "0.003\" to 0.005\"",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "inboard heat sink (829-2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "outboard fan (817)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "fan shroud (812)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "pump coupling hub",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "drive key (811-2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "impeller (805)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "shaft (820)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "casing cover (802)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "casing (800)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "gland gasket (815-2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "impeller key (811-1)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "casing gasket (815-1)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "Table 3",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "ASTM A193 GR B7",
+        "type": "REGULATION"
+      },
+      {
+        "text": "Table 4",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Section 1",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Section 2",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Section 3",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Section 5",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Section 6",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Section 9",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Section 10",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "Section 11",
+        "type": "PROCEDURE"
+      },
+      {
+        "text": "PumpWorks 610",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "impeller locknut (2912)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "impeller locknut setscrew",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "seal setting devices",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "coupling spacer",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "coupling guard",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "coupling key (6700.2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "nuts (6580.2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "nuts (6580.1)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "jack bolts",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "locknut (821-1)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "lockwasher (831)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "locknut (821-2)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "seal chamber bore",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "motor coupling hub",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "case cover plate",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "motor hub",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "motor mounting bolts",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "suction flange",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "discharge flange",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "suction valve",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "discharge valve",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "check valve",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "gate valve",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "constant level oiler",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "oil vent plug",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "bearing housing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "oil flinger",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "pumping ring",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "fan guard (812)",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "fan (853)",
+        "type": "EQUIPMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "PumpWorks 610 PWI pump",
+        "relation": "governed_by",
+        "target": "API Standard 610"
+      },
+      {
+        "source": "PWI-BB (OH3)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "PWI (OH4)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "pump driver stand (3160)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "shaft (2210)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "mechanical seal (4200)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "PumpWorks 610 PWI pump",
+        "relation": "references",
+        "target": "Figure 3"
+      },
+      {
+        "source": "seal drive collar",
+        "relation": "part_of",
+        "target": "mechanical seal (4200)"
+      },
+      {
+        "source": "bearing housing",
+        "relation": "part_of",
+        "target": "PWI-BB (OH3)"
+      },
+      {
+        "source": "pump data sheet",
+        "relation": "references",
+        "target": "minimum continuous safe flow (MCSF)"
+      },
+      {
+        "source": "Section 4",
+        "relation": "references",
+        "target": "Figure 1"
+      },
+      {
+        "source": "Section 4",
+        "relation": "references",
+        "target": "Figure 2"
+      },
+      {
+        "source": "Section 7",
+        "relation": "references",
+        "target": "Table 1"
+      },
+      {
+        "source": "Section 8",
+        "relation": "references",
+        "target": "Table 4"
+      },
+      {
+        "source": "impeller (2200)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "casing (1110)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "impeller wear rings (1500.1, 1500.2, 2300.1, 2300.2)",
+        "relation": "part_of",
+        "target": "impeller (2200)"
+      },
+      {
+        "source": "casing cover (4100)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "Table 2",
+        "relation": "governed_by",
+        "target": "API 610"
+      },
+      {
+        "source": "sleeve bearing (3000)",
+        "relation": "part_of",
+        "target": "casing cover (4100)"
+      },
+      {
+        "source": "impeller key (6700.1)",
+        "relation": "part_of",
+        "target": "pump shaft (2110)"
+      },
+      {
+        "source": "casing gasket (4510)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "casing stud nuts (6580.1)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "driver stand (3160)",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "cap screws (6577)",
+        "relation": "part_of",
+        "target": "driver stand (3160)"
+      },
+      {
+        "source": "seal gland nuts (6580.2)",
+        "relation": "part_of",
+        "target": "mechanical seal (4200)"
+      },
+      {
+        "source": "bearing bracket (849)",
+        "relation": "part_of",
+        "target": "PWI-BB (OH3)"
+      },
+      {
+        "source": "cartridge seal (4200)",
+        "relation": "part_of",
+        "target": "casing cover (4100)"
+      },
+      {
+        "source": "throat bushing (847)",
+        "relation": "part_of",
+        "target": "casing cover (802)"
+      },
+      {
+        "source": "oil rings (817)",
+        "relation": "part_of",
+        "target": "shaft (820)"
+      },
+      {
+        "source": "thrust bearing (881-2)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      },
+      {
+        "source": "radial bearing (881-1)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      },
+      {
+        "source": "inboard bearing seal (829-1)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      },
+      {
+        "source": "outboard bearing end cap/bearing seal assembly (813-2,829-2)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      },
+      {
+        "source": "plastic shims (815-3)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      },
+      {
+        "source": "inboard heat sink (829-2)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      },
+      {
+        "source": "outboard fan (817)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      },
+      {
+        "source": "fan shroud (812)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      },
+      {
+        "source": "pump coupling hub",
+        "relation": "part_of",
+        "target": "shaft (820)"
+      },
+      {
+        "source": "drive key (811-2)",
+        "relation": "part_of",
+        "target": "pump coupling hub"
+      },
+      {
+        "source": "impeller (805)",
+        "relation": "part_of",
+        "target": "shaft (820)"
+      },
+      {
+        "source": "casing cover (802)",
+        "relation": "part_of",
+        "target": "PWI-BB (OH3)"
+      },
+      {
+        "source": "casing (800)",
+        "relation": "part_of",
+        "target": "PWI-BB (OH3)"
+      },
+      {
+        "source": "gland gasket (815-2)",
+        "relation": "part_of",
+        "target": "casing cover (802)"
+      },
+      {
+        "source": "impeller key (811-1)",
+        "relation": "part_of",
+        "target": "impeller (805)"
+      },
+      {
+        "source": "casing gasket (815-1)",
+        "relation": "part_of",
+        "target": "casing (800)"
+      },
+      {
+        "source": "Table 3",
+        "relation": "governed_by",
+        "target": "ASTM A193 GR B7"
+      },
+      {
+        "source": "Section 9",
+        "relation": "references",
+        "target": "Table 4"
+      },
+      {
+        "source": "impeller locknut (2912)",
+        "relation": "part_of",
+        "target": "impeller (2200)"
+      },
+      {
+        "source": "seal setting devices",
+        "relation": "part_of",
+        "target": "mechanical seal (4200)"
+      },
+      {
+        "source": "coupling spacer",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "coupling guard",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "coupling key (6700.2)",
+        "relation": "part_of",
+        "target": "pump coupling hub"
+      },
+      {
+        "source": "nuts (6580.2)",
+        "relation": "part_of",
+        "target": "mechanical seal (4200)"
+      },
+      {
+        "source": "nuts (6580.1)",
+        "relation": "part_of",
+        "target": "casing cover (4100)"
+      },
+      {
+        "source": "jack bolts",
+        "relation": "part_of",
+        "target": "casing cover (4100)"
+      },
+      {
+        "source": "locknut (821-1)",
+        "relation": "part_of",
+        "target": "impeller (805)"
+      },
+      {
+        "source": "lockwasher (831)",
+        "relation": "part_of",
+        "target": "thrust bearing (881-2)"
+      },
+      {
+        "source": "locknut (821-2)",
+        "relation": "part_of",
+        "target": "thrust bearing (881-2)"
+      },
+      {
+        "source": "seal chamber bore",
+        "relation": "part_of",
+        "target": "casing cover (4100)"
+      },
+      {
+        "source": "motor coupling hub",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "case cover plate",
+        "relation": "part_of",
+        "target": "casing cover (4100)"
+      },
+      {
+        "source": "motor hub",
+        "relation": "part_of",
+        "target": "motor coupling hub"
+      },
+      {
+        "source": "motor mounting bolts",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "suction flange",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "discharge flange",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "suction valve",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "discharge valve",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "check valve",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "gate valve",
+        "relation": "part_of",
+        "target": "PumpWorks 610 PWI pump"
+      },
+      {
+        "source": "constant level oiler",
+        "relation": "part_of",
+        "target": "bearing housing"
+      },
+      {
+        "source": "oil vent plug",
+        "relation": "part_of",
+        "target": "bearing housing"
+      },
+      {
+        "source": "oil flinger",
+        "relation": "part_of",
+        "target": "bearing housing"
+      },
+      {
+        "source": "pumping ring",
+        "relation": "part_of",
+        "target": "bearing housing"
+      },
+      {
+        "source": "fan guard (812)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      },
+      {
+        "source": "fan (853)",
+        "relation": "part_of",
+        "target": "bearing bracket (849)"
+      }
+    ],
+    "pages": 26
+  },
+  "SH-0717_shift_handover.pdf": {
+    "entities": [
+      {
+        "text": "SH-0717_shift_handover.pdf",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Unit 2",
+        "type": "LOCATION"
+      },
+      {
+        "text": "18 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "P-205",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "P-210",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "P-201",
+        "type": "EQUIPMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "P-204",
+        "relation": "part_of",
+        "target": "Unit 2"
+      },
+      {
+        "source": "P-205",
+        "relation": "part_of",
+        "target": "Unit 2"
+      },
+      {
+        "source": "P-210",
+        "relation": "part_of",
+        "target": "Unit 2"
+      },
+      {
+        "source": "P-201",
+        "relation": "part_of",
+        "target": "Unit 2"
+      }
+    ],
+    "pages": 1
+  },
+  "SOP-09_pumphouse_safety.pdf": {
+    "entities": [
+      {
+        "text": "SOP-09",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Pump House Confined Areas",
+        "type": "LOCATION"
+      },
+      {
+        "text": "M-118",
+        "type": "PROCEDURE"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "SOP-09",
+        "relation": "references",
+        "target": "M-118"
+      }
+    ],
+    "pages": 1
+  },
+  "VS-204_vibration_trend_log.pdf": {
+    "entities": [
+      {
+        "text": "VS-204",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "Pump P-204",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "DE Bearing",
+        "type": "EQUIPMENT"
+      },
+      {
+        "text": "VT-204-DE",
+        "type": "SENSOR"
+      },
+      {
+        "text": "IR-556",
+        "type": "DOCUMENT_REF"
+      },
+      {
+        "text": "7.1 mm/s RMS",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "ISO 10816-3",
+        "type": "REGULATION"
+      },
+      {
+        "text": "01 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "4.6",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Zone C - Elevated",
+        "type": "STATUS"
+      },
+      {
+        "text": "08 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "4.9",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "12 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "5.8",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Zone C - Rising",
+        "type": "STATUS"
+      },
+      {
+        "text": "17 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "7.4",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Zone D - ALARM",
+        "type": "STATUS"
+      },
+      {
+        "text": "19 Jul 2024",
+        "type": "DATE"
+      },
+      {
+        "text": "9.1",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "Zone D - CRITICAL",
+        "type": "STATUS"
+      },
+      {
+        "text": "five days",
+        "type": "MEASUREMENT"
+      },
+      {
+        "text": "9.1 mm/s",
+        "type": "MEASUREMENT"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "VT-204-DE",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      },
+      {
+        "source": "VT-204-DE",
+        "relation": "part_of",
+        "target": "DE Bearing"
+      },
+      {
+        "source": "VS-204",
+        "relation": "references",
+        "target": "IR-556"
+      },
+      {
+        "source": "7.1 mm/s RMS",
+        "relation": "governed_by",
+        "target": "ISO 10816-3"
+      },
+      {
+        "source": "DE Bearing",
+        "relation": "part_of",
+        "target": "Pump P-204"
+      }
+    ],
+    "pages": 1
+  }
+}

@@ -1,0 +1,5485 @@
+{
+  "directed": true,
+  "multigraph": true,
+  "graph": {},
+  "nodes": [
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "INC-2024-07"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "22 Jul 2024"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "IR-560_motor_inspection.pdf",
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf",
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Pump P-204"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Boiler Feed Water"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf"
+      ],
+      "types": [
+        "EVENT"
+      ],
+      "id": "Catastrophic DE bearing seizure"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "38 hours"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "Shift Engineer"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
+        "MaintMaster_manual.pdf",
+        "SH-0717_shift_handover.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Unit 2"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf"
+      ],
+      "types": [
+        "STATUS"
+      ],
+      "id": "High"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf",
+        "P-210_pump_manual_extract.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "DE bearing"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "SKF 6316"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "shaft"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "standby pump P-205"
+    },
+    {
+      "doc_ids": [
+        "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
+        "SH-0717_shift_handover.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "P-205"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "IR-560_motor_inspection.pdf",
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf",
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "IR-556"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "01 Jul 2024"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Centrifugal Pump P-204"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-560_motor_inspection.pdf",
+        "LS-07_lubrication_spec.pdf",
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "SH-0717_shift_handover.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "P-204"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Unit 2, Pump House Bay 4"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "IR-560_motor_inspection.pdf",
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "R. Krishnan"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "ISO 18436-2 Cat II"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "M-118_procedure.pdf",
+        "M-142_seal_procedure.pdf",
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf",
+        "SOP-09_pumphouse_safety.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "M-118"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "4.6 mm/s RMS"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "2.1 mm/s RMS"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "MaintMaster_manual.pdf",
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "ISO 10816-3"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "7.1 mm/s"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "62 C"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "STATUS"
+      ],
+      "id": "ELEVATED - MONITOR"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Procedure M-118"
+    },
+    {
+      "doc_ids": [
+        "IR-556_inspection_report_SCANNED.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "P-204 DE bearing"
+    },
+    {
+      "doc_ids": [
+        "IR-560_motor_inspection.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "IR-560"
+    },
+    {
+      "doc_ids": [
+        "IR-560_motor_inspection.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "M-204"
+    },
+    {
+      "doc_ids": [
+        "IR-560_motor_inspection.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "03 Jul 2024"
+    },
+    {
+      "doc_ids": [
+        "IR-560_motor_inspection.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "3.0 mm/s"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH Centrifugal Pump"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-5"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-10"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-15"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-20"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-25"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-35"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-40"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-45"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-50"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-60"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-70"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-75"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-85"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "LKH-90"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "impeller"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "impeller screw"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "stub shaft"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "pump casing"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "back plate"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "shaft seal"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "single shaft seal"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "double mechanical shaft seal"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "flushed shaft seal"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "motor"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "adaptor"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "O-ring"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "stationary seal ring"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "rotating seal ring"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "spring"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "drive ring"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "seal housing"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "compression rings"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "motor shaft"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 3.3"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 3.4"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 4.3"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 5.1"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 5.2"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 5.3"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 5.4"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 5.5"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 5.6"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 5.7"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "section 5.8"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf",
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "clause 4.3"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "Machinery Directive 2006/42/EC"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "RoHS EU Directive 2011/65/EU"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "The Supply of Machinery (Safety) Regulations 2008"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment Regulations 2012"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "IEC metric standard"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "EN60204-1"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "3A standard"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "Lars Kruse Andersen"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "ESE00698-EN31"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "2022-10"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "2022-10-01"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "2020-01-23"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "0.5 mm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "1.0 mm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "10-20 mm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "15 Nm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "20 Nm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "50 Nm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "7 Nm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "40 Nm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "67 Nm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "110 Nm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "600 kPa"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "1000 kPa"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "500 kPa"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "-10\u00b0C to +140\u00b0C"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "70\u00b0C"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "125\u00b0C"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "800 cP"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "0.25 - 0.5 l/min"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "0.75 - 110 kW"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "900 - 4000 rpm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "3000/3600 rpm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "12 months"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "0.5 m"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "100 mm"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "1 bar"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "5 bar"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "3 bar"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Alfa Laval Kolding A/S, Albuen 31, DK-6000 Kolding, Denmark"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Kolding, Denmark"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "AISI 316L"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "EPDM"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "NBR"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "FPM"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "FEP"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "silicon carbide"
+    },
+    {
+      "doc_ids": [
+        "LKH_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Carbon"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "LS-07"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Feed water pumps"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf",
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf"
+      ],
+      "types": [
+        "MEASUREMENT",
+        "REGULATION"
+      ],
+      "id": "ISO VG 68"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "1500 hrs"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Cooling water pumps"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "ISO VG 68 grease"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "2000 hrs"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Fans"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "ISO VG 46"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "3000 hrs"
+    },
+    {
+      "doc_ids": [
+        "LS-07_lubrication_spec.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "1500 operating hours"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Rotating Equipment Condition Monitoring"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Condition Monitoring & Bearing Management, Rotating Equipment"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Centrifugal pumps"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "motors"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "fans"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf",
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "OISD-132"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "Inspection of Rotating Equipment"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Rev 4"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Clause 4.3"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "ISO 10816-3 Zone C"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf",
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "14 days"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Clause 4.4"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf"
+      ],
+      "types": [
+        "STATUS"
+      ],
+      "id": "Zone D"
+    },
+    {
+      "doc_ids": [
+        "M-118_procedure.pdf",
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "7.1 mm/s RMS"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "M-142"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "mechanical seals"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "centrifugal pumps"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "bearing"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Seal faces"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Gland bolts"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Cover bolts"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Coupling"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "45"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "70"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "120"
+    },
+    {
+      "doc_ids": [
+        "M-142_seal_procedure.pdf"
+      ],
+      "types": [
+        "UNKNOWN"
+      ],
+      "id": "Pump Sealing Systems"
+    },
+    {
+      "doc_ids": [
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "ML-1183"
+    },
+    {
+      "doc_ids": [
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "08 Jul 2024"
+    },
+    {
+      "doc_ids": [
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "S. Prakash"
+    },
+    {
+      "doc_ids": [
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "V. Menon"
+    },
+    {
+      "doc_ids": [
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "4.9 mm/s RMS"
+    },
+    {
+      "doc_ids": [
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "SKF 6316 C3"
+    },
+    {
+      "doc_ids": [
+        "ML-1183_maintenance_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "6 weeks"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "MAINTMASTER\u00ae"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "EN 13306"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "SS-EN 13306"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "EN-15341"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "EN-13460"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "European standards"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "Swedish Institute for Standards"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "Mikael Andersson"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "MaintMaster Systems"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "MaintMaster_manual.pdf"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "www.sis.se"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "2016"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "MOTBF"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "MTTR"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "MMDT"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "MWT"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Line 1"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Hydraulic press"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Cutting machine"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Scissor lift"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Welding station"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Robot"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Compressor 1"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Dryer 1-1"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Tank 1-2"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Cooling unit A-1"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Cooling unit B-1"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Cooling central B"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Cooling central A"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Gate 15, Hall B"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Gate 16, Hall B"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Hall B"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Building A"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Pump House Bay 4"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Incoming goods"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Outgoing goods"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Stockroom"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "3 years"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "5000 Euro"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "30-70 people"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "70-100 persons"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "100+ people"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "15-30 people"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "account 5510"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5511"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5511-01"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5511-02"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5511-03"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5512"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5512-01"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5512-02"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5512-03"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5513"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5513-01"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Account 5513-02"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "BAS chart of accounts"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "Swedish BAS chart of accounts"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Corrective maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Preventive maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Improvement maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Modification"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Case management"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Immediate corrective maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Deferred corrective maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Predetermined maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Condition-based maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Predictive maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Autonomous maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Operator maintenance"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Root Cause Analysis"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Root Cause Analyses"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "6-sigma"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "FMEA"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "SPL"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "LEAN"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "5S"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "CMMS"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Maintenance system"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EVENT"
+      ],
+      "id": "catastrophic DE bearing seizure"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf",
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "SENSOR"
+      ],
+      "id": "VT-204-DE"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "Maintenance manager"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "Maintenance supervisor"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "Maintenance planner"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "Maintenance technician"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "PERSON"
+      ],
+      "id": "Maintenance engineer"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "EVENT"
+      ],
+      "id": "breakdown"
+    },
+    {
+      "doc_ids": [
+        "MaintMaster_manual.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "first edition"
+    },
+    {
+      "doc_ids": [
+        "P-210_pump_manual_extract.pdf",
+        "SH-0717_shift_handover.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "P-210"
+    },
+    {
+      "doc_ids": [
+        "P-210_pump_manual_extract.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "Centrifugal Pump P-210"
+    },
+    {
+      "doc_ids": [
+        "P-210_pump_manual_extract.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "deep-groove ball bearings"
+    },
+    {
+      "doc_ids": [
+        "P-210_pump_manual_extract.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "2000 operating hours"
+    },
+    {
+      "doc_ids": [
+        "P-210_pump_manual_extract.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "ISO VG 68 grade grease"
+    },
+    {
+      "doc_ids": [
+        "P-210_pump_manual_extract.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "2.8 mm/s RMS"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "PWI_IOM.pdf"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "STDS-PWI-IOM-TM-0.0"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "PumpWorks 610 PWI pump"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "API Standard 610"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "American Petroleum Institute (API) Standard 610"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "PWI-BB (OH3)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "PWI (OH4)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "pump driver stand (3160)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "shaft (2210)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "mechanical seal (4200)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Figure 3"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "ISO/ASTM VG 32 oil"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "6 months"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "1 quart"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "3.5 turns"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "180\u00ba"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "Hydraulic Institute"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "five to ten pipe diameters"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Figure 1"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Figure 2"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "seal drive collar"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "0.005\" T.I.R."
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "0.002\""
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "0.0005\""
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "300\u00ba F"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "150\u00ba C"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "150\u00ba F"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "37.8\u00ba C"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "75\u00ba F"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "24\u00ba C"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "minimum continuous safe flow (MCSF)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "pump data sheet"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 4"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 7"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 8"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "60 Minutes"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "10 minute intervals"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "24 hours"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "180\u00b0F"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "82.2\u00b0C"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "160\u00b0F"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "71.1\u00b0C"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "125\u00b0 - 180\u00b0 F"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "50\u00ba - 80\u00ba C"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "190\u00b0 F"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "88\u00b0 C"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "25\u00b0F"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "impeller (2200)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "casing (1110)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "impeller wear rings (1500.1, 1500.2, 2300.1, 2300.2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "casing cover (4100)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Table 2"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "API 610"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "0.005\""
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "127 micrometers"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "500\u00ba F"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": ".002 inch TIR"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "sleeve bearing (3000)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "impeller key (6700.1)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "pump shaft (2110)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "casing gasket (4510)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "casing stud nuts (6580.1)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "driver stand (3160)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "cap screws (6577)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "seal gland nuts (6580.2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "bearing bracket (849)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "cartridge seal (4200)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "throat bushing (847)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "oil rings (817)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "thrust bearing (881-2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "radial bearing (881-1)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "inboard bearing seal (829-1)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "outboard bearing end cap/bearing seal assembly (813-2,829-2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "plastic shims (815-3)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "0.003\" to 0.005\""
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "inboard heat sink (829-2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "outboard fan (817)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "fan shroud (812)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "pump coupling hub"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "drive key (811-2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "impeller (805)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "shaft (820)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "casing cover (802)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "casing (800)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "gland gasket (815-2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "impeller key (811-1)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "casing gasket (815-1)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Table 3"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "REGULATION"
+      ],
+      "id": "ASTM A193 GR B7"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "Table 4"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 1"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 2"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 3"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 5"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 6"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 9"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 10"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "PROCEDURE"
+      ],
+      "id": "Section 11"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "PumpWorks 610"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "impeller locknut (2912)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "impeller locknut setscrew"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "seal setting devices"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "coupling spacer"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "coupling guard"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "coupling key (6700.2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "nuts (6580.2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "nuts (6580.1)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "jack bolts"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "locknut (821-1)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "lockwasher (831)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "locknut (821-2)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "seal chamber bore"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "motor coupling hub"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "case cover plate"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "motor hub"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "motor mounting bolts"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "suction flange"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "discharge flange"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "suction valve"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "discharge valve"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "check valve"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "gate valve"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "constant level oiler"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "oil vent plug"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "bearing housing"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "oil flinger"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "pumping ring"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "fan guard (812)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "fan (853)"
+    },
+    {
+      "doc_ids": [
+        "PWI_IOM.pdf"
+      ],
+      "types": [
+        "UNKNOWN"
+      ],
+      "id": "Table 1"
+    },
+    {
+      "doc_ids": [
+        "SH-0717_shift_handover.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "SH-0717_shift_handover.pdf"
+    },
+    {
+      "doc_ids": [
+        "SH-0717_shift_handover.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "18 Jul 2024"
+    },
+    {
+      "doc_ids": [
+        "SH-0717_shift_handover.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "P-201"
+    },
+    {
+      "doc_ids": [
+        "SOP-09_pumphouse_safety.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "SOP-09"
+    },
+    {
+      "doc_ids": [
+        "SOP-09_pumphouse_safety.pdf"
+      ],
+      "types": [
+        "LOCATION"
+      ],
+      "id": "Pump House Confined Areas"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "DOCUMENT_REF"
+      ],
+      "id": "VS-204"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "EQUIPMENT"
+      ],
+      "id": "DE Bearing"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "4.6"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "STATUS"
+      ],
+      "id": "Zone C - Elevated"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "4.9"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "12 Jul 2024"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "5.8"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "STATUS"
+      ],
+      "id": "Zone C - Rising"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "17 Jul 2024"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "7.4"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "STATUS"
+      ],
+      "id": "Zone D - ALARM"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "DATE"
+      ],
+      "id": "19 Jul 2024"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "9.1"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "STATUS"
+      ],
+      "id": "Zone D - CRITICAL"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "five days"
+    },
+    {
+      "doc_ids": [
+        "VS-204_vibration_trend_log.pdf"
+      ],
+      "types": [
+        "MEASUREMENT"
+      ],
+      "id": "9.1 mm/s"
+    }
+  ],
+  "edges": [
+    {
+      "relation": "references",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "INC-2024-07",
+      "target": "Pump P-204",
+      "key": "references@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "reported_by",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "INC-2024-07",
+      "target": "Shift Engineer",
+      "key": "reported_by@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "Pump P-204",
+      "target": "Unit 2",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "drives",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "Pump P-204",
+      "target": "Boiler Feed Water",
+      "key": "drives@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "Pump P-204",
+      "target": "Unit 2, Pump House Bay 4",
+      "key": "part_of@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "inspected_by",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "Pump P-204",
+      "target": "R. Krishnan",
+      "key": "inspected_by@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "Pump P-204",
+      "target": "M-118",
+      "key": "governed_by@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "Pump P-204",
+      "target": "ISO 10816-3",
+      "key": "governed_by@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "inspected_by",
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "source": "Pump P-204",
+      "target": "S. Prakash",
+      "key": "inspected_by@ML-1183_maintenance_log.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "Catastrophic DE bearing seizure",
+      "target": "Pump P-204",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "Catastrophic DE bearing seizure",
+      "target": "Pump P-204",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "Shift Engineer",
+      "target": "Unit 2",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "Shift Engineer",
+      "target": "Unit 2",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "DE bearing",
+      "target": "Pump P-204",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "DE bearing",
+      "target": "Pump P-204",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "DE bearing",
+      "target": "Pump P-204",
+      "key": "part_of@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "DE bearing",
+      "target": "P-204",
+      "key": "part_of@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "source": "DE bearing",
+      "target": "P-204",
+      "key": "part_of@ML-1183_maintenance_log.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
+      "source": "DE bearing",
+      "target": "P-204",
+      "key": "part_of@ML-1183_maintenance_log_SCANNED.pdf"
+    },
+    {
+      "relation": "flagged_by",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "DE bearing",
+      "target": "ELEVATED - MONITOR",
+      "key": "flagged_by@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "P-210_pump_manual_extract.pdf",
+      "source": "DE bearing",
+      "target": "P-210",
+      "key": "part_of@P-210_pump_manual_extract.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "SKF 6316",
+      "target": "Pump P-204",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "SKF 6316",
+      "target": "Pump P-204",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "shaft",
+      "target": "Pump P-204",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "shaft",
+      "target": "Pump P-204",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report.pdf",
+      "source": "P-205",
+      "target": "Unit 2",
+      "key": "part_of@INC-2024-07_incident_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "SH-0717_shift_handover.pdf",
+      "source": "P-205",
+      "target": "Unit 2",
+      "key": "part_of@SH-0717_shift_handover.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "INC-2024-07_incident_report_SCANNED.pdf",
+      "source": "P-205",
+      "target": "Boiler Feed Water",
+      "key": "part_of@INC-2024-07_incident_report_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "Centrifugal Pump P-204",
+      "target": "Unit 2, Pump House Bay 4",
+      "key": "part_of@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "P-204",
+      "target": "Centrifugal Pump P-204",
+      "key": "part_of@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "P-204",
+      "target": "ISO 10816-3",
+      "key": "governed_by@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "serviced_under",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "P-204",
+      "target": "M-118",
+      "key": "serviced_under@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "IR-560_motor_inspection.pdf",
+      "source": "P-204",
+      "target": "IR-556",
+      "key": "references@IR-560_motor_inspection.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "source": "P-204",
+      "target": "IR-556",
+      "key": "references@ML-1183_maintenance_log.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LS-07_lubrication_spec.pdf",
+      "source": "P-204",
+      "target": "Feed water pumps",
+      "key": "part_of@LS-07_lubrication_spec.pdf"
+    },
+    {
+      "relation": "inspected_by",
+      "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
+      "source": "P-204",
+      "target": "S. Prakash",
+      "key": "inspected_by@ML-1183_maintenance_log_SCANNED.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "SH-0717_shift_handover.pdf",
+      "source": "P-204",
+      "target": "Unit 2",
+      "key": "part_of@SH-0717_shift_handover.pdf"
+    },
+    {
+      "relation": "inspected_by",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "R. Krishnan",
+      "target": "Centrifugal Pump P-204",
+      "key": "inspected_by@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "IR-556_inspection_report.pdf",
+      "source": "M-118",
+      "target": "Centrifugal Pump P-204",
+      "key": "governed_by@IR-556_inspection_report.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "M-118_procedure.pdf",
+      "source": "M-118",
+      "target": "OISD-132",
+      "key": "governed_by@M-118_procedure.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "M-118_procedure.pdf",
+      "source": "M-118",
+      "target": "OISD-132",
+      "key": "references@M-118_procedure.pdf"
+    },
+    {
+      "relation": "flagged_by",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "P-204 DE bearing",
+      "target": "IR-556",
+      "key": "flagged_by@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "serviced_under",
+      "doc_id": "IR-556_inspection_report_SCANNED.pdf",
+      "source": "P-204 DE bearing",
+      "target": "M-118",
+      "key": "serviced_under@IR-556_inspection_report_SCANNED.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "IR-560_motor_inspection.pdf",
+      "source": "IR-560",
+      "target": "IR-556",
+      "key": "references@IR-560_motor_inspection.pdf"
+    },
+    {
+      "relation": "drives",
+      "doc_id": "IR-560_motor_inspection.pdf",
+      "source": "M-204",
+      "target": "Pump P-204",
+      "key": "drives@IR-560_motor_inspection.pdf"
+    },
+    {
+      "relation": "drives",
+      "doc_id": "IR-560_motor_inspection.pdf",
+      "source": "M-204",
+      "target": "P-204",
+      "key": "drives@IR-560_motor_inspection.pdf"
+    },
+    {
+      "relation": "inspected_by",
+      "doc_id": "IR-560_motor_inspection.pdf",
+      "source": "M-204",
+      "target": "R. Krishnan",
+      "key": "inspected_by@IR-560_motor_inspection.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "LKH_manual.pdf",
+      "source": "LKH Centrifugal Pump",
+      "target": "Machinery Directive 2006/42/EC",
+      "key": "governed_by@LKH_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "LKH_manual.pdf",
+      "source": "LKH Centrifugal Pump",
+      "target": "RoHS EU Directive 2011/65/EU",
+      "key": "governed_by@LKH_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "LKH_manual.pdf",
+      "source": "LKH Centrifugal Pump",
+      "target": "The Supply of Machinery (Safety) Regulations 2008",
+      "key": "governed_by@LKH_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "LKH_manual.pdf",
+      "source": "LKH Centrifugal Pump",
+      "target": "The Restriction of the Use of Certain Hazardous Substances in Electrical and Electronic Equipment Regulations 2012",
+      "key": "governed_by@LKH_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "LKH_manual.pdf",
+      "source": "LKH Centrifugal Pump",
+      "target": "3A standard",
+      "key": "governed_by@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "impeller",
+      "target": "LKH Centrifugal Pump",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "impeller screw",
+      "target": "impeller",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "stub shaft",
+      "target": "LKH Centrifugal Pump",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "pump casing",
+      "target": "LKH Centrifugal Pump",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "back plate",
+      "target": "LKH Centrifugal Pump",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "shaft seal",
+      "target": "LKH Centrifugal Pump",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "single shaft seal",
+      "target": "shaft seal",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "double mechanical shaft seal",
+      "target": "shaft seal",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "flushed shaft seal",
+      "target": "shaft seal",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "drives",
+      "doc_id": "LKH_manual.pdf",
+      "source": "motor",
+      "target": "LKH Centrifugal Pump",
+      "key": "drives@LKH_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "LKH_manual.pdf",
+      "source": "motor",
+      "target": "IEC metric standard",
+      "key": "governed_by@LKH_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "LKH_manual.pdf",
+      "source": "motor",
+      "target": "EN60204-1",
+      "key": "governed_by@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "adaptor",
+      "target": "LKH Centrifugal Pump",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "O-ring",
+      "target": "shaft seal",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "stationary seal ring",
+      "target": "shaft seal",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "rotating seal ring",
+      "target": "shaft seal",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "spring",
+      "target": "shaft seal",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "drive ring",
+      "target": "shaft seal",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "seal housing",
+      "target": "shaft seal",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "compression rings",
+      "target": "stub shaft",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "motor shaft",
+      "target": "motor",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "LKH_manual.pdf",
+      "source": "section 5.4",
+      "target": "section 3.3",
+      "key": "references@LKH_manual.pdf"
+    },
+    {
+      "relation": "serviced_under",
+      "doc_id": "LKH_manual.pdf",
+      "source": "section 5.7",
+      "target": "LKH-5",
+      "key": "serviced_under@LKH_manual.pdf"
+    },
+    {
+      "relation": "serviced_under",
+      "doc_id": "LKH_manual.pdf",
+      "source": "section 5.8",
+      "target": "LKH-10",
+      "key": "serviced_under@LKH_manual.pdf"
+    },
+    {
+      "relation": "serviced_under",
+      "doc_id": "LKH_manual.pdf",
+      "source": "section 5.8",
+      "target": "LKH-90",
+      "key": "serviced_under@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "source": "clause 4.3",
+      "target": "M-118",
+      "key": "part_of@ML-1183_maintenance_log.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
+      "source": "clause 4.3",
+      "target": "M-118",
+      "key": "part_of@ML-1183_maintenance_log_SCANNED.pdf"
+    },
+    {
+      "relation": "approved",
+      "doc_id": "LKH_manual.pdf",
+      "source": "Lars Kruse Andersen",
+      "target": "ESE00698-EN31",
+      "key": "approved@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "EPDM",
+      "target": "O-ring",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "silicon carbide",
+      "target": "stationary seal ring",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "LKH_manual.pdf",
+      "source": "Carbon",
+      "target": "rotating seal ring",
+      "key": "part_of@LKH_manual.pdf"
+    },
+    {
+      "relation": "requires_lubricant",
+      "doc_id": "LS-07_lubrication_spec.pdf",
+      "source": "Feed water pumps",
+      "target": "ISO VG 68",
+      "key": "requires_lubricant@LS-07_lubrication_spec.pdf"
+    },
+    {
+      "relation": "requires_lubricant",
+      "doc_id": "LS-07_lubrication_spec.pdf",
+      "source": "Cooling water pumps",
+      "target": "ISO VG 68 grease",
+      "key": "requires_lubricant@LS-07_lubrication_spec.pdf"
+    },
+    {
+      "relation": "requires_lubricant",
+      "doc_id": "LS-07_lubrication_spec.pdf",
+      "source": "Fans",
+      "target": "ISO VG 46",
+      "key": "requires_lubricant@LS-07_lubrication_spec.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "M-118_procedure.pdf",
+      "source": "Clause 4.3",
+      "target": "M-118",
+      "key": "part_of@M-118_procedure.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "M-118_procedure.pdf",
+      "source": "Clause 4.3",
+      "target": "ISO 10816-3 Zone C",
+      "key": "references@M-118_procedure.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "M-118_procedure.pdf",
+      "source": "Clause 4.4",
+      "target": "M-118",
+      "key": "part_of@M-118_procedure.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "VS-204_vibration_trend_log.pdf",
+      "source": "7.1 mm/s RMS",
+      "target": "ISO 10816-3",
+      "key": "governed_by@VS-204_vibration_trend_log.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "M-142_seal_procedure.pdf",
+      "source": "M-142",
+      "target": "M-118",
+      "key": "references@M-142_seal_procedure.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "M-142_seal_procedure.pdf",
+      "source": "M-142",
+      "target": "Pump Sealing Systems",
+      "key": "part_of@M-142_seal_procedure.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "source": "ML-1183",
+      "target": "Pump P-204",
+      "key": "references@ML-1183_maintenance_log.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "source": "ML-1183",
+      "target": "IR-556",
+      "key": "references@ML-1183_maintenance_log.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
+      "source": "ML-1183",
+      "target": "IR-556",
+      "key": "references@ML-1183_maintenance_log_SCANNED.pdf"
+    },
+    {
+      "relation": "serviced_under",
+      "doc_id": "ML-1183_maintenance_log.pdf",
+      "source": "ML-1183",
+      "target": "M-118",
+      "key": "serviced_under@ML-1183_maintenance_log.pdf"
+    },
+    {
+      "relation": "serviced_under",
+      "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
+      "source": "ML-1183",
+      "target": "M-118",
+      "key": "serviced_under@ML-1183_maintenance_log_SCANNED.pdf"
+    },
+    {
+      "relation": "deferred_in",
+      "doc_id": "ML-1183_maintenance_log_SCANNED.pdf",
+      "source": "V. Menon",
+      "target": "ML-1183",
+      "key": "deferred_in@ML-1183_maintenance_log_SCANNED.pdf"
+    },
+    {
+      "relation": "owned_by",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "SS-EN 13306",
+      "target": "Swedish Institute for Standards",
+      "key": "owned_by@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Mikael Andersson",
+      "target": "MaintMaster Systems",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "MaintMaster_manual.pdf",
+      "target": "EN 13306",
+      "key": "governed_by@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "MaintMaster_manual.pdf",
+      "target": "SS-EN 13306",
+      "key": "governed_by@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "MaintMaster_manual.pdf",
+      "target": "EN-15341",
+      "key": "governed_by@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "MaintMaster_manual.pdf",
+      "target": "EN-13460",
+      "key": "governed_by@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "MaintMaster_manual.pdf",
+      "target": "www.sis.se",
+      "key": "references@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "MaintMaster_manual.pdf",
+      "target": "first edition",
+      "key": "references@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Hydraulic press",
+      "target": "Line 1",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Cutting machine",
+      "target": "Line 1",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Scissor lift",
+      "target": "Line 1",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Welding station",
+      "target": "Line 1",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Robot",
+      "target": "Line 1",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Dryer 1-1",
+      "target": "Compressor 1",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Tank 1-2",
+      "target": "Compressor 1",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Cooling unit A-1",
+      "target": "Cooling central A",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Cooling unit B-1",
+      "target": "Cooling central B",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Gate 15, Hall B",
+      "target": "Hall B",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Gate 16, Hall B",
+      "target": "Hall B",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Stockroom",
+      "target": "Building A",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "tracks",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5511",
+      "target": "Preventive maintenance",
+      "key": "tracks@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5511-01",
+      "target": "Account 5511",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5511-02",
+      "target": "Account 5511",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5511-03",
+      "target": "Account 5511",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "tracks",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5512",
+      "target": "Improvement maintenance",
+      "key": "tracks@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5512-01",
+      "target": "Account 5512",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5512-02",
+      "target": "Account 5512",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5512-03",
+      "target": "Account 5512",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "tracks",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5513",
+      "target": "Corrective maintenance",
+      "key": "tracks@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5513-01",
+      "target": "Account 5513",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Account 5513-02",
+      "target": "Account 5513",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Corrective maintenance",
+      "target": "European standards",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Preventive maintenance",
+      "target": "European standards",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Improvement maintenance",
+      "target": "European standards",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Immediate corrective maintenance",
+      "target": "Corrective maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Deferred corrective maintenance",
+      "target": "Corrective maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Predetermined maintenance",
+      "target": "Preventive maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Condition-based maintenance",
+      "target": "Preventive maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Predictive maintenance",
+      "target": "Preventive maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Autonomous maintenance",
+      "target": "Preventive maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Root Cause Analysis",
+      "target": "Improvement maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "6-sigma",
+      "target": "Improvement maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "FMEA",
+      "target": "Improvement maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "SPL",
+      "target": "Improvement maintenance",
+      "key": "part_of@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "incorporates",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "LEAN",
+      "target": "5S",
+      "key": "incorporates@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "CMMS",
+      "target": "MAINTMASTER\u00ae",
+      "key": "references@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "VS-204_vibration_trend_log.pdf",
+      "source": "VT-204-DE",
+      "target": "Pump P-204",
+      "key": "part_of@VS-204_vibration_trend_log.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "VS-204_vibration_trend_log.pdf",
+      "source": "VT-204-DE",
+      "target": "DE Bearing",
+      "key": "part_of@VS-204_vibration_trend_log.pdf"
+    },
+    {
+      "relation": "reports_to",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Maintenance supervisor",
+      "target": "Maintenance manager",
+      "key": "reports_to@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "reports_to",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Maintenance planner",
+      "target": "Maintenance manager",
+      "key": "reports_to@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "reports_to",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Maintenance technician",
+      "target": "Maintenance supervisor",
+      "key": "reports_to@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "reports_to",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "Maintenance engineer",
+      "target": "Maintenance manager",
+      "key": "reports_to@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "published_in",
+      "doc_id": "MaintMaster_manual.pdf",
+      "source": "first edition",
+      "target": "2016",
+      "key": "published_in@MaintMaster_manual.pdf"
+    },
+    {
+      "relation": "uses",
+      "doc_id": "P-210_pump_manual_extract.pdf",
+      "source": "P-210",
+      "target": "deep-groove ball bearings",
+      "key": "uses@P-210_pump_manual_extract.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "SH-0717_shift_handover.pdf",
+      "source": "P-210",
+      "target": "Unit 2",
+      "key": "part_of@SH-0717_shift_handover.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "P-210_pump_manual_extract.pdf",
+      "source": "Centrifugal Pump P-210",
+      "target": "P-210",
+      "key": "part_of@P-210_pump_manual_extract.pdf"
+    },
+    {
+      "relation": "requires",
+      "doc_id": "P-210_pump_manual_extract.pdf",
+      "source": "deep-groove ball bearings",
+      "target": "ISO VG 68 grade grease",
+      "key": "requires@P-210_pump_manual_extract.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "PumpWorks 610 PWI pump",
+      "target": "API Standard 610",
+      "key": "governed_by@PWI_IOM.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "PumpWorks 610 PWI pump",
+      "target": "Figure 3",
+      "key": "references@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "PWI-BB (OH3)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "PWI (OH4)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "pump driver stand (3160)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "shaft (2210)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "mechanical seal (4200)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "seal drive collar",
+      "target": "mechanical seal (4200)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "pump data sheet",
+      "target": "minimum continuous safe flow (MCSF)",
+      "key": "references@PWI_IOM.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "Section 4",
+      "target": "Figure 1",
+      "key": "references@PWI_IOM.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "Section 4",
+      "target": "Figure 2",
+      "key": "references@PWI_IOM.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "Section 7",
+      "target": "Table 1",
+      "key": "references@PWI_IOM.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "Section 8",
+      "target": "Table 4",
+      "key": "references@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "impeller (2200)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "casing (1110)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "impeller wear rings (1500.1, 1500.2, 2300.1, 2300.2)",
+      "target": "impeller (2200)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "casing cover (4100)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "Table 2",
+      "target": "API 610",
+      "key": "governed_by@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "sleeve bearing (3000)",
+      "target": "casing cover (4100)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "impeller key (6700.1)",
+      "target": "pump shaft (2110)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "casing gasket (4510)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "casing stud nuts (6580.1)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "driver stand (3160)",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "cap screws (6577)",
+      "target": "driver stand (3160)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "seal gland nuts (6580.2)",
+      "target": "mechanical seal (4200)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "bearing bracket (849)",
+      "target": "PWI-BB (OH3)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "cartridge seal (4200)",
+      "target": "casing cover (4100)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "throat bushing (847)",
+      "target": "casing cover (802)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "oil rings (817)",
+      "target": "shaft (820)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "thrust bearing (881-2)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "radial bearing (881-1)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "inboard bearing seal (829-1)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "outboard bearing end cap/bearing seal assembly (813-2,829-2)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "plastic shims (815-3)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "inboard heat sink (829-2)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "outboard fan (817)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "fan shroud (812)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "pump coupling hub",
+      "target": "shaft (820)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "drive key (811-2)",
+      "target": "pump coupling hub",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "impeller (805)",
+      "target": "shaft (820)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "casing cover (802)",
+      "target": "PWI-BB (OH3)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "casing (800)",
+      "target": "PWI-BB (OH3)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "gland gasket (815-2)",
+      "target": "casing cover (802)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "impeller key (811-1)",
+      "target": "impeller (805)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "casing gasket (815-1)",
+      "target": "casing (800)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "governed_by",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "Table 3",
+      "target": "ASTM A193 GR B7",
+      "key": "governed_by@PWI_IOM.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "Section 9",
+      "target": "Table 4",
+      "key": "references@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "impeller locknut (2912)",
+      "target": "impeller (2200)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "seal setting devices",
+      "target": "mechanical seal (4200)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "coupling spacer",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "coupling guard",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "coupling key (6700.2)",
+      "target": "pump coupling hub",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "nuts (6580.2)",
+      "target": "mechanical seal (4200)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "nuts (6580.1)",
+      "target": "casing cover (4100)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "jack bolts",
+      "target": "casing cover (4100)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "locknut (821-1)",
+      "target": "impeller (805)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "lockwasher (831)",
+      "target": "thrust bearing (881-2)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "locknut (821-2)",
+      "target": "thrust bearing (881-2)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "seal chamber bore",
+      "target": "casing cover (4100)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "motor coupling hub",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "case cover plate",
+      "target": "casing cover (4100)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "motor hub",
+      "target": "motor coupling hub",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "motor mounting bolts",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "suction flange",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "discharge flange",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "suction valve",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "discharge valve",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "check valve",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "gate valve",
+      "target": "PumpWorks 610 PWI pump",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "constant level oiler",
+      "target": "bearing housing",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "oil vent plug",
+      "target": "bearing housing",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "bearing housing",
+      "target": "PWI-BB (OH3)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "oil flinger",
+      "target": "bearing housing",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "pumping ring",
+      "target": "bearing housing",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "fan guard (812)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "PWI_IOM.pdf",
+      "source": "fan (853)",
+      "target": "bearing bracket (849)",
+      "key": "part_of@PWI_IOM.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "SH-0717_shift_handover.pdf",
+      "source": "P-201",
+      "target": "Unit 2",
+      "key": "part_of@SH-0717_shift_handover.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "SOP-09_pumphouse_safety.pdf",
+      "source": "SOP-09",
+      "target": "M-118",
+      "key": "references@SOP-09_pumphouse_safety.pdf"
+    },
+    {
+      "relation": "references",
+      "doc_id": "VS-204_vibration_trend_log.pdf",
+      "source": "VS-204",
+      "target": "IR-556",
+      "key": "references@VS-204_vibration_trend_log.pdf"
+    },
+    {
+      "relation": "part_of",
+      "doc_id": "VS-204_vibration_trend_log.pdf",
+      "source": "DE Bearing",
+      "target": "Pump P-204",
+      "key": "part_of@VS-204_vibration_trend_log.pdf"
+    }
+  ]
+}

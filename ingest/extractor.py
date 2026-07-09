@@ -89,7 +89,7 @@ def extract_document(doc_id: str, full_text: str, client: Anthropic = None,
 
     message = client.messages.create(
         model=model,
-        max_tokens=2000,
+        max_tokens=8192,
         system=EXTRACTION_SYSTEM_PROMPT,
         messages=[{
             "role": "user",

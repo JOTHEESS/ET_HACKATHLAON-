@@ -111,4 +111,22 @@ Keyword search fails this. Graph traversal answers it correctly.
       confirmed the rendered answer, confidence badge, citations, and
       expander contents all matched the synthesis agent's output -
       see screenshots from that run for the golden-path proof.
-- [ ] Benchmark harness (keyword vs hybrid comparison)
+- [x] Benchmark harness (evaluate.py) - scores vector-only retrieval vs
+      the RRF hybrid on all 8 benchmark questions using recall@10 of
+      each question's expected "hops". Results saved to
+      data/eval/benchmark_results.json.
+      By retrieval_type: graph_only avg recall improved 0.38 -> 0.48
+      (4 questions); keyword_answerable and hybrid types held flat at
+      1.00 for both methods (2 questions each) - the control case
+      working as intended, hybrid doesn't cost anything on easy lookups.
+      Q01_STAR (the flagship demo question) showed the clearest win:
+      0.20 -> 0.60 recall (vector found 1 of 5 chain docs, hybrid found 3).
+      Caveat worth knowing: benchmark "hops" mix document IDs with
+      entity/regulation IDs that aren't documents at all (e.g. Q02's
+      hops are ["P-204", "M-118", "OISD-132"] - only M-118 is an actual
+      filename), so some questions have a recall ceiling below 1.0
+      regardless of retrieval quality. Read in that light: Q06's 0.33
+      is actually a perfect hit on its one real document target
+      (IR-560), not a partial miss. Q02's 0.00 IS a real miss, though -
+      confirms the M-118 ranking gap flagged back in stage 5 is genuine
+      and still unresolved.

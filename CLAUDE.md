@@ -85,6 +85,19 @@ Keyword search fails this. Graph traversal answers it correctly.
       visible to the synthesis agent because IR-556/ML-1183 quote the
       procedure by name, but this is worth re-checking once the
       benchmark harness (stage 7) can score it objectively.
-- [ ] Synthesis agent
+- [x] Synthesis agent (ingest/synthesis.py) - takes the retriever's fused
+      doc_ids, pulls each doc's best-matching chunk (falling back to page
+      1 for docs found only via graph traversal, since they have no
+      vector hit), and asks Claude for {answer, citations, confidence}.
+      Tested on Q01_STAR and Q03: Q03 (control) answer was an exact
+      match to ground truth (7.1 mm/s RMS, ISO 10816-3 Zone D, high
+      confidence). Q01 (the star chain) correctly reconstructed the
+      full early-warning story - IR-556 elevated vibration -> ML-1183
+      deferred replacement -> M-118 clause 4.3 violation -> INC-2024-07
+      failure - even though VS-204/M-118_procedure.pdf weren't in the
+      top-10 retrieved doc_ids, because Claude picked up the clause
+      references quoted inside ML-1183's own text. High confidence,
+      correct citations. Good evidence the pipeline is robust to
+      retrieval gaps, not just a lucky ranking.
 - [ ] Streamlit UI
 - [ ] Benchmark harness (keyword vs hybrid comparison)

@@ -6,3 +6,5 @@ anthropic
 pdf2image
 img2pdf
 networkx
+chromadb
+sentence-transformers

@@ -56,7 +56,13 @@ Keyword search fails this. Graph traversal answers it correctly.
       extractions - bumped to 8192 and all 17 docs now extract cleanly.
       Entities merge across docs by exact text match (e.g. "P-204" links
       IR-556 to M-118). Saved to data/knowledge_graph.json.
-- [ ] Vector store builder
+- [x] Vector store builder (ingest/vector_builder.py) - ChromaDB
+      (PersistentClient, data/chroma_db/ - gitignored, regenerable) +
+      sentence-transformers (all-MiniLM-L6-v2). One chunk per page
+      (194 pages -> 192 non-empty chunks). Sample query "vibration alarm
+      threshold for Pump P-204's DE bearing" correctly top-ranked IR-556,
+      its scanned duplicate, and VS-204 - matches benchmark Q03's expected
+      source docs.
 - [ ] RRF fusion retriever
 - [ ] Synthesis agent
 - [ ] Streamlit UI

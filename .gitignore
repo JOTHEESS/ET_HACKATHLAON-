@@ -7,6 +7,9 @@ venv/
 # Extraction cache (regenerable, no need to version)
 .extraction_cache/
 
+# Vector store (regenerable from corpus + extraction results)
+data/chroma_db/
+
 # FailureSensorIQ is a separate cloned repo - don't nest it in your repo history
 FailureSensorIQ/
 

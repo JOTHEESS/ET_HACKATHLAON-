@@ -1,172 +1,62 @@
-# FailureSensorIQ Evaluation & Benchmark Layer
+# Industrial Knowledge Intelligence — Hybrid GraphRAG
 
-This directory serves as the evaluation and benchmark layer utilizing the **FailureSensorIQ** framework developed by IBM Research. This layer is designed to assess the reasoning capabilities of Large Language Models (LLMs) on complex, domain-specific relationships between industrial sensors and failure modes across various industrial assets (Industry 4.0).
+A hybrid GraphRAG system (knowledge graph + vector search, fused via RRF) that answers questions about industrial pump maintenance by tracing relationships across documents that share no keywords with each other. Built for **ET AI Hackathon 2.0, Problem #8: Industrial Knowledge Intelligence**.
 
----
+## Quick start
 
-## 📖 About FailureSensorIQ
-**FailureSensorIQ** is a Multi-Choice Question-Answering (MCQA) benchmarking system derived from official ISO standards. It contains **8,296 questions** across **10 different industrial assets**.
+```bash
+pip install -r requirements.txt
 
-### Key Question Types
-1. **Failure Mode to Sensors (FM2Sensor)**: Answers "What sensors should be monitored to detect a specific failure early?"
-2. **Sensor to Failure Mode (Sensor2FM)**: Answers "What potential failure is predicted given anomalous behavior on specific sensors?"
+# macOS/Linux
+export ANTHROPIC_API_KEY="your-key"
+# Windows PowerShell
+$env:ANTHROPIC_API_KEY="your-key"
 
-### Covered Assets
-*   Electric Motor
-*   Steam Turbine
-*   Aero Gas Turbine
-*   Industrial Gas Turbine
-*   Pump
-*   Compressor
-*   Reciprocating IC Engine
-*   Electric Generator
-*   Fan
-*   Power Transformer
-
----
-
-## 🛠️ Installation & Setup
-
-1. **Python Dependencies**
-   Make sure you have python (3.10+ recommended) and the required packages installed:
-   ```bash
-   pip install datasets huggingface_hub scikit-learn transformers accelerate
-   ```
-
-2. **Authenticate with Hugging Face**
-   Authenticate to ensure access to the dataset repository:
-   ```bash
-   huggingface-cli login
-   # Paste your user access token from huggingface.co/settings/tokens
-   ```
-
-3. **Download the Datasets**
-   We have provided a automated python downloader script [download_failuresensoriq.py](file:///Users/josh23/Desktop/projects/ET/download_failuresensoriq.py). Run it from the `ET/` directory:
-   ```bash
-   python download_failuresensoriq.py
-   ```
-   This will download the standard, multi-choice, and perturbed subsets and save them as formatted `.json` files inside:
-   *   `ET/data/eval/`
-
----
-
-## 📊 Dataset Subsets & Files
-Once downloaded, the files inside [data/eval](file:///Users/josh23/Desktop/projects/ET/data/eval) are:
-
-| Local File | Description | Records |
-| :--- | :--- | :--- |
-| **`failuresensoriq_single.json`** | Single-correct standard MCQA dataset (Config: `single_true_multi_choice_qa`) | 2,667 |
-| **`failuresensoriq_multi.json`** | Multi-correct MCQA dataset (Config: `multi_true_multi_choice_qa`) | 5,629 |
-| **`failuresensoriq_standard_all.json`** | Full standard single-correct dataset | 2,667 |
-| **`failuresensoriq_standard_all_multi_answers.json`** | Full standard multi-correct dataset | 5,629 |
-| **`failuresensoriq_standard_all_10_options.json`** | MCQA questions expanded to 10 options (reduces guessing likelihood) | 2,667 |
-| **`failuresensoriq_standard_sample_50.json`** | Subset of 50 questions for quick evaluation debugging | 50 |
-| **`failuresensoriq_perturbed_simple.json`** | Simple Perturbations (shuffled options, modified option labels P, Q, R...) | 2,667 |
-| **`failuresensoriq_perturbed_complex.json`** | Complex Perturbations (reordered options + LLM-rephrased questions) | 2,667 |
-| **`failuresensoriq_perturbed_10_options_simple.json`** | Simple Perturbations applied to the 10-option dataset | 2,667 |
-| **`failuresensoriq_perturbed_10_options_complex.json`** | Complex Perturbations applied to the 10-option dataset | 2,667 |
-
----
-
-## 🔍 Perturbation-Uncertainty-Complexity (PUC) Framework
-FailureSensorIQ evaluates LLMs across three dimensions of robustness:
-1. **Perturbation Robustness**: Compares performance on standard questions vs. `SimplePert` and `ComplexPert` datasets to measure fragility under question rephrasing and formatting changes.
-2. **Uncertainty Calibration**: Prompts LLMs to output probability distributions over options, using conformal prediction scores calculated on a calibration split to generate set-valued predictions.
-3. **Complexity Ambiguity**: Gauges LLM capabilities under higher option density (e.g., 10 options) to minimize guessing artifacts.
-
----
-
-## 🤖 LLMFeatureSelector (scikit-learn Pipeline)
-The benchmark also includes `LLMFeatureSelector`—a custom scikit-learn feature selector estimator. Instead of purely statistical criteria (like ANOVA or correlation), it queries an LLM to rank and select features based on domain-specific understanding of sensor-failure relationships.
-
-### Implementation Reference
-You can use the following scikit-learn compatible estimator pattern based on IBM's pipeline code:
-
-```python
-import numpy as np
-from sklearn.base import BaseEstimator
-from sklearn.utils.validation import validate_data
-from transformers import AutoModelForCausalLM, AutoTokenizer
-import transformers
-from accelerate import Accelerator
-
-class LLMFeatureSelector(BaseEstimator):
-    def __init__(self, model_name, feature_names, target_variable, prompt_template=None, topk=None):
-        self.model_name = model_name
-        self.feature_names = feature_names
-        self.prompt_template = prompt_template
-        self.target_variable = target_variable
-        self.topk = topk
-        if not self.prompt_template:
-            self.prompt_template = (
-                "Select the variables from the list that are most relevant for predicting <target_variable>. "
-                "Provide the variables sorted starting with the one with the highest priority. "
-                "All variables: <all_variables>\n"
-                '```json\n{"selected_variables": ["variable 1", "variable 2", ..., "variable n"]}\n```'
-            )
-        
-        self.model = AutoModelForCausalLM.from_pretrained(model_name, device_map='auto')
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.generation_config = transformers.GenerationConfig(max_length=512, stop_strings=['}'])
-        
-    def fit(self, X, y=None):
-        X = validate_data(
-            self,
-            X,
-            accept_sparse=("csr", "csc"),
-            dtype=np.float64,
-            ensure_all_finite="allow-nan",
-        )
-        prompt = self.prompt_template.replace('<all_variables>', ', '.join(self.feature_names))
-        prompt = prompt.replace('<target_variable>', self.target_variable)
-        
-        # Format the chat prompt
-        messages = [
-            {'role': 'user', 'content': prompt},
-            {'role': 'assistant', 'content': '{"selected_variables": ["'}
-        ]
-        
-        accelerator = Accelerator()
-        tokens = self.tokenizer.apply_chat_template(messages, continue_final_message=True, return_tensors='pt').to(accelerator.device)
-        output = self.model.generate(tokens, generation_config=self.generation_config, tokenizer=self.tokenizer)
-        output_text = self.tokenizer.decode(output[0][tokens.shape[1]:], skip_special_tokens=True)
-        output_text = '{"selected_variables": ["' + output_text
-        
-        try:
-            parsed = eval(output_text)
-        except Exception as e:
-            print(f"Failed to parse LLM output: {e}")
-            return X
-            
-        valid_idxs = []
-        for col in parsed.get('selected_variables', [])[:self.topk]:
-            if col in self.feature_names:
-                valid_idxs.append(self.feature_names.index(col))
-                
-        return X[:, valid_idxs]
-
-    def transform(self, X):
-        # Implementation depends on stored indices after fit
-        pass
+streamlit run app.py
 ```
 
----
+The first run downloads the `all-MiniLM-L6-v2` embedding model (~90MB) and builds the vector store/knowledge graph from the corpus if they don't already exist under `data/`.
 
-## 📝 Citation & Paper Details
-To cite the dataset and research findings:
+## Architecture
 
-**Dataset & Benchmark Paper (NeurIPS 2025 Datasets & Benchmarks):**
-```bibtex
-@inproceedings{
-  constantinides2025failuresensoriq,
-  title={FailureSensor{IQ}: A Multi-Choice {QA} Dataset for Understanding Sensor Relationships and Failure Modes},
-  author={Christodoulos Constantinides and Dhaval C Patel and Shuxin Lin and Claudio Guerrero and SUNIL DAGAJIRAO PATIL and Jayant Kalagnanam},
-  booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems Datasets and Benchmarks Track},
-  year={2025},
-  url={https://openreview.net/forum?id=9KfkMAy2ut}
-}
+Seven stages, each a standalone module in `ingest/`:
+
+1. **Document loader** (`loaders.py`) — PyMuPDF text extraction, with pytesseract OCR fallback for scanned pages
+2. **Entity/relationship extractor** (`extractor.py`) — Claude API extracts typed entities and relationships per document, cached to disk
+3. **Knowledge graph builder** (`graph_builder.py`) — assembles a NetworkX graph across the whole corpus, merging entities by canonical ID (e.g. "Pump P-204" and "P-204" resolve to one node)
+4. **Vector store builder** (`vector_builder.py`) — embeds each page into a persistent ChromaDB collection
+5. **RRF fusion retriever** (`retriever.py`) — combines semantic search with graph traversal via Reciprocal Rank Fusion
+6. **Synthesis agent** (`synthesis.py`) — Claude API turns retrieved documents into an answer with citations and a confidence rating
+7. **Streamlit chat UI** (`app.py`) — the user-facing entry point
+
+`evaluate.py` is an eighth piece, sitting outside the numbered pipeline: a benchmark harness scoring retrieval quality against hand-labeled ground truth.
+
+## The star demo question
+
+> "Was there any early warning before the Pump P-204 failure, and what should have been done according to procedure?"
+
+This is the flagship test of the whole hybrid approach. The answer requires connecting five documents that share no common keywords: an inspection report flags elevated bearing vibration three weeks before failure; a maintenance log defers the recommended bearing replacement due to a parts shortage; a vibration trend log shows the alarm threshold crossed five days out; an incident report records the resulting failure; and a procedure document specifies what should have happened instead. Pure keyword or vector search returns only the incident report — the graph traversal is what recovers the earlier warning chain.
+
+## Benchmark results
+
+- **Entity extraction Macro-F1: 0.8411** (excluding DATE, which has zero labeled instances in the ground truth set)
+- **Star demo question (Q01) recall: 0.60**
+- **Overall hybrid retrieval recall across 8 benchmark questions: 0.78**
+
+Known, understood limitation: two questions (Q02, and partially Q01) are capped by "hop-0 tie-flooding" — many documents share an identical graph proximity score for merely mentioning the query's main entity, which can crowd out a more specific but structurally-further answer out of the top-K results. Full root-cause traces are in `CLAUDE.md`.
+
+## Repo structure
+
+```
+ingest/          the 7-stage pipeline (see Architecture above)
+data/corpus/     the locked document corpus (synthetic, real OEM manuals, scanned)
+data/eval/       benchmark questions, ground truth, results, FailureSensorIQ reference data
+app.py           Streamlit UI - the live app
+evaluate.py      benchmark harness
+generate_corpus.py, make_scanned.py, download_failuresensoriq.py
+                 one-off scripts that built the locked dataset - not part of running the app
 ```
 
-*   **Paper Link:** [arXiv:2506.03278](https://arxiv.org/abs/2506.03278)
-*   **Official Code Repository:** [IBM/FailureSensorIQ GitHub](https://github.com/IBM/FailureSensorIQ)
-*   **Leaderboard:** [Hugging Face Space](https://huggingface.co/spaces/cc4718/FailureSensorIQ) or [Kaggle Benchmark](https://www.kaggle.com/benchmarks/ibm-research/asset-ops-bench/)
+## Dataset
+
+The corpus is a locked mix of a synthetic P-204 pump near-miss chain (11 PDFs, planted for the star demo), 3 real OEM pump manuals, and 3 degraded scans for OCR testing, plus IBM's FailureSensorIQ dataset (CC-BY-4.0) as reference evaluation data. Full provenance, sources, and structure: [`data/DATASET_README.md`](data/DATASET_README.md). FailureSensorIQ-specific reference material (citation, dataset subsets, benchmark details): [`data/eval/FAILURESENSORIQ_NOTES.md`](data/eval/FAILURESENSORIQ_NOTES.md).

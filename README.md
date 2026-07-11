@@ -53,8 +53,8 @@ data/corpus/     the locked document corpus (synthetic, real OEM manuals, scanne
 data/eval/       benchmark questions, ground truth, results, FailureSensorIQ reference data
 app.py           Streamlit UI - the live app
 evaluate.py      benchmark harness
-generate_corpus.py, make_scanned.py, download_failuresensoriq.py
-                 one-off scripts that built the locked dataset - not part of running the app
+scripts/         one-off scripts that built the locked dataset - not part of running the app
+                 (generate_corpus.py, make_scanned.py, download_failuresensoriq.py)
 ```
 
 ## Dataset

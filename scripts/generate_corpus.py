@@ -18,7 +18,8 @@ from reportlab.lib.enums import TA_LEFT
 
 random.seed(42)
 
-OUT = os.path.join(os.path.dirname(__file__), "data", "corpus", "synthetic")
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT = os.path.join(REPO_ROOT, "data", "corpus", "synthetic")
 os.makedirs(OUT, exist_ok=True)
 
 styles = getSampleStyleSheet()

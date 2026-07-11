@@ -23,7 +23,7 @@ def convert_jsonl_to_json(src_path, dest_path):
         return False
 
 def populate_local_data():
-    base_dir = os.path.dirname(os.path.abspath(__file__))
+    base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     output_dir = os.path.join(base_dir, "data", "eval")
     os.makedirs(output_dir, exist_ok=True)
     

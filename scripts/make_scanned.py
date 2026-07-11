@@ -17,7 +17,8 @@ import img2pdf
 random.seed(42)
 np.random.seed(42)
 
-OUT = os.path.join(os.path.dirname(__file__), "data", "corpus", "scanned")
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUT = os.path.join(REPO_ROOT, "data", "corpus", "scanned")
 os.makedirs(OUT, exist_ok=True)
 
 
@@ -52,7 +53,7 @@ def scan_pdf(input_path):
 
 
 if __name__ == "__main__":
-    syn = os.path.join(os.path.dirname(__file__), "data", "corpus", "synthetic")
+    syn = os.path.join(REPO_ROOT, "data", "corpus", "synthetic")
     targets = [
         os.path.join(syn, "IR-556_inspection_report.pdf"),
         os.path.join(syn, "ML-1183_maintenance_log.pdf"),

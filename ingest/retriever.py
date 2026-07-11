@@ -112,8 +112,16 @@ def graph_doc_ranking(graph, query: str, max_hops: int = 2) -> list:
                 if any(graph.nodes[nbr]["types"] & query_types for nbr in neighbors(graph, node)):
                     boosted_docs.update(graph.nodes[node].get("doc_ids", []))
 
+    # Final tie-break: doc_id itself, alphabetically. Without this, ties
+    # remaining after score and boost status fall back to Python's stable
+    # sort preserving whatever order items arrived in - which traces back
+    # to iterating set() objects (doc_ids on nodes, BFS frontier/
+    # next_frontier). String hashing is randomized per process by default,
+    # so that arrival order - and therefore the ranking itself - genuinely
+    # changed between runs with zero code or data changes (confirmed: three
+    # consecutive evaluate.py runs gave Q01_STAR recall 0.80, 0.60, 0.40).
     ranked = sorted(doc_scores.items(),
-                     key=lambda x: (-x[1], 0 if x[0] in boosted_docs else 1))
+                     key=lambda x: (-x[1], 0 if x[0] in boosted_docs else 1, x[0]))
     return [doc_id for doc_id, _ in ranked]
 
 
@@ -133,7 +141,10 @@ def rrf_fuse(rankings: list, k: int = RRF_K) -> list:
     for ranking in rankings:
         for rank, doc_id in enumerate(ranking, start=1):
             scores[doc_id] += 1.0 / (k + rank)
-    return [doc_id for doc_id, _ in sorted(scores.items(), key=lambda x: x[1], reverse=True)]
+    # doc_id as final tie-break, same reasoning as graph_doc_ranking - an
+    # exact float tie here would otherwise fall back to non-deterministic
+    # dict/set iteration order.
+    return [doc_id for doc_id, _ in sorted(scores.items(), key=lambda x: (-x[1], x[0]))]
 
 
 def retrieve(query: str, collection=None, graph=None, top_k: int = 12) -> dict:

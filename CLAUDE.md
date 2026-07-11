@@ -203,26 +203,65 @@ crossing hop-0 vs hop-1. Two iterations:
    Confirmed via full 8-question benchmark: zero regressions, but also
    zero net change to Q02's recall (stayed 0.00 at top_k=10).
 
-**Real, useful side-effect found while testing:** the type-boost gave a
-genuine, unplanned improvement to Q01_STAR - its query also contains
-the word "procedure" ("what should have been done according to
-procedure?"), so the same boost logic helped there too. Q01 recall
-improved 0.60 -> 0.80 at top_k=12 (up from the pre-type-boost 0.60).
+**A side-effect initially looked like a genuine improvement to
+Q01_STAR (0.60 -> 0.80) - this turned out to be a measurement artifact,
+see the non-determinism bug below. Corrected, stable number: 0.60,
+unchanged from before the type-boost.**
 
 **Final state:** top_k=12 restored (chosen over reverting to 10, since
 12 is the only currently-working way to actually retrieve M-118 for
-Q02). Type-boost code kept - it's correct, causes no regressions, and
-helped Q01 even though it couldn't fully solve Q02. Q02/M-118 remains
-a known, well-understood limitation: fixing it for real would require
-either relaxing the "never cross hop tiers" constraint (risk: could
-let weakly-relevant hop-1 docs outrank genuinely relevant hop-0 docs
-elsewhere, untested) or reducing the hop-0 tie-flood at its source
-(distinguishing "trivially mentions the seed entity" from "is actually
-about the query's topic" - a deeper design change, not attempted given
-the deadline).
+Q02). Type-boost code kept - it's correct and causes no regressions,
+even though it didn't move Q01 or Q02 once measured properly (see
+below). Q02/M-118 remains a known, well-understood limitation: fixing
+it for real would require either relaxing the "never cross hop tiers"
+constraint (risk: could let weakly-relevant hop-1 docs outrank
+genuinely relevant hop-0 docs elsewhere, untested) or reducing the
+hop-0 tie-flood at its source (distinguishing "trivially mentions the
+seed entity" from "is actually about the query's topic" - a deeper
+design change, not attempted given the deadline).
 
-**Final benchmark, top_k=12, with type-boost:**
-graph_only avg recall: 0.38 -> 0.62 (vector -> hybrid). Overall:
-0.69 -> 0.81. Q01_STAR: 0.20 -> 0.80. Q02 unchanged at 0.00 -> 0.33
-(same as the top_k-only fix - the type-boost didn't move Q02 further,
-its gain shows up on Q01 instead).
+## Critical bug found via UI testing: retrieval ranking was non-deterministic
+
+User asked me to actually run `streamlit run app.py` and drive the UI
+for the star demo question, rather than trust the numbers already
+logged. That surfaced a real bug bigger than anything above: **every
+benchmark number in this file up to this point was a snapshot of one
+random process run, not a stable metric.**
+
+Evidence: ran `evaluate.py` three times in a row with zero code or
+data changes between runs. Q01_STAR's hybrid recall came back 0.80,
+then 0.60, then 0.40 - three different answers from identical inputs.
+
+Root cause: `graph_doc_ranking`'s final sort
+(`key=lambda x: (-x[1], 0 if x[0] in boosted_docs else 1)`) and
+`rrf_fuse`'s sort (`key=lambda x: x[1]`) had no tie-break beyond score
+and boost status. Many documents legitimately tie on both (e.g. the
+12 hop-0-tied docs from the Q02 investigation above), so Python's
+stable sort fell back to whatever order those items arrived in - which
+traces back to iterating `set()` objects (`doc_ids` on graph nodes,
+BFS `frontier`/`next_frontier`, `boosted_docs`). Python randomizes
+string hashing per process by default, so that arrival order - and
+therefore every ranking with a tie in it - genuinely changed from run
+to run, with the same code and same data.
+
+**Fixed:** added `doc_id` (alphabetical) as the final tie-break key in
+both `graph_doc_ranking` and `rrf_fuse`. Verified by running
+`evaluate.py` three more times: byte-for-byte identical results all
+three times.
+
+**Corrected, now-stable final benchmark (top_k=12, with type-boost,
+fully deterministic):**
+graph_only avg recall: 0.38 -> 0.57 (vector -> hybrid). Overall:
+0.69 -> 0.78. Q01_STAR: 0.20 -> 0.60 (the 0.80 figure logged earlier
+in this file was a non-reproducible artifact of the bug above, not a
+real result - this 0.60 is the true, stable number, unchanged by the
+type-boost). Q02: 0.00 -> 0.33, also unchanged and still the known
+open limitation described above.
+
+**Why this matters beyond the number correction:** any retrieval
+system with real ties (common whenever many documents share a topic)
+needs an explicit, deterministic tie-break, or its behavior - and any
+benchmark built on top of it - is silently unreliable across restarts,
+deployments, or even repeated calls within the same session if the
+process restarts. This was caught by the user insisting on an actual
+UI run rather than trusting previously-logged numbers.

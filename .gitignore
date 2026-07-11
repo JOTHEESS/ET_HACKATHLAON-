@@ -13,10 +13,9 @@ data/chroma_db/
 # FailureSensorIQ is a separate cloned repo - don't nest it in your repo history
 FailureSensorIQ/
 
-# Optional: exclude the largest unused FailureSensorIQ eval variants (~15MB)
-# Uncomment if you want a leaner repo:
-# data/eval/failuresensoriq_perturbed_*.json
-# data/eval/failuresensoriq_standard_all*.json
+# Unused FailureSensorIQ eval variants (~21.5MB) - kept on disk, not tracked
+data/eval/failuresensoriq_perturbed_*.json
+data/eval/failuresensoriq_standard_all*.json
 
 # Secrets - never commit API keys to this public repo
 .env

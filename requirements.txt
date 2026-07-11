@@ -9,3 +9,5 @@ networkx
 chromadb
 sentence-transformers
 streamlit
+reportlab
+numpy

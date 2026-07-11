@@ -28,9 +28,9 @@ This directory serves as the evaluation and benchmark layer utilizing the **Fail
 ## 🛠️ Installation & Setup
 
 1. **Python Dependencies**
-   Make sure you have python (3.10+ recommended) and the required packages installed:
+   Make sure you have python (3.10+ recommended) and the required packages installed. These are separate from the main app's `requirements.txt` since they're only needed for this one-off download flow:
    ```bash
-   pip install datasets huggingface_hub scikit-learn transformers accelerate
+   pip install -r requirements-optional.txt
    ```
 
 2. **Authenticate with Hugging Face**

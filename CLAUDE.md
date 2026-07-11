@@ -2,6 +2,31 @@
 
 > Windows GPU laptop setup is done - Python, tesseract (hardcoded path in loaders.py), all pip packages installed. Tomorrow's first task: add API credits, rotate key, run the extraction test, then proceed to knowledge graph builder.
 
+## FINAL LOCKED METRICS
+
+**These numbers are FINAL. Do not re-run benchmarks or extraction unless
+a genuine bug is found - no more tuning for score improvement from this
+point forward.**
+
+**ENTITY EXTRACTION (Macro-F1, excluding DATE - see note): 0.8411**
+- Precision issues: near-duplicate surface forms (P-204 vs Pump P-204,
+  M-118 vs Procedure M-118) - not hallucination, same real entity
+  captured twice
+- Recall: strong, only 3 misses across 39 gold entities
+- DATE excluded: ground truth has zero labeled DATE instances in this
+  document set, making recall undefined for that type
+
+**RETRIEVAL (hybrid vs keyword baseline):**
+- Q01_STAR (star demo question) recall: 0.60
+- Overall hybrid avg recall (8 questions): 0.78
+- Verified deterministic/reproducible across repeated runs
+
+**KNOWN LIMITATIONS (documented, understood root cause):**
+- Q02: hop-0 tie-flooding, 12 docs share identical graph score for mere
+  entity mention, defeats 2-hop-specific answer
+- VS-204 for Q01: consistently ranks just outside top-12, likely same
+  tie-flooding pattern
+
 ## Problem Statement
 ET AI Hackathon 2.0, Problem #8: Industrial Knowledge Intelligence.
 Deadline: 22 July 2026, 11:59 PM.

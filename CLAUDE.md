@@ -161,3 +161,68 @@ work). M-118_procedure.pdf's fused position confirmed directly:
 tight margin worth another look if time permits, not a robust win.
 graph_only avg recall: 0.38 -> 0.57 (vector -> hybrid, top_k=12).
 Overall: 0.69 -> 0.78. Q01_STAR still the clearest win: 0.20 -> 0.60.
+
+## Deeper dive: why does M-118 rank so low, exactly? (user-requested trace)
+
+User asked for the precise mechanism, not just "it's low." Traced with
+real numbers (not estimates): `graph_doc_ranking`'s BFS gives M-118 a
+real score (0.5, hop-1 from the P-204 seed - correctly connected, not
+a graph bug), but **RRF fusion discards score magnitude and keeps only
+rank position** - a hop-0 doc (score 1.0) and M-118 (score 0.5) become
+adjacent RRF contributions (`1/61` vs `1/62`) despite a real 2x gap in
+the underlying signal. Tested empirically whether reweighting RRF
+(graph weight 2x/3x/5x/10x, vector fixed) moves M-118 up: it does not,
+at any weight - confirmed M-118 sits at #14 of 16 *within the graph
+ranking itself*, and no scalar reweight can reorder a document within
+the same source list, only change how much that list counts relative
+to the other.
+
+## Entity-type-boost fix (implemented, tested, partial result - honest account)
+
+Root cause: 12 documents tie at hop-0 for Q02's query (anything merely
+mentioning "P-204"), all outranking M-118 (hop-1, score 0.5) regardless
+of tie-break sophistication, since sort is primarily by hop-tier score.
+
+Implemented a lightweight keyword-to-entity-type mapping
+(`QUERY_TYPE_TRIGGERS` in retriever.py - "regulation"/"governs" ->
+REGULATION, "procedure" -> PROCEDURE, "who"/"inspector" -> PERSON,
+"when" -> DATE) used only as a **tie-break within a hop tier**, never
+crossing hop-0 vs hop-1. Two iterations:
+1. First version checked only the original seed entities' 1-hop
+   neighbors for a type match. Traced why it failed: OISD-132 is 2 hops
+   from seed "P-204" (via M-118), not 1, so the boost fired on the
+   wrong document (`ISO 10816-3`, a different regulation 1 hop from
+   P-204, boosting IR-556 instead of M-118). Zero effect on Q02 recall.
+2. Extended to check every node reached in the BFS (not just seeds) -
+   correctly identifies M-118's own edge to OISD-132 this time. M-118
+   moved from graph-rank #14 -> #13 (wins the tie-break against its
+   hop-1 peers, P-210/SOP-09), but **cannot cross into hop-0** - with
+   12 documents already tied at hop-0 (exceeding top_k=10 on their own),
+   this is a hard mathematical ceiling of "hop-distance as primary sort
+   key, tie-break within-tier only," not a bug in the boost logic.
+   Confirmed via full 8-question benchmark: zero regressions, but also
+   zero net change to Q02's recall (stayed 0.00 at top_k=10).
+
+**Real, useful side-effect found while testing:** the type-boost gave a
+genuine, unplanned improvement to Q01_STAR - its query also contains
+the word "procedure" ("what should have been done according to
+procedure?"), so the same boost logic helped there too. Q01 recall
+improved 0.60 -> 0.80 at top_k=12 (up from the pre-type-boost 0.60).
+
+**Final state:** top_k=12 restored (chosen over reverting to 10, since
+12 is the only currently-working way to actually retrieve M-118 for
+Q02). Type-boost code kept - it's correct, causes no regressions, and
+helped Q01 even though it couldn't fully solve Q02. Q02/M-118 remains
+a known, well-understood limitation: fixing it for real would require
+either relaxing the "never cross hop tiers" constraint (risk: could
+let weakly-relevant hop-1 docs outrank genuinely relevant hop-0 docs
+elsewhere, untested) or reducing the hop-0 tie-flood at its source
+(distinguishing "trivially mentions the seed entity" from "is actually
+about the query's topic" - a deeper design change, not attempted given
+the deadline).
+
+**Final benchmark, top_k=12, with type-boost:**
+graph_only avg recall: 0.38 -> 0.62 (vector -> hybrid). Overall:
+0.69 -> 0.81. Q01_STAR: 0.20 -> 0.80. Q02 unchanged at 0.00 -> 0.33
+(same as the top_k-only fix - the type-boost didn't move Q02 further,
+its gain shows up on Q01 instead).

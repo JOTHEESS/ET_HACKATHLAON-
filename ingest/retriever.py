@@ -19,6 +19,29 @@ from ingest.graph_builder import load_graph, neighbors
 
 RRF_K = 60
 
+# Lightweight keyword-to-entity-type mapping, not a general query-intent
+# classifier. Used only to break ties among documents at the same
+# hop-distance in graph_doc_ranking - e.g. "Which regulation governs..."
+# should prefer a hop-tied document whose connecting entity has a direct
+# edge to a REGULATION, over one that doesn't, without touching hop
+# distance itself.
+QUERY_TYPE_TRIGGERS = {
+    "regulation": "REGULATION",
+    "governs": "REGULATION",
+    "complies": "REGULATION",
+    "compliance": "REGULATION",
+    "procedure": "PROCEDURE",
+    "who": "PERSON",
+    "inspector": "PERSON",
+    "inspected": "PERSON",
+    "when": "DATE",
+}
+
+
+def _matched_query_types(query: str) -> set:
+    query_lower = query.lower()
+    return {etype for word, etype in QUERY_TYPE_TRIGGERS.items() if word in query_lower}
+
 
 def match_entities(graph, query: str) -> list:
     """Graph node texts that appear verbatim in the query, longest match first."""
@@ -48,7 +71,10 @@ def graph_doc_ranking(graph, query: str, max_hops: int = 2) -> list:
     if not seed_entities:
         return []
 
+    query_types = _matched_query_types(query)
     doc_scores = defaultdict(float)
+    boosted_docs = set()
+
     for entity in seed_entities:
         if not graph.has_node(entity):
             continue
@@ -72,7 +98,23 @@ def graph_doc_ranking(graph, query: str, max_hops: int = 2) -> list:
         for doc_id, hop in best_hop_for_doc.items():
             doc_scores[doc_id] += 1.0 / (hop + 1)
 
-    return [doc_id for doc_id, _ in sorted(doc_scores.items(), key=lambda x: x[1], reverse=True)]
+        # Tie-break only: a query implying an entity type (e.g. "regulation")
+        # should prefer, among documents tied at the same hop-distance score,
+        # those with an entity of that type directly (1-edge) connected to
+        # ANY node already reached in this BFS - not just the original seed.
+        # Checking only the seed (e.g. "P-204") misses cases where the type
+        # match hangs off an intermediate node (e.g. "M-118" -> OISD-132,
+        # 2 hops from the seed but 1 hop from M-118). This does not change
+        # scores across hop tiers - only the ordering within an identical
+        # score tie.
+        if query_types:
+            for node in hop_distance:
+                if any(graph.nodes[nbr]["types"] & query_types for nbr in neighbors(graph, node)):
+                    boosted_docs.update(graph.nodes[node].get("doc_ids", []))
+
+    ranked = sorted(doc_scores.items(),
+                     key=lambda x: (-x[1], 0 if x[0] in boosted_docs else 1))
+    return [doc_id for doc_id, _ in ranked]
 
 
 def vector_doc_ranking(collection, query: str, n_results: int = 20) -> list:

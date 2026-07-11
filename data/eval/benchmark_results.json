@@ -13,7 +13,7 @@
         "M-118"
       ],
       "vector_recall": 0.2,
-      "hybrid_recall": 0.6,
+      "hybrid_recall": 0.8,
       "vector_ranking": [
         "INC-2024-07_incident_report.pdf",
         "INC-2024-07_incident_report_SCANNED.pdf",
@@ -23,18 +23,18 @@
         "P-210_pump_manual_extract.pdf"
       ],
       "hybrid_ranking": [
-        "INC-2024-07_incident_report_SCANNED.pdf",
         "INC-2024-07_incident_report.pdf",
-        "IR-560_motor_inspection.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
         "IR-556_inspection_report.pdf",
-        "IR-556_inspection_report_SCANNED.pdf",
-        "SOP-09_pumphouse_safety.pdf",
+        "IR-560_motor_inspection.pdf",
         "LKH_manual.pdf",
+        "SOP-09_pumphouse_safety.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
         "P-210_pump_manual_extract.pdf",
-        "SH-0717_shift_handover.pdf",
-        "VS-204_vibration_trend_log.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf",
         "PWI_IOM.pdf",
-        "LS-07_lubrication_spec.pdf"
+        "VS-204_vibration_trend_log.pdf"
       ]
     },
     {
@@ -59,17 +59,17 @@
         "SOP-09_pumphouse_safety.pdf"
       ],
       "hybrid_ranking": [
-        "INC-2024-07_incident_report_SCANNED.pdf",
-        "M-142_seal_procedure.pdf",
         "INC-2024-07_incident_report.pdf",
-        "ML-1183_maintenance_log.pdf",
-        "P-210_pump_manual_extract.pdf",
         "IR-556_inspection_report.pdf",
-        "IR-556_inspection_report_SCANNED.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
         "ML-1183_maintenance_log_SCANNED.pdf",
+        "M-142_seal_procedure.pdf",
+        "P-210_pump_manual_extract.pdf",
         "IR-560_motor_inspection.pdf",
-        "LS-07_lubrication_spec.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "ML-1183_maintenance_log.pdf",
         "SOP-09_pumphouse_safety.pdf",
+        "LS-07_lubrication_spec.pdf",
         "M-118_procedure.pdf"
       ]
     },
@@ -98,10 +98,10 @@
       ],
       "hybrid_ranking": [
         "VS-204_vibration_trend_log.pdf",
-        "IR-556_inspection_report_SCANNED.pdf",
-        "INC-2024-07_incident_report.pdf",
         "IR-556_inspection_report.pdf",
         "ML-1183_maintenance_log_SCANNED.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "INC-2024-07_incident_report.pdf",
         "INC-2024-07_incident_report_SCANNED.pdf",
         "P-210_pump_manual_extract.pdf",
         "ML-1183_maintenance_log.pdf",
@@ -131,15 +131,15 @@
       "hybrid_ranking": [
         "LS-07_lubrication_spec.pdf",
         "IR-556_inspection_report.pdf",
-        "IR-556_inspection_report_SCANNED.pdf",
         "P-210_pump_manual_extract.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
         "LKH_manual.pdf",
-        "SH-0717_shift_handover.pdf",
-        "VS-204_vibration_trend_log.pdf",
-        "ML-1183_maintenance_log.pdf",
         "ML-1183_maintenance_log_SCANNED.pdf",
-        "PWI_IOM.pdf",
+        "ML-1183_maintenance_log.pdf",
         "MaintMaster_manual.pdf",
+        "PWI_IOM.pdf",
+        "VS-204_vibration_trend_log.pdf",
+        "INC-2024-07_incident_report.pdf",
         "INC-2024-07_incident_report_SCANNED.pdf"
       ]
     },
@@ -163,18 +163,18 @@
         "SOP-09_pumphouse_safety.pdf"
       ],
       "hybrid_ranking": [
-        "INC-2024-07_incident_report_SCANNED.pdf",
-        "IR-560_motor_inspection.pdf",
         "INC-2024-07_incident_report.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
         "IR-556_inspection_report.pdf",
+        "IR-560_motor_inspection.pdf",
         "IR-556_inspection_report_SCANNED.pdf",
-        "SOP-09_pumphouse_safety.pdf",
         "P-210_pump_manual_extract.pdf",
+        "SOP-09_pumphouse_safety.pdf",
         "LKH_manual.pdf",
-        "SH-0717_shift_handover.pdf",
-        "VS-204_vibration_trend_log.pdf",
-        "LS-07_lubrication_spec.pdf",
-        "PWI_IOM.pdf"
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf",
+        "PWI_IOM.pdf",
+        "VS-204_vibration_trend_log.pdf"
       ]
     },
     {
@@ -199,18 +199,18 @@
         "IR-556_inspection_report_SCANNED.pdf"
       ],
       "hybrid_ranking": [
-        "SH-0717_shift_handover.pdf",
-        "IR-560_motor_inspection.pdf",
-        "LKH_manual.pdf",
-        "INC-2024-07_incident_report_SCANNED.pdf",
-        "VS-204_vibration_trend_log.pdf",
         "INC-2024-07_incident_report.pdf",
-        "LS-07_lubrication_spec.pdf",
+        "IR-560_motor_inspection.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
+        "LKH_manual.pdf",
         "IR-556_inspection_report.pdf",
-        "IR-556_inspection_report_SCANNED.pdf",
+        "VS-204_vibration_trend_log.pdf",
+        "SH-0717_shift_handover.pdf",
         "P-210_pump_manual_extract.pdf",
-        "ML-1183_maintenance_log.pdf",
-        "PWI_IOM.pdf"
+        "IR-556_inspection_report_SCANNED.pdf",
+        "LS-07_lubrication_spec.pdf",
+        "ML-1183_maintenance_log_SCANNED.pdf",
+        "MaintMaster_manual.pdf"
       ]
     },
     {
@@ -237,16 +237,16 @@
         "VS-204_vibration_trend_log.pdf"
       ],
       "hybrid_ranking": [
-        "ML-1183_maintenance_log.pdf",
-        "INC-2024-07_incident_report_SCANNED.pdf",
         "ML-1183_maintenance_log_SCANNED.pdf",
-        "SH-0717_shift_handover.pdf",
         "INC-2024-07_incident_report.pdf",
-        "VS-204_vibration_trend_log.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
         "IR-556_inspection_report.pdf",
-        "IR-556_inspection_report_SCANNED.pdf",
+        "ML-1183_maintenance_log.pdf",
         "IR-560_motor_inspection.pdf",
+        "VS-204_vibration_trend_log.pdf",
         "P-210_pump_manual_extract.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "SH-0717_shift_handover.pdf",
         "M-118_procedure.pdf",
         "M-142_seal_procedure.pdf"
       ]
@@ -278,16 +278,16 @@
       ],
       "hybrid_ranking": [
         "VS-204_vibration_trend_log.pdf",
-        "SH-0717_shift_handover.pdf",
         "M-118_procedure.pdf",
-        "IR-556_inspection_report_SCANNED.pdf",
-        "IR-560_motor_inspection.pdf",
         "IR-556_inspection_report.pdf",
-        "ML-1183_maintenance_log.pdf",
-        "INC-2024-07_incident_report_SCANNED.pdf",
+        "SH-0717_shift_handover.pdf",
         "ML-1183_maintenance_log_SCANNED.pdf",
+        "IR-560_motor_inspection.pdf",
         "INC-2024-07_incident_report.pdf",
+        "IR-556_inspection_report_SCANNED.pdf",
+        "INC-2024-07_incident_report_SCANNED.pdf",
         "MaintMaster_manual.pdf",
+        "ML-1183_maintenance_log.pdf",
         "P-210_pump_manual_extract.pdf"
       ]
     }
@@ -296,7 +296,7 @@
     "graph_only": {
       "n": 4,
       "vector_avg_recall": 0.3833333333333333,
-      "hybrid_avg_recall": 0.5666666666666667
+      "hybrid_avg_recall": 0.6166666666666667
     },
     "keyword_answerable": {
       "n": 2,
@@ -311,6 +311,6 @@
   },
   "overall": {
     "vector_avg_recall": 0.6916666666666667,
-    "hybrid_avg_recall": 0.7833333333333333
+    "hybrid_avg_recall": 0.8083333333333333
   }
 }

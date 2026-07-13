@@ -27,6 +27,35 @@ point forward.**
 - VS-204 for Q01: consistently ranks just outside top-12, likely same
   tie-flooding pattern
 
+## Submission document inaccuracy - caught and corrected before submission
+
+`~/Desktop/Industrial_Knowledge_Intelligence_Detailed_Document.pdf`
+(the hackathon submission writeup, separate from this repo) originally
+claimed in Section 10 (Scalability and Roadmap) that "Ingestion is
+incremental — new documents merge into the existing graph and vector
+store without a full rebuild." That's false against the actual code:
+`vector_builder.build_vector_store()` defaults to `reset=True` (wipes
+and rebuilds the whole ChromaDB collection every call), and
+`graph_builder.build_graph()` always constructs a brand-new graph from
+the full `extraction_results` dict - there's no code path that loads an
+existing graph and merges only new documents into it. The only
+genuinely incremental piece is the per-document extraction cache
+(`extractor.py`) - re-running extraction on an unchanged corpus costs
+zero additional API calls, but the downstream graph/vector-store build
+is always a full rebuild from that cache, not an incremental merge.
+
+Caught by cross-checking the submission PDF's claims against the real
+repo before the deadline, rather than after a judge tested it. Fixed by
+replacing that paragraph with an accurate description (cached
+per-document extraction is real and valuable; true incremental
+graph/vector-store merge is future work, not built). Edited directly in
+the PDF via PyMuPDF (redact + reinsert with the embedded Carlito font's
+metric-compatible system equivalent, Calibri, since the original
+embedded font was a subset missing most glyphs needed for new text) -
+verified by rendering every page before overwriting the original file.
+A pre-edit backup was kept alongside it
+(`Industrial_Knowledge_Intelligence_Detailed_Document.BACKUP.pdf`).
+
 ## Problem Statement
 ET AI Hackathon 2.0, Problem #8: Industrial Knowledge Intelligence.
 Deadline: 22 July 2026, 11:59 PM.

@@ -2,6 +2,8 @@
 
 A hybrid GraphRAG system (knowledge graph + vector search, fused via RRF) that answers questions about industrial pump maintenance by tracing relationships across documents that share no keywords with each other. Built for **ET AI Hackathon 2.0, Problem #8: Industrial Knowledge Intelligence**.
 
+**[Full write-up](Industrial_Knowledge_Intelligence_Detailed_Document.pdf)** · **[Architecture diagram](architecture_diagram.png)**
+
 ## Quick start
 
 ```bash

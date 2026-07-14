@@ -4,6 +4,9 @@ A hybrid GraphRAG system (knowledge graph + vector search, fused via RRF) that a
 
 **[Full write-up](Industrial_Knowledge_Intelligence_Detailed_Document.pdf)** · **[Architecture diagram](architecture_diagram.png)**
 
+**Presentation deck:** [Industrial_Knowledge_Intelligence_Deck.pptx](./Industrial_Knowledge_Intelligence_Deck.pptx)
+**Demo video:** [demo_video.mp4](./demo_video.mp4)
+
 ## Quick start
 
 ```bash

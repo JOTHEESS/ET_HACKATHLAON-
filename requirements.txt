@@ -1,13 +1,16 @@
-pymupdf
-pdfplumber
-pytesseract
-pillow
-anthropic
-pdf2image
-img2pdf
-networkx
-chromadb
-sentence-transformers
-streamlit
-reportlab
-numpy
+# Pinned to the exact versions used for the 17 Jul 2026 verification run
+# (26/26 tests, benchmark reproduced 3x byte-identical).
+pymupdf==1.28.0
+pdfplumber==0.11.10
+pytesseract==0.3.13
+pillow==12.3.0
+anthropic==0.117.0
+pdf2image==1.17.0
+img2pdf==0.6.3
+networkx==3.6.1
+chromadb==1.5.9
+sentence-transformers==5.6.0
+streamlit==1.59.2
+reportlab==5.0.0
+numpy==2.5.1
+pyvis==0.3.2

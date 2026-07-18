@@ -12,6 +12,7 @@ Usage:
     result = retrieve("Was there early warning before the P-204 failure?")
 """
 import os
+import re
 from collections import defaultdict
 
 from ingest.vector_builder import load_vector_store, query_store
@@ -43,11 +44,45 @@ def _matched_query_types(query: str) -> set:
     return {etype for word, etype in QUERY_TYPE_TRIGGERS.items() if word in query_lower}
 
 
+def _normalize(text: str) -> str:
+    return re.sub(r"[^a-z0-9]", "", text.lower())
+
+
+def _canonical_doc(doc_id: str) -> str:
+    """INC-2024-07_incident_report_SCANNED.pdf and its clean twin are the
+    same content - collapse them so duplicates can't occupy two top-k slots."""
+    return re.sub(r"_SCANNED(?=\.pdf$)", "", doc_id, flags=re.IGNORECASE)
+
+
+def _dedupe_canonical(doc_ids: list) -> list:
+    seen, out = set(), []
+    for doc_id in doc_ids:
+        canon = _canonical_doc(doc_id)
+        if canon not in seen:
+            seen.add(canon)
+            out.append(doc_id)
+    return out
+
+
 def match_entities(graph, query: str) -> list:
-    """Graph node texts that appear verbatim in the query, longest match first."""
+    """Graph nodes mentioned in the query. Three matching tiers, so a
+    paraphrased question still seeds the graph traversal:
+    1. node key verbatim in the query ("P-204"),
+    2. any stored alias verbatim in the query ("Centrifugal Pump P-204"),
+    3. punctuation-insensitive ID match ("p204", "P 204" -> "P-204").
+    Longest match first; deterministic order."""
     query_lower = query.lower()
-    matches = [node for node in graph.nodes if len(node) >= 3 and node.lower() in query_lower]
-    matches.sort(key=len, reverse=True)
+    query_norm = _normalize(query)
+    matches = []
+    for node, data in graph.nodes(data=True):
+        surface_forms = {node} | set(data.get("aliases", ()))
+        hit = any(len(s) >= 3 and s.lower() in query_lower for s in surface_forms)
+        if not hit:
+            norm = _normalize(node)
+            hit = len(norm) >= 4 and norm in query_norm
+        if hit:
+            matches.append(node)
+    matches.sort(key=lambda n: (-len(n), n))
     return matches
 
 
@@ -122,17 +157,18 @@ def graph_doc_ranking(graph, query: str, max_hops: int = 2) -> list:
     # consecutive evaluate.py runs gave Q01_STAR recall 0.80, 0.60, 0.40).
     ranked = sorted(doc_scores.items(),
                      key=lambda x: (-x[1], 0 if x[0] in boosted_docs else 1, x[0]))
-    return [doc_id for doc_id, _ in ranked]
+    return _dedupe_canonical([doc_id for doc_id, _ in ranked])
 
 
 def vector_doc_ranking(collection, query: str, n_results: int = 20) -> list:
-    """De-duplicated doc_id ranking from the top n_results page-chunk hits."""
+    """De-duplicated doc_id ranking from the top n_results chunk hits.
+    Scanned/clean twins collapse to whichever variant ranked higher."""
     seen = []
     for hit in query_store(collection, query, n_results=n_results):
         doc_id = hit["metadata"]["doc_id"]
         if doc_id not in seen:
             seen.append(doc_id)
-    return seen
+    return _dedupe_canonical(seen)
 
 
 def rrf_fuse(rankings: list, k: int = RRF_K) -> list:
@@ -155,7 +191,9 @@ def retrieve(query: str, collection=None, graph=None, top_k: int = 12) -> dict:
 
     v_ranking = vector_doc_ranking(collection, query)
     g_ranking = graph_doc_ranking(graph, query)
-    fused = rrf_fuse([v_ranking, g_ranking])
+    # Sources dedupe independently, so they can keep DIFFERENT twins of the
+    # same scanned/clean pair - collapse again after fusion.
+    fused = _dedupe_canonical(rrf_fuse([v_ranking, g_ranking]))
 
     return {
         "query": query,

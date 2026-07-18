@@ -1,11 +1,13 @@
 """
 Vector store builder for the Hybrid GraphRAG pipeline.
 
-Embeds each page of the corpus (via sentence-transformers) into a
-persistent ChromaDB collection, so the RRF fusion retriever can combine
-semantic search with the knowledge graph traversal. One chunk per page
-keeps this simple - the synthetic/real docs are short enough per page
-that finer-grained splitting isn't needed.
+Embeds the corpus (via sentence-transformers) into a persistent ChromaDB
+collection, so the RRF fusion retriever can combine semantic search with
+the knowledge graph traversal. Pages are the outer unit (page_num survives
+into metadata for citations), but pages longer than the embedding model's
+token window are split into overlapping word windows - previously the
+whole page was embedded as one chunk and silently truncated at the model
+limit, leaving most of each long OEM-manual page invisible to search.
 
 Usage:
     from ingest.vector_builder import build_vector_store, query_store
@@ -19,11 +21,31 @@ from chromadb.utils import embedding_functions
 
 CHROMA_DIR = "data/chroma_db"
 COLLECTION_NAME = "et_corpus"
-EMBEDDING_MODEL = "all-MiniLM-L6-v2"
+EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"  # 512-token window (2x MiniLM)
+
+# ~512 bge tokens with headroom for wordpiece expansion; ~15% overlap so a
+# fact straddling a window boundary is fully inside at least one chunk.
+WORDS_PER_CHUNK = 380
+OVERLAP_WORDS = 57
 
 
-def _chunk_id(doc_id: str, page_num: int) -> str:
-    return f"{doc_id}::p{page_num}"
+def _split_page(text: str) -> list:
+    """One chunk for a short page; overlapping word windows for a long one."""
+    words = text.split()
+    if len(words) <= WORDS_PER_CHUNK:
+        return [text]
+    chunks, start = [], 0
+    step = WORDS_PER_CHUNK - OVERLAP_WORDS
+    while start < len(words):
+        chunks.append(" ".join(words[start:start + WORDS_PER_CHUNK]))
+        if start + WORDS_PER_CHUNK >= len(words):
+            break
+        start += step
+    return chunks
+
+
+def _chunk_id(doc_id: str, page_num: int, window: int) -> str:
+    return f"{doc_id}::p{page_num}.{window}"
 
 
 def build_vector_store(page_records: list, persist_dir: str = CHROMA_DIR,
@@ -38,22 +60,26 @@ def build_vector_store(page_records: list, persist_dir: str = CHROMA_DIR,
         except Exception:
             pass
 
-    collection = client.get_or_create_collection(name=COLLECTION_NAME, embedding_function=embed_fn)
+    collection = client.get_or_create_collection(
+        name=COLLECTION_NAME, embedding_function=embed_fn,
+        metadata={"embedding_model": EMBEDDING_MODEL, "words_per_chunk": WORDS_PER_CHUNK})
 
     ids, documents, metadatas = [], [], []
     for rec in page_records:
         text = rec["text"].strip()
         if not text:
             continue
-        ids.append(_chunk_id(rec["doc_id"], rec["page_num"]))
-        documents.append(text)
-        metadatas.append({
-            "doc_id": rec["doc_id"],
-            "page_num": rec["page_num"],
-            "source_folder": rec["source_folder"],
-            "is_ocr": rec["is_ocr"],
-            "num_tables": len(rec["tables"]),
-        })
+        for window, chunk in enumerate(_split_page(text)):
+            ids.append(_chunk_id(rec["doc_id"], rec["page_num"], window))
+            documents.append(chunk)
+            metadatas.append({
+                "doc_id": rec["doc_id"],
+                "page_num": rec["page_num"],
+                "window": window,
+                "source_folder": rec["source_folder"],
+                "is_ocr": rec["is_ocr"],
+                "num_tables": len(rec["tables"]),
+            })
 
     if ids:
         collection.upsert(ids=ids, documents=documents, metadatas=metadatas)
@@ -65,6 +91,25 @@ def load_vector_store(persist_dir: str = CHROMA_DIR) -> chromadb.api.models.Coll
     client = chromadb.PersistentClient(path=persist_dir)
     embed_fn = embedding_functions.SentenceTransformerEmbeddingFunction(model_name=EMBEDDING_MODEL)
     return client.get_collection(name=COLLECTION_NAME, embedding_function=embed_fn)
+
+
+def load_or_build_vector_store(persist_dir: str = CHROMA_DIR,
+                                corpus_root: str = "data/corpus") -> chromadb.api.models.Collection.Collection:
+    """data/chroma_db is gitignored, so a fresh clone has no collection - build
+    it from the corpus on first run instead of crashing. No API key needed:
+    only PDF text extraction + local sentence-transformers embedding. A store
+    built with a different embedding model/chunking config is stale - rebuild
+    it too, or old and new vectors would silently mix."""
+    try:
+        collection = load_vector_store(persist_dir)
+        meta = collection.metadata or {}
+        if meta.get("embedding_model") == EMBEDDING_MODEL \
+                and meta.get("words_per_chunk") == WORDS_PER_CHUNK:
+            return collection
+    except Exception:  # chromadb's missing-collection error type varies by version
+        pass
+    from ingest.loaders import load_corpus
+    return build_vector_store(load_corpus(corpus_root), persist_dir=persist_dir)
 
 
 def query_store(collection, query_text: str, n_results: int = 5) -> list:

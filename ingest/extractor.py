@@ -14,6 +14,7 @@ import hashlib
 from anthropic import Anthropic
 
 CACHE_DIR = ".extraction_cache"
+EXTRACTION_MODEL = os.environ.get("EXTRACTION_MODEL", "claude-sonnet-4-5")
 
 EXTRACTION_SYSTEM_PROMPT = """You are an industrial document entity extraction system. \
 Extract entities and relationships from the given document text with high precision.
@@ -71,7 +72,7 @@ def _save_cache(key: str, data: dict):
 
 
 def extract_document(doc_id: str, full_text: str, client: Anthropic = None,
-                      model: str = "claude-sonnet-4-5", use_cache: bool = True) -> dict:
+                      model: str = EXTRACTION_MODEL, use_cache: bool = True) -> dict:
     key = _cache_key(doc_id, full_text)
     if use_cache:
         cached = _load_cache(key)
@@ -118,7 +119,7 @@ def extract_document(doc_id: str, full_text: str, client: Anthropic = None,
 
 
 def extract_corpus(page_records: list, client: Anthropic = None,
-                    model: str = "claude-sonnet-4-5") -> dict:
+                    model: str = EXTRACTION_MODEL) -> dict:
     by_doc = {}
     for rec in page_records:
         by_doc.setdefault(rec["doc_id"], []).append(rec)

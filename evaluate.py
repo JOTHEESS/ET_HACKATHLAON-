@@ -56,7 +56,10 @@ def run_benchmark(top_k: int = TOP_K) -> dict:
 
     per_question = []
     for q in benchmark["questions"]:
-        vector_ranking = vector_doc_ranking(collection, q["question"], n_results=top_k)[:top_k]
+        # n_results=20 matches what retrieve() feeds the hybrid's vector arm -
+        # giving the baseline fewer chunks than the hybrid gets would
+        # artificially inflate the hybrid's margin.
+        vector_ranking = vector_doc_ranking(collection, q["question"], n_results=20)[:top_k]
         hybrid_ranking = retrieve(q["question"], collection=collection, graph=graph,
                                    top_k=top_k)["fused_doc_ids"]
 
@@ -67,6 +70,10 @@ def run_benchmark(top_k: int = TOP_K) -> dict:
             "hops": q["hops"],
             "vector_recall": _recall(q["hops"], vector_ranking),
             "hybrid_recall": _recall(q["hops"], hybrid_ranking),
+            # recall@5 is the stricter, more meaningful cut on a 17-doc
+            # corpus - recall@12 leaves little room to differ from chance.
+            "vector_recall_at5": _recall(q["hops"], vector_ranking[:5]),
+            "hybrid_recall_at5": _recall(q["hops"], hybrid_ranking[:5]),
             "vector_ranking": vector_ranking,
             "hybrid_ranking": hybrid_ranking,
         })
@@ -85,9 +92,12 @@ def run_benchmark(top_k: int = TOP_K) -> dict:
         for rtype, scores in by_type.items()
     }
 
+    n = len(per_question)
     overall = {
-        "vector_avg_recall": sum(pq["vector_recall"] for pq in per_question) / len(per_question),
-        "hybrid_avg_recall": sum(pq["hybrid_recall"] for pq in per_question) / len(per_question),
+        "vector_avg_recall": sum(pq["vector_recall"] for pq in per_question) / n,
+        "hybrid_avg_recall": sum(pq["hybrid_recall"] for pq in per_question) / n,
+        "vector_avg_recall_at5": sum(pq["vector_recall_at5"] for pq in per_question) / n,
+        "hybrid_avg_recall_at5": sum(pq["hybrid_recall_at5"] for pq in per_question) / n,
     }
 
     return {"top_k": top_k, "per_question": per_question,
@@ -95,18 +105,22 @@ def run_benchmark(top_k: int = TOP_K) -> dict:
 
 
 def print_report(results: dict) -> None:
-    print(f"Recall@{results['top_k']} - fraction of a question's required documents found in the top-{results['top_k']} ranking\n")
+    k = results["top_k"]
+    print(f"Recall - fraction of a question's required documents found in the top-K ranking (K=5 and K={k})\n")
 
-    print(f"{'ID':<10} {'type':<18} {'vector':>8} {'hybrid':>8}")
+    print(f"{'ID':<10} {'type':<18} {'vec@5':>7} {'hyb@5':>7} {'vec@' + str(k):>7} {'hyb@' + str(k):>7}")
     for pq in results["per_question"]:
-        print(f"{pq['id']:<10} {pq['retrieval_type']:<18} {pq['vector_recall']:>8.2f} {pq['hybrid_recall']:>8.2f}")
+        print(f"{pq['id']:<10} {pq['retrieval_type']:<18} "
+              f"{pq['vector_recall_at5']:>7.2f} {pq['hybrid_recall_at5']:>7.2f} "
+              f"{pq['vector_recall']:>7.2f} {pq['hybrid_recall']:>7.2f}")
 
     print(f"\n{'retrieval_type':<18} {'n':>3} {'vector avg':>12} {'hybrid avg':>12}")
     for rtype, s in results["by_retrieval_type"].items():
         print(f"{rtype:<18} {s['n']:>3} {s['vector_avg_recall']:>12.2f} {s['hybrid_avg_recall']:>12.2f}")
 
     o = results["overall"]
-    print(f"\nOVERALL: vector avg recall = {o['vector_avg_recall']:.2f}  |  hybrid avg recall = {o['hybrid_avg_recall']:.2f}")
+    print(f"\nOVERALL @5:  vector = {o['vector_avg_recall_at5']:.2f}  |  hybrid = {o['hybrid_avg_recall_at5']:.2f}")
+    print(f"OVERALL @{k}: vector = {o['vector_avg_recall']:.2f}  |  hybrid = {o['hybrid_avg_recall']:.2f}")
 
 
 if __name__ == "__main__":

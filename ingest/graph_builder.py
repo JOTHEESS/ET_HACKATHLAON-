@@ -106,6 +106,20 @@ def load_graph(path: str = GRAPH_PATH) -> nx.MultiDiGraph:
     return graph
 
 
+def load_or_build_graph(path: str = GRAPH_PATH,
+                         extraction_path: str = "data/extraction_results.json") -> nx.MultiDiGraph:
+    """Build from the committed extraction results if the graph JSON is
+    missing (e.g. a fresh clone where only extraction_results.json is
+    versioned). No API calls - extraction is already done."""
+    if os.path.exists(path):
+        return load_graph(path)
+    with open(extraction_path, "r") as f:
+        results = json.load(f)
+    graph = build_graph(results)
+    save_graph(graph, path)
+    return graph
+
+
 def neighbors(graph: nx.MultiDiGraph, node: str) -> list:
     """Both incoming and outgoing edges, since traversal for retrieval doesn't care about direction."""
     undirected = graph.to_undirected(as_view=True)

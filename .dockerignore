@@ -1,0 +1,20 @@
+# Heavy submission artifacts - not needed to run the app
+demo_video.mp4
+Industrial_Knowledge_Intelligence_Deck.pptx
+Industrial_Knowledge_Intelligence_Detailed_Document.pdf
+architecture_diagram.png
+
+# Runtime artifacts (regenerated inside the image/container)
+data/chroma_db/
+.extraction_cache/
+.synthesis_cache/
+logs/
+
+# Dev clutter
+.git/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+FailureSensorIQ/

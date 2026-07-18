@@ -4,6 +4,29 @@
 
 ## FINAL LOCKED METRICS
 
+**UPDATE 17 Jul 2026: re-measurement DONE - metrics RE-LOCKED.**
+Full verification on macOS / Python 3.14 (fresh venv, tesseract via
+brew, all 17 docs incl. scanned OCR'd): 26/26 tests pass; vector store
+rebuilt with bge-small-en-v1.5 + windowed chunks; evaluate.py run 3x,
+byte-identical output (determinism holds).
+
+New locked numbers (top_k=12, scanned-twin dedupe, fair 20-chunk
+vector baseline):
+- Q01_STAR: hybrid 1.00 @12 (was 0.60) vs vector 0.80. The FULL star
+  chain is retrieved; the hybrid's additions over vector are exactly
+  VS-204 and M-118 - the docs whose text never mentions "P-204".
+- Overall @12: hybrid 0.83 vs vector 0.81 (old: 0.78 vs 0.69).
+- Overall @5: hybrid 0.70 vs vector 0.76 - hop-0 graph noise costs
+  precision at strict cutoffs on single-doc questions. Honest
+  trade-off, stated in the README; don't hide it in the pitch.
+- Q02: 0.33 both modes @12 (ceiling: only 1 of its 3 hops is a real
+  document). bge now finds M-118 semantically, so the old "only the
+  graph can reach Q02" evidence evaporated - the embedding upgrade
+  ate the graph's clearest aggregate win. The per-question Q01 chain
+  evidence is now the load-bearing proof, and it's stronger than ever.
+- Controls: all 1.00 in both modes.
+Deck slide 8 and detailed-document p10 updated to match these numbers.
+
 **These numbers are FINAL. Do not re-run benchmarks or extraction unless
 a genuine bug is found - no more tuning for score improvement from this
 point forward.**
@@ -16,16 +39,23 @@ point forward.**
 - DATE excluded: ground truth has zero labeled DATE instances in this
   document set, making recall undefined for that type
 
-**RETRIEVAL (hybrid vs keyword baseline):**
-- Q01_STAR (star demo question) recall: 0.60
-- Overall hybrid avg recall (8 questions): 0.78
+**RETRIEVAL (hybrid vs vector-only baseline, top_k=12, post
+chunking/embedding upgrade + scanned-twin dedupe):**
+- Q01_STAR (star demo question) recall: 1.00 hybrid vs 0.80 vector-only
+  - the full five-document star chain is now retrieved
+- Overall hybrid avg recall (8 questions) @12: 0.83 vs 0.81 vector-only
+- Overall @5 (stricter cutoff, more meaningful on a 17-doc corpus): 0.70
+  hybrid vs 0.76 vector-only - honest precision trade-off, not hidden
 - Verified deterministic/reproducible across repeated runs
 
 **KNOWN LIMITATIONS (documented, understood root cause):**
 - Q02: hop-0 tie-flooding, 12 docs share identical graph score for mere
-  entity mention, defeats 2-hop-specific answer
-- VS-204 for Q01: consistently ranks just outside top-12, likely same
-  tie-flooding pattern
+  entity mention, defeats 2-hop-specific answer. Ceiling regardless of
+  retrieval quality: only 1 of its 3 expected hops is a real document.
+  0.33 in both modes - the embedding upgrade now reaches M-118
+  semantically too, so this is no longer graph-only evidence.
+- VS-204 for Q01: resolved by the scanned-twin dedupe (freed 2-3 top-k
+  slots) - now retrieved inside top-12 in the hybrid ranking.
 
 ## Submission document inaccuracy - caught and corrected before submission
 
@@ -319,3 +349,117 @@ benchmark built on top of it - is silently unreliable across restarts,
 deployments, or even repeated calls within the same session if the
 process restarts. This was caught by the user insisting on an actual
 UI run rather than trusting previously-logged numbers.
+
+## Post-review hardening (15 Jul 2026, pre-submission)
+
+An external architect-style review surfaced fragile areas; fixed in one
+pass:
+
+1. **Fresh-clone quick start actually works now.** app.py previously
+   crashed on a clone (chroma_db/ gitignored, load-only path).
+   `load_or_build_vector_store()` / `load_or_build_graph()` build from
+   the committed corpus/extraction results on first run - no API key
+   needed. The collection stamps its embedding model + chunk config in
+   metadata and auto-rebuilds when stale.
+2. **Tesseract path portable** - the hardcoded Windows path is now
+   conditional; macOS/Linux resolve tesseract from PATH (previously the
+   3 scanned PDFs silently dropped out of any non-Windows rebuild).
+3. **Citation validation** (synthesis._validate_citations) - model
+   citations are whitelisted against the doc_ids actually in context;
+   short forms ("IR-556") resolve to full filenames; hallucinated
+   citations can no longer render in the UI.
+4. **Timeout + retries** on the synthesis client (60s, 3 retries),
+   friendly UI error instead of a traceback.
+5. **Graph path visualization** (ingest/path_viz.py, pyvis) - per-answer
+   "Why these documents" expander renders shortest paths from query
+   entities to each cited doc, relation-labeled edges. vis.js inlined
+   and Bootstrap CDN tags stripped: works with no internet at the venue.
+6. **Observability** (ingest/tracing.py) - every synthesize() appends a
+   JSON line to logs/query_traces.jsonl: latency split (retrieval vs
+   LLM), token usage, matched entities, rankings, citations, cache
+   status. Tracing failures never break the answer path.
+7. **Answer cache** (.synthesis_cache/) - repeat questions return
+   instantly with a ⚡ badge, no API call. Keyed on
+   (model, top_k, normalized query).
+8. **Chunking/embedding fix** - whole-page chunks were silently
+   truncated at all-MiniLM-L6-v2's ~256-token limit (long OEM-manual
+   pages mostly invisible to vector search). Now: overlapping
+   380-word/57-overlap page windows + BAAI/bge-small-en-v1.5 (512-token
+   window). RETRIEVAL METRICS MUST BE RE-MEASURED (see note at top).
+9. **tests/** - pytest suite: eval-dataset validation (every benchmark
+   hop resolves to a real corpus doc or graph node), graph invariants
+   (star chain connected, P-204 canonicalized to one hub node),
+   chunking overlap/no-loss, citation whitelist, RRF tie-break
+   determinism. Heavy-dep tests skip cleanly where chromadb/anthropic
+   aren't installed.
+
+## Second hardening pass (same day, "fix all the issues")
+
+10. **Fuzzy entity matching** (retriever.match_entities) - three tiers:
+    node key verbatim, any stored alias verbatim, punctuation-insensitive
+    ID match ("p204"/"P 204" -> "P-204"). Paraphrased judge questions no
+    longer silently lose the graph signal. Deterministic ordering kept.
+11. **Scanned-twin dedupe** (_canonical_doc/_dedupe_canonical) - the
+    _SCANNED duplicates no longer eat top-k slots; applied to vector and
+    graph rankings AND re-applied post-fusion (the two sources can keep
+    different twins of the same pair). This frees 2-3 slots on the star
+    question - likely to move Q01 recall up for real. AFFECTS BENCHMARKS:
+    covered by the same re-measurement TODO as the chunking change.
+12. **Conversational memory** (synthesize(history=...)) - app passes prior
+    turns; follow-ups with no entity IDs borrow the previous user turn
+    for retrieval seeding; last 6 turns go to the model marked as
+    reference-resolution context, not fact source. Cache key includes
+    history so cached answers can't leak across different conversations.
+13. **Targeted context for graph-only docs** - instead of blindly taking
+    page 1, _gather_context now vector-queries within that doc for the
+    best chunk for this query.
+14. **Robust JSON parsing** (_parse_json_response) - fence-tolerant,
+    extracts the first {...} block from stray prose; replaces the
+    hand-rolled strip("`").
+15. **evaluate.py reports recall@5 alongside recall@top_k** - on a 17-doc
+    corpus recall@12 is close to chance; @5 is the number that actually
+    proves the hybrid earns its place. Lead with @5 in the deck.
+
+Known follow-ups deliberately NOT done: hop-0 tie-flooding redesign
+(Q02 ceiling - dedupe partially relieves it but the tier design stands),
+groundedness scoring of answer text against sources (hallucination
+handling is currently: extraction/synthesis prompt constraints +
+citation whitelist + self-reported confidence - the answer text itself
+is not verified).
+
+## Merge from teammate_version (18 Jul 2026)
+
+The credit error that interrupted planning on 18 Jul left nothing
+committed on this side - confirmed via git log/reflog (linear history,
+no merge, no stash, no dangling commits). The teammate's parallel work
+survived as an extracted zip at
+`~/Desktop/teammate_version/extracted/ET_HACKATHLAON--main`, recovered
+and merged in from there.
+
+Before copying anything, checked the recovered folder for signs of
+tampering (it's an unverified external source, not something either of
+us had touched together before): `.github/workflows/tests.yml` is a
+plain checkout/setup-python/pytest job, `Dockerfile` is a standard
+build with no unexpected network calls, and a grep across all `.py`
+files for `subprocess`/`eval`/`exec`/`urllib`/raw socket use turned up
+nothing. `data/eval/benchmark_results.json` contains real per-question
+data consistent with the CLAUDE.md narrative (not hand-typed round
+numbers), and the diffs against every "modified" file matched the
+teammate's own changelog line-for-line (dedupe, fuzzy entity matching,
+bge-small-en-v1.5 + windowed chunking, path_viz, tracing, citation
+validation). Read as genuine parallel engineering work, not injected
+content.
+
+One real inconsistency found in the teammate's own CLAUDE.md: the "17
+Jul re-measurement" note claimed new locked numbers (1.00/0.83) but the
+RETRIEVAL/KNOWN LIMITATIONS bullets directly below it still stated the
+old numbers (0.60/0.78) - an editing oversight on their end. Fixed here
+by rewriting those bullets to match the re-measurement note instead of
+carrying the mix forward.
+
+Files added: Dockerfile, .dockerignore, .github/workflows/tests.yml,
+LICENSE, tests/ (pytest suite), ingest/path_viz.py, ingest/tracing.py,
+scripts/make_architecture_diagram.py, requirements-dev.txt (pytest).
+Files overwritten with the teammate's versions: app.py, evaluate.py,
+all of ingest/*.py, README.md, .gitignore, requirements.txt,
+data/eval/benchmark_results.json.

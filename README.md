@@ -12,6 +12,11 @@ A hybrid GraphRAG system (knowledge graph + vector search, fused via RRF) that a
 ```bash
 pip install -r requirements.txt
 
+# System dependency: Tesseract OCR (only needed when (re)building the vector
+# store, since 3 corpus PDFs are scanned images):
+#   macOS: brew install tesseract | Debian/Ubuntu: apt install tesseract-ocr
+#   Windows: https://github.com/UB-Mannheim/tesseract/wiki
+
 # macOS/Linux
 export ANTHROPIC_API_KEY="your-key"
 # Windows PowerShell
@@ -20,7 +25,20 @@ $env:ANTHROPIC_API_KEY="your-key"
 streamlit run app.py
 ```
 
-The first run downloads the `all-MiniLM-L6-v2` embedding model (~90MB) and builds the vector store/knowledge graph from the corpus if they don't already exist under `data/`.
+The first run downloads the `BAAI/bge-small-en-v1.5` embedding model (~130MB) and builds the vector store/knowledge graph from the corpus if they don't already exist under `data/` (no API key needed for the build itself).
+
+Run the test suite with `python -m pytest tests/` — it validates the eval dataset, graph invariants, chunking, citation filtering, and ranking determinism. CI runs it on every push (`.github/workflows/tests.yml`).
+
+Or run it in Docker (embedding model and indexes baked into the image at build time):
+
+```bash
+docker build -t ikig .
+docker run -p 8501:8501 -e ANTHROPIC_API_KEY="your-key" ikig
+```
+
+Operational notes: answers are cached in `.synthesis_cache/` (repeat questions skip the API and show a ⚡ badge); every query appends a JSON trace line to `logs/query_traces.jsonl` (latency split, token usage, rankings, citations); model names and top-k are overridable via `SYNTHESIS_MODEL`, `EXTRACTION_MODEL`, and `RETRIEVAL_TOP_K` env vars. Model citations are validated against the retrieved context before rendering — a hallucinated doc reference can never display as a source. Each answer includes a "Why these documents" expander showing the knowledge-graph paths (works offline; all JS inlined).
+
+Retrieval robustness: entity matching is alias- and punctuation-tolerant ("p204" finds P-204), scanned/clean duplicate documents collapse to one top-k slot, and follow-up questions reuse the conversation so "was it acted upon?" resolves against the previous answer. `evaluate.py` reports recall at both K=5 and K=12 — on a 17-document corpus the @5 figure is the meaningful one.
 
 ## Architecture
 
@@ -44,11 +62,14 @@ This is the flagship test of the whole hybrid approach. The answer requires conn
 
 ## Benchmark results
 
-- **Entity extraction Macro-F1: 0.8411** (excluding DATE, which has zero labeled instances in the ground truth set)
-- **Star demo question (Q01) recall: 0.60**
-- **Overall hybrid retrieval recall across 8 benchmark questions: 0.78**
+Measured 17 Jul 2026 after the chunking/embedding upgrade (windowed page chunks + `bge-small-en-v1.5`), verified byte-identical across three consecutive runs:
 
-Known, understood limitation: two questions (Q02, and partially Q01) are capped by "hop-0 tie-flooding" — many documents share an identical graph proximity score for merely mentioning the query's main entity, which can crowd out a more specific but structurally-further answer out of the top-K results. Full root-cause traces are in `CLAUDE.md`.
+- **Entity extraction Macro-F1: 0.8411** (excluding DATE, which has zero labeled instances in the ground truth set)
+- **Star demo question (Q01) recall@12: 1.00 hybrid vs 0.80 vector-only** — the full five-document chain is retrieved; the two documents the vector baseline misses (VS-204 and M-118, whose text never mentions "P-204") are supplied by graph traversal
+- **Overall recall@12 across 8 questions: 0.83 hybrid vs 0.81 vector-only**; **recall@5: 0.70 hybrid vs 0.76 vector-only**
+- All control (keyword-answerable) questions: 1.00 in both modes
+
+Honest reading: upgrading the embedding model lifted the *vector baseline* substantially (0.69 → 0.81 @12), so the hybrid's aggregate margin is now small — and at the stricter @5 cutoff, hop-0 graph noise costs a little precision on single-document questions. The graph earns its place on the multi-hop chain question this system was built for (Q01: 1.00 vs 0.80), not on aggregate averages. Q02 remains capped by hop-0 tie-flooding (root-cause trace in `CLAUDE.md`).
 
 ## Repo structure
 

@@ -7,6 +7,10 @@ venv/
 # Extraction cache (regenerable, no need to version)
 .extraction_cache/
 
+# Synthesis answer cache + query traces (runtime artifacts)
+.synthesis_cache/
+logs/
+
 # Vector store (regenerable from corpus + extraction results)
 data/chroma_db/
 
